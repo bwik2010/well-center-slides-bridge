@@ -8,33 +8,33 @@ const ImpactSlide = () => {
       icon: Users,
       value: "2,500+",
       label: "Community Members Served",
-      color: "emerald"
+      color: "#173e4e"
     },
     {
       icon: Leaf,
       value: "15",
       label: "Sustainability Programs",
-      color: "teal"
+      color: "#8aa1a9"
     },
     {
       icon: DollarSign,
       value: "$1.2M",
       label: "Economic Impact Generated",
-      color: "blue"
+      color: "#b8832b"
     },
     {
       icon: TrendingUp,
       value: "85%",
       label: "Program Success Rate",
-      color: "indigo"
+      color: "#173e4e"
     }
   ];
 
   return (
     <div className="h-full p-8">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Impact</h2>
-        <div className="w-24 h-1 bg-emerald-500 mx-auto mb-6"></div>
+        <h2 className="text-4xl font-bold mb-4" style={{ color: '#173e4e' }}>Our Impact</h2>
+        <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#b8832b' }}></div>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
           Measuring our success through community growth, sustainability achievements, and economic empowerment
         </p>
@@ -46,17 +46,17 @@ const ImpactSlide = () => {
             const IconComponent = metric.icon;
             return (
               <div key={index} className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 text-center">
-                <div className={`bg-${metric.color}-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4`}>
-                  <IconComponent className={`h-8 w-8 text-${metric.color}-600`} />
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: metric.color + '20' }}>
+                  <IconComponent className="h-8 w-8" style={{ color: metric.color }} />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-800 mb-2">{metric.value}</h3>
+                <h3 className="text-3xl font-bold mb-2" style={{ color: '#173e4e' }}>{metric.value}</h3>
                 <p className="text-gray-600 font-medium">{metric.label}</p>
               </div>
             );
           })}
         </div>
         
-        <div className="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl p-8 text-white">
+        <div className="rounded-2xl p-8 text-white" style={{ background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)' }}>
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-2xl font-bold mb-4">Looking Forward</h3>
             <p className="text-lg opacity-90 leading-relaxed">

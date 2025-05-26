@@ -34,16 +34,16 @@ const PresentationTemplate = () => {
   const CurrentSlideComponent = slides[currentSlide].component;
   
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-blue-50 p-6">
+    <div className="min-h-screen p-6" style={{ background: 'linear-gradient(135deg, #8aa1a920 0%, #173e4e20 100%)' }}>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-3">
-            <div className="bg-emerald-600 p-2 rounded-lg">
+            <div className="p-2 rounded-lg" style={{ backgroundColor: '#173e4e' }}>
               <Presentation className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-800">The Well Center</h1>
+              <h1 className="text-2xl font-bold" style={{ color: '#173e4e' }}>The Well Center</h1>
               <p className="text-sm text-gray-600">Presentation Template</p>
             </div>
           </div>
@@ -66,7 +66,8 @@ const PresentationTemplate = () => {
           <Button 
             onClick={prevSlide}
             variant="outline"
-            className="flex items-center gap-2 hover:bg-emerald-50 hover:border-emerald-300"
+            className="flex items-center gap-2 hover:opacity-80"
+            style={{ borderColor: '#8aa1a9', color: '#173e4e' }}
             disabled={currentSlide === 0}
           >
             <ChevronLeft className="h-4 w-4" />
@@ -81,12 +82,16 @@ const PresentationTemplate = () => {
                 onClick={() => goToSlide(index)}
                 className={`w-12 h-8 rounded border-2 transition-all duration-200 ${
                   index === currentSlide 
-                    ? 'border-emerald-500 bg-emerald-100' 
-                    : 'border-gray-300 bg-gray-100 hover:border-emerald-300'
+                    ? 'border-opacity-100 opacity-100' 
+                    : 'border-opacity-50 opacity-50 hover:opacity-75'
                 }`}
+                style={{ 
+                  borderColor: '#b8832b',
+                  backgroundColor: index === currentSlide ? '#b8832b20' : '#8aa1a920'
+                }}
                 title={slide.title}
               >
-                <span className="text-xs font-medium text-gray-600">{index + 1}</span>
+                <span className="text-xs font-medium" style={{ color: '#173e4e' }}>{index + 1}</span>
               </button>
             ))}
           </div>
@@ -94,7 +99,8 @@ const PresentationTemplate = () => {
           <Button 
             onClick={nextSlide}
             variant="outline"
-            className="flex items-center gap-2 hover:bg-emerald-50 hover:border-emerald-300"
+            className="flex items-center gap-2 hover:opacity-80"
+            style={{ borderColor: '#8aa1a9', color: '#173e4e' }}
             disabled={currentSlide === slides.length - 1}
           >
             Next
