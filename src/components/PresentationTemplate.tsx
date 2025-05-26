@@ -1,9 +1,9 @@
-
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Presentation } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import TitleSlide from './slides/TitleSlide';
 import MissionSlide from './slides/MissionSlide';
+import BridgeSlide from './slides/BridgeSlide';
 import ContentSlide from './slides/ContentSlide';
 import ImpactSlide from './slides/ImpactSlide';
 import CallToActionSlide from './slides/CallToActionSlide';
@@ -11,9 +11,10 @@ import CallToActionSlide from './slides/CallToActionSlide';
 const slides = [
   { id: 1, component: TitleSlide, title: "Title Slide" },
   { id: 2, component: MissionSlide, title: "Mission Statement" },
-  { id: 3, component: ContentSlide, title: "Content Slide" },
-  { id: 4, component: ImpactSlide, title: "Impact & Results" },
-  { id: 5, component: CallToActionSlide, title: "Call to Action" }
+  { id: 3, component: BridgeSlide, title: "Bridge Diagram" },
+  { id: 4, component: ContentSlide, title: "Content Slide" },
+  { id: 5, component: ImpactSlide, title: "Impact & Results" },
+  { id: 6, component: CallToActionSlide, title: "Call to Action" }
 ];
 
 const PresentationTemplate = () => {
