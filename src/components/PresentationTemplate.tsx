@@ -1,0 +1,109 @@
+
+import React, { useState } from 'react';
+import { ChevronLeft, ChevronRight, Presentation } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import TitleSlide from './slides/TitleSlide';
+import MissionSlide from './slides/MissionSlide';
+import ContentSlide from './slides/ContentSlide';
+import ImpactSlide from './slides/ImpactSlide';
+import CallToActionSlide from './slides/CallToActionSlide';
+
+const slides = [
+  { id: 1, component: TitleSlide, title: "Title Slide" },
+  { id: 2, component: MissionSlide, title: "Mission Statement" },
+  { id: 3, component: ContentSlide, title: "Content Slide" },
+  { id: 4, component: ImpactSlide, title: "Impact & Results" },
+  { id: 5, component: CallToActionSlide, title: "Call to Action" }
+];
+
+const PresentationTemplate = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+  
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+  
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+  };
+  
+  const CurrentSlideComponent = slides[currentSlide].component;
+  
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-blue-50 p-6">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center gap-3">
+            <div className="bg-emerald-600 p-2 rounded-lg">
+              <Presentation className="h-6 w-6 text-white" />
+            </div>
+            <div>
+              <h1 className="text-2xl font-bold text-gray-800">The Well Center</h1>
+              <p className="text-sm text-gray-600">Presentation Template</p>
+            </div>
+          </div>
+          
+          {/* Slide Counter */}
+          <div className="text-sm text-gray-600 bg-white px-3 py-1 rounded-full shadow-sm">
+            {currentSlide + 1} of {slides.length}
+          </div>
+        </div>
+        
+        {/* Main Slide Area */}
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-6 min-h-[600px] flex items-center justify-center">
+          <div className="w-full h-full p-8">
+            <CurrentSlideComponent />
+          </div>
+        </div>
+        
+        {/* Navigation Controls */}
+        <div className="flex items-center justify-between">
+          <Button 
+            onClick={prevSlide}
+            variant="outline"
+            className="flex items-center gap-2 hover:bg-emerald-50 hover:border-emerald-300"
+            disabled={currentSlide === 0}
+          >
+            <ChevronLeft className="h-4 w-4" />
+            Previous
+          </Button>
+          
+          {/* Slide Thumbnails */}
+          <div className="flex gap-2">
+            {slides.map((slide, index) => (
+              <button
+                key={slide.id}
+                onClick={() => goToSlide(index)}
+                className={`w-12 h-8 rounded border-2 transition-all duration-200 ${
+                  index === currentSlide 
+                    ? 'border-emerald-500 bg-emerald-100' 
+                    : 'border-gray-300 bg-gray-100 hover:border-emerald-300'
+                }`}
+                title={slide.title}
+              >
+                <span className="text-xs font-medium text-gray-600">{index + 1}</span>
+              </button>
+            ))}
+          </div>
+          
+          <Button 
+            onClick={nextSlide}
+            variant="outline"
+            className="flex items-center gap-2 hover:bg-emerald-50 hover:border-emerald-300"
+            disabled={currentSlide === slides.length - 1}
+          >
+            Next
+            <ChevronRight className="h-4 w-4" />
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PresentationTemplate;
