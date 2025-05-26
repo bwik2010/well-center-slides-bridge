@@ -1,49 +1,68 @@
 
 import React from 'react';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Users, Building2, Heart } from 'lucide-react';
 
 const ContentSlide = () => {
   return (
     <div className="w-full h-full p-6" style={{ aspectRatio: '16/9' }}>
       <div className="max-w-6xl mx-auto h-full">
-        <h2 className="text-3xl font-bold mb-6 text-center" style={{ color: '#173e4e' }}>Content Slide Template</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center" style={{ color: '#173e4e' }}>Key Partners & Collaborations</h2>
         
         <div className="grid grid-cols-2 gap-8 items-center h-5/6">
-          {/* Left Content */}
+          {/* Left Content - Partners */}
           <div>
-            <h3 className="text-xl font-semibold mb-4" style={{ color: '#173e4e' }}>Key Points & Benefits</h3>
+            <h3 className="text-xl font-semibold mb-4" style={{ color: '#173e4e' }}>Strategic Partners</h3>
             
-            <div className="space-y-3">
-              {[
-                "Community-centered approach to development",
-                "Sustainable resource management programs", 
-                "Economic empowerment initiatives",
-                "Environmental stewardship education",
-                "Collaborative partnerships with local organizations"
-              ].map((point, index) => (
-                <div key={index} className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: '#b8832b' }} />
-                  <p className="text-gray-700 text-sm">{point}</p>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3 p-4 rounded-xl border" style={{ backgroundColor: '#173e4e', borderColor: '#173e4e' }}>
+                <Users className="h-6 w-6 text-white mt-0.5 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold mb-1 text-white">Kidsco</h4>
+                  <p className="text-white opacity-90 text-sm">Child development center operations and early childhood programming</p>
                 </div>
-              ))}
-            </div>
-            
-            <div className="mt-6 p-4 rounded-xl" style={{ backgroundColor: '#8aa1a9', color: 'white' }}>
-              <p className="font-medium italic text-sm">
-                "Building resilient communities through sustainable practices and inclusive economic opportunities."
-              </p>
+              </div>
+              
+              <div className="flex items-start gap-3 p-4 rounded-xl border" style={{ backgroundColor: '#8aa1a9', borderColor: '#8aa1a9' }}>
+                <Building2 className="h-6 w-6 text-white mt-0.5 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold mb-1 text-white">Weaving Impact</h4>
+                  <p className="text-white opacity-90 text-sm">Proven social enterprise strategies developed over 25 years as part of the Miller Center for Social Innovation</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-3 p-4 rounded-xl border" style={{ backgroundColor: '#b8832b', borderColor: '#b8832b' }}>
+                <Heart className="h-6 w-6 text-white mt-0.5 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold mb-1 text-white">Miller Center for Social Innovation</h4>
+                  <p className="text-white opacity-90 text-sm">Academic partnership providing research and innovation support</p>
+                </div>
+              </div>
             </div>
           </div>
           
-          {/* Right Content - Visual Element */}
+          {/* Right Content - Funding */}
           <div className="relative">
-            <div className="rounded-2xl p-6 h-64 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #8aa1a9 0%, #173e4e 100%)' }}>
-              <div className="text-center">
-                <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg" style={{ backgroundColor: '#b8832b' }}>
-                  <span className="text-3xl font-bold text-white">W</span>
+            <div className="rounded-2xl p-6 h-64" style={{ background: 'linear-gradient(135deg, #8aa1a9 0%, #173e4e 100%)' }}>
+              <div className="text-center text-white">
+                <h4 className="text-xl font-semibold mb-4">Funding Commitment</h4>
+                
+                <div className="space-y-4">
+                  <div className="bg-white bg-opacity-20 rounded-xl p-4">
+                    <div className="text-3xl font-bold mb-2" style={{ color: '#b8832b' }}>$2.25M</div>
+                    <p className="text-sm opacity-90">Capital Funding Committed</p>
+                  </div>
+                  
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="bg-white bg-opacity-15 rounded-lg p-3">
+                      <p className="font-semibold text-sm">State of Maryland</p>
+                      <p className="text-xs opacity-80">Government Partner</p>
+                    </div>
+                    <div className="bg-white bg-opacity-15 rounded-lg p-3">
+                      <p className="font-semibold text-sm">Montgomery County</p>
+                      <p className="text-xs opacity-80">Local Government</p>
+                    </div>
+                  </div>
                 </div>
-                <h4 className="text-lg font-semibold text-white mb-2">Visual Content Area</h4>
-                <p className="text-white opacity-90 text-sm">Charts, images, or infographics can be placed here</p>
               </div>
             </div>
             

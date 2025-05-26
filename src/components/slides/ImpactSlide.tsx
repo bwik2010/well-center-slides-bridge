@@ -1,31 +1,31 @@
 
 import React from 'react';
-import { TrendingUp, Users, Leaf, DollarSign } from 'lucide-react';
+import { TrendingUp, Users, Building, DollarSign, Calendar } from 'lucide-react';
 
 const ImpactSlide = () => {
   const metrics = [
     {
-      icon: Users,
-      value: "2,500+",
-      label: "Community Members Served",
+      icon: Building,
+      value: "12,000",
+      label: "Square Feet Community Center",
       color: "#173e4e"
     },
     {
-      icon: Leaf,
-      value: "15",
-      label: "Sustainability Programs",
+      icon: Users,
+      value: "200",
+      label: "Households Engaged",
       color: "#8aa1a9"
     },
     {
-      icon: DollarSign,
-      value: "$1.2M",
-      label: "Economic Impact Generated",
+      icon: TrendingUp,
+      value: "200",
+      label: "Entrepreneurs Supported",
       color: "#b8832b"
     },
     {
-      icon: TrendingUp,
-      value: "85%",
-      label: "Program Success Rate",
+      icon: Calendar,
+      value: "300",
+      label: "Event Capacity",
       color: "#173e4e"
     }
   ];
@@ -33,10 +33,10 @@ const ImpactSlide = () => {
   return (
     <div className="w-full h-full p-6" style={{ aspectRatio: '16/9' }}>
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold mb-3" style={{ color: '#173e4e' }}>Our Impact</h2>
+        <h2 className="text-3xl font-bold mb-3" style={{ color: '#173e4e' }}>Community Impact by the Numbers</h2>
         <div className="w-20 h-1 mx-auto mb-4" style={{ backgroundColor: '#b8832b' }}></div>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Measuring our success through community growth, sustainability achievements, and economic empowerment
+          Our state-of-the-art facility will serve as the cornerstone for community resilience and economic empowerment
         </p>
       </div>
       
@@ -56,13 +56,21 @@ const ImpactSlide = () => {
           })}
         </div>
         
-        <div className="rounded-2xl p-6 text-white" style={{ background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)' }}>
-          <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-xl font-bold mb-3">Looking Forward</h3>
-            <p className="text-base opacity-90 leading-relaxed">
-              Our commitment to Montgomery County continues to grow stronger each year. Together, we're building 
-              a more resilient, sustainable, and equitable community for all residents.
-            </p>
+        <div className="grid grid-cols-2 gap-6">
+          <div className="rounded-2xl p-6 text-white" style={{ background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)' }}>
+            <h3 className="text-lg font-bold mb-3">Funding Secured</h3>
+            <div className="text-center">
+              <div className="text-2xl font-bold mb-2" style={{ color: '#b8832b' }}>$2.25 Million</div>
+              <p className="text-sm opacity-90">Capital funding committed by State of MD and Montgomery County</p>
+            </div>
+          </div>
+          
+          <div className="rounded-2xl p-6" style={{ backgroundColor: '#8aa1a920', border: '2px solid #8aa1a9' }}>
+            <h3 className="text-lg font-bold mb-3" style={{ color: '#173e4e' }}>Community Space</h3>
+            <div className="text-center">
+              <div className="text-2xl font-bold mb-2" style={{ color: '#b8832b' }}>Multifunctional</div>
+              <p className="text-sm text-gray-700">Social space for events, gatherings, and community building activities</p>
+            </div>
           </div>
         </div>
       </div>
