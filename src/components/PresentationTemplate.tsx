@@ -54,11 +54,9 @@ const PresentationTemplate = () => {
           </div>
         </div>
         
-        {/* Main Slide Area */}
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-6 min-h-[600px] flex items-center justify-center">
-          <div className="w-full h-full p-8">
-            <CurrentSlideComponent />
-          </div>
+        {/* Main Slide Area - 16:9 Aspect Ratio */}
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-6 mx-auto" style={{ width: '100%', maxWidth: '1200px', aspectRatio: '16/9' }}>
+          <CurrentSlideComponent />
         </div>
         
         {/* Navigation Controls */}
