@@ -38,7 +38,7 @@ const MissionSlide = () => {
             <h3 className="text-lg font-semibold mb-2" style={{
             color: '#173e4e'
           }}>Early Childhood Dev.</h3>
-            <p className="text-sm text-gray-600">Building stronger community bonds and social networks</p>
+            <p className="text-sm text-gray-600">Giving children and families the opportunity for success from the start</p>
           </div>
           
           <div className="text-center p-4 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow" style={{
@@ -52,7 +52,7 @@ const MissionSlide = () => {
             <h3 className="text-lg font-semibold mb-2" style={{
             color: '#173e4e'
           }}>Entrepreneurship</h3>
-            <p className="text-sm text-gray-600">Promoting environmentally conscious and sustainable practices</p>
+            <p className="text-sm text-gray-600">Creating a local entrepreneurial eco-system and mentor network</p>
           </div>
           
           <div className="text-center p-4 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow" style={{
@@ -66,7 +66,7 @@ const MissionSlide = () => {
             <h3 className="text-lg font-semibold mb-2" style={{
             color: '#173e4e'
           }}>Social Bridging</h3>
-            <p className="text-sm text-gray-600">Creating economic opportunities and financial stability</p>
+            <p className="text-sm text-gray-600">Building stronger community connection and social interaction</p>
           </div>
         </div>
       </div>
