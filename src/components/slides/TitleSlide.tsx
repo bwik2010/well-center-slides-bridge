@@ -1,7 +1,40 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { removeBackground, loadImage } from '../../utils/backgroundRemoval';
 
 const TitleSlide = () => {
+  const [processedLogoUrl, setProcessedLogoUrl] = useState<string | null>(null);
+  const [isProcessing, setIsProcessing] = useState(false);
+
+  useEffect(() => {
+    const processLogo = async () => {
+      setIsProcessing(true);
+      try {
+        // Fetch the original logo
+        const response = await fetch('/lovable-uploads/cdf9fd12-ac7a-42a5-9118-1cab3e12b551.png');
+        const blob = await response.blob();
+        
+        // Load the image
+        const image = await loadImage(blob);
+        
+        // Remove background
+        const processedBlob = await removeBackground(image);
+        
+        // Create URL for the processed image
+        const url = URL.createObjectURL(processedBlob);
+        setProcessedLogoUrl(url);
+      } catch (error) {
+        console.error('Failed to process logo:', error);
+        // Fallback to original image
+        setProcessedLogoUrl('/lovable-uploads/cdf9fd12-ac7a-42a5-9118-1cab3e12b551.png');
+      } finally {
+        setIsProcessing(false);
+      }
+    };
+
+    processLogo();
+  }, []);
+
   return (
     <div className="w-full h-full flex flex-col items-center justify-center text-center relative rounded-xl text-white" style={{
       background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)',
@@ -20,12 +53,16 @@ const TitleSlide = () => {
       
       <div className="relative z-10 max-w-5xl px-8">
         <div className="mb-6">
-          <div className="w-32 h-32 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg p-4">
-            <img 
-              src="/lovable-uploads/cdf9fd12-ac7a-42a5-9118-1cab3e12b551.png" 
-              alt="The Well Center Logo" 
-              className="w-full h-full object-contain"
-            />
+          <div className="w-64 h-64 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg p-6">
+            {isProcessing ? (
+              <div className="text-white text-lg">Processing logo...</div>
+            ) : (
+              <img 
+                src={processedLogoUrl || '/lovable-uploads/cdf9fd12-ac7a-42a5-9118-1cab3e12b551.png'} 
+                alt="The Well Center Logo" 
+                className="w-full h-full object-contain"
+              />
+            )}
           </div>
         </div>
         
