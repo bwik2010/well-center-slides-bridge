@@ -4,21 +4,21 @@ import { Users } from 'lucide-react';
 
 const BridgeTeamSlide = () => {
   const teamMembers = [
-    { name: "Trish Weaver", position: { x: 150, y: 80 } },
-    { name: "Pamela Roussos", position: { x: 350, y: 60 } },
-    { name: "KC Whang", position: { x: 550, y: 90 } },
-    { name: "Omar Palos", position: { x: 520, y: 200 } },
-    { name: "Jay Gerson", position: { x: 450, y: 310 } },
-    { name: "Larry Bram", position: { x: 250, y: 330 } },
-    { name: "Mayrin Munguia", position: { x: 80, y: 250 } },
-    { name: "Lucia Zegara", position: { x: 200, y: 150 } },
-    { name: "David Son", position: { x: 600, y: 150 } },
-    { name: "Jasmine Dero", position: { x: 480, y: 250 } },
-    { name: "Robin McKinney", position: { x: 120, y: 330 } },
-    { name: "Gloria Kalotra", position: { x: 420, y: 80 } }
+    { name: "Trish Weaver", position: { x: 200, y: 100 } },
+    { name: "Pamela Roussos", position: { x: 500, y: 80 } },
+    { name: "KC Whang", position: { x: 800, y: 120 } },
+    { name: "Omar Palos", position: { x: 900, y: 280 } },
+    { name: "Jay Gerson", position: { x: 700, y: 450 } },
+    { name: "Larry Bram", position: { x: 400, y: 480 } },
+    { name: "Mayrin Munguia", position: { x: 100, y: 380 } },
+    { name: "Lucia Zegara", position: { x: 250, y: 220 } },
+    { name: "David Son", position: { x: 850, y: 200 } },
+    { name: "Jasmine Dero", position: { x: 650, y: 320 } },
+    { name: "Robin McKinney", position: { x: 150, y: 480 } },
+    { name: "Gloria Kalotra", position: { x: 600, y: 100 } }
   ];
 
-  const centerPosition = { x: 360, y: 200 };
+  const centerPosition = { x: 500, y: 280 };
   const benWikner = { name: "Ben Wikner", position: centerPosition };
   const allMembers = [benWikner, ...teamMembers];
 
@@ -58,7 +58,7 @@ const BridgeTeamSlide = () => {
       <div className="flex-1 mx-6 mb-6">
         <div className="bg-white rounded-2xl shadow-xl p-4 h-full">
           <div className="relative w-full h-full overflow-hidden">
-            <svg className="absolute inset-0 w-full h-full">
+            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1000 560">
               {/* Lines connecting all team members to each other */}
               {connections.map((connection, index) => (
                 <line
@@ -78,8 +78,8 @@ const BridgeTeamSlide = () => {
             <div 
               className="absolute transform -translate-x-1/2 -translate-y-1/2"
               style={{
-                left: centerPosition.x,
-                top: centerPosition.y
+                left: `${(centerPosition.x / 1000) * 100}%`,
+                top: `${(centerPosition.y / 560) * 100}%`
               }}
             >
               <div 
@@ -98,8 +98,8 @@ const BridgeTeamSlide = () => {
                 key={member.name}
                 className="absolute transform -translate-x-1/2 -translate-y-1/2"
                 style={{
-                  left: member.position.x,
-                  top: member.position.y
+                  left: `${(member.position.x / 1000) * 100}%`,
+                  top: `${(member.position.y / 560) * 100}%`
                 }}
               >
                 <div 
