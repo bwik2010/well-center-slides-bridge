@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Presentation, TrendingUp, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -5,6 +6,7 @@ import { Link } from 'react-router-dom';
 import TitleSlide from './slides/TitleSlide';
 import MissionSlide from './slides/MissionSlide';
 import BridgeSlide from './slides/BridgeSlide';
+import BridgeTeamSlide from './slides/BridgeTeamSlide';
 import ContentSlide from './slides/ContentSlide';
 import ImpactSlide from './slides/ImpactSlide';
 import FinancialProjectionsSlide from './slides/FinancialProjectionsSlide';
@@ -14,10 +16,11 @@ const slides = [
   { id: 1, component: TitleSlide, title: "Title Slide" },
   { id: 2, component: MissionSlide, title: "Mission Statement" },
   { id: 3, component: BridgeSlide, title: "Bridge Diagram" },
-  { id: 4, component: ContentSlide, title: "Content Slide" },
-  { id: 5, component: ImpactSlide, title: "Impact & Results" },
-  { id: 6, component: FinancialProjectionsSlide, title: "Financial Projections" },
-  { id: 7, component: CallToActionSlide, title: "Call to Action" }
+  { id: 4, component: BridgeTeamSlide, title: "Bridge Team" },
+  { id: 5, component: ContentSlide, title: "Content Slide" },
+  { id: 6, component: ImpactSlide, title: "Impact & Results" },
+  { id: 7, component: FinancialProjectionsSlide, title: "Financial Projections" },
+  { id: 8, component: CallToActionSlide, title: "Call to Action" }
 ];
 
 const PresentationTemplate = () => {
