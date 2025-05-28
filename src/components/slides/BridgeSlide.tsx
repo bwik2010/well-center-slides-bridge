@@ -64,10 +64,13 @@ const BridgeSlide = () => {
         <div className="absolute top-20 left-1/2 transform -translate-x-1/2">
           <div className="flex flex-col items-center">
             <div className="relative">
-              <svg width="80" height="120" viewBox="0 0 80 120" className="text-current" style={{ color: '#173e4e' }}>
-                <path d="M40 10 L40 90 M25 75 L40 90 L55 75" stroke="currentColor" strokeWidth="6" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              <svg width="100" height="140" viewBox="0 0 100 140" className="text-current" style={{ color: '#173e4e' }}>
+                {/* Arrow line */}
+                <path d="M50 15 L50 105" stroke="currentColor" strokeWidth="8" fill="none" strokeLinecap="round"/>
+                {/* Large arrowhead at bottom */}
+                <path d="M30 85 L50 105 L70 85" stroke="currentColor" strokeWidth="8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-2 py-1 rounded text-white text-xs font-medium" style={{ backgroundColor: '#b8832b' }}>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 py-2 rounded text-white text-xs font-bold" style={{ backgroundColor: '#b8832b' }}>
                 <p>Entrepreneurial</p>
                 <p>system development</p>
               </div>
@@ -79,10 +82,13 @@ const BridgeSlide = () => {
         <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2">
           <div className="flex flex-col items-center">
             <div className="relative">
-              <svg width="80" height="120" viewBox="0 0 80 120" className="text-current" style={{ color: '#173e4e' }}>
-                <path d="M40 110 L40 30 M25 45 L40 30 L55 45" stroke="currentColor" strokeWidth="6" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              <svg width="100" height="140" viewBox="0 0 100 140" className="text-current" style={{ color: '#173e4e' }}>
+                {/* Arrow line */}
+                <path d="M50 125 L50 35" stroke="currentColor" strokeWidth="8" fill="none" strokeLinecap="round"/>
+                {/* Large arrowhead at top */}
+                <path d="M30 55 L50 35 L70 55" stroke="currentColor" strokeWidth="8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-2 py-1 rounded text-white text-xs font-medium" style={{ backgroundColor: '#b8832b' }}>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 py-2 rounded text-white text-xs font-bold" style={{ backgroundColor: '#b8832b' }}>
                 <p>Family and</p>
                 <p>community development</p>
               </div>
@@ -95,20 +101,26 @@ const BridgeSlide = () => {
           <div className="flex flex-col items-center gap-8">
             {/* Right arrow with Time and Talent */}
             <div className="relative">
-              <svg width="120" height="40" viewBox="0 0 120 40" className="text-current" style={{ color: '#173e4e' }}>
-                <path d="M10 20 L90 20 M75 5 L90 20 L75 35" stroke="currentColor" strokeWidth="5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              <svg width="140" height="50" viewBox="0 0 140 50" className="text-current" style={{ color: '#173e4e' }}>
+                {/* Arrow line */}
+                <path d="M15 25 L110 25" stroke="currentColor" strokeWidth="7" fill="none" strokeLinecap="round"/>
+                {/* Large arrowhead at right */}
+                <path d="M90 10 L110 25 L90 40" stroke="currentColor" strokeWidth="7" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 py-1 rounded text-white text-xs font-medium" style={{ backgroundColor: '#173e4e' }}>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-4 py-1 rounded text-white text-xs font-bold" style={{ backgroundColor: '#173e4e' }}>
                 Time and Talent
               </div>
             </div>
             
             {/* Left arrow with Satisfaction/Connection */}
             <div className="relative">
-              <svg width="120" height="40" viewBox="0 0 120 40" className="text-current" style={{ color: '#b8832b' }}>
-                <path d="M110 20 L30 20 M45 5 L30 20 L45 35" stroke="currentColor" strokeWidth="5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              <svg width="140" height="50" viewBox="0 0 140 50" className="text-current" style={{ color: '#b8832b' }}>
+                {/* Arrow line */}
+                <path d="M125 25 L30 25" stroke="currentColor" strokeWidth="7" fill="none" strokeLinecap="round"/>
+                {/* Large arrowhead at left */}
+                <path d="M50 10 L30 25 L50 40" stroke="currentColor" strokeWidth="7" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 py-1 rounded text-white text-xs font-medium" style={{ backgroundColor: '#b8832b' }}>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-4 py-1 rounded text-white text-xs font-bold" style={{ backgroundColor: '#b8832b' }}>
                 Satisfaction/Connection
               </div>
             </div>
@@ -120,20 +132,26 @@ const BridgeSlide = () => {
           <div className="flex flex-col items-center gap-8">
             {/* Right arrow with Capital/Connection */}
             <div className="relative">
-              <svg width="120" height="40" viewBox="0 0 120 40" className="text-current" style={{ color: '#b8832b' }}>
-                <path d="M10 20 L90 20 M75 5 L90 20 L75 35" stroke="currentColor" strokeWidth="5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              <svg width="140" height="50" viewBox="0 0 140 50" className="text-current" style={{ color: '#b8832b' }}>
+                {/* Arrow line */}
+                <path d="M15 25 L110 25" stroke="currentColor" strokeWidth="7" fill="none" strokeLinecap="round"/>
+                {/* Large arrowhead at right */}
+                <path d="M90 10 L110 25 L90 40" stroke="currentColor" strokeWidth="7" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 py-1 rounded text-white text-xs font-medium" style={{ backgroundColor: '#b8832b' }}>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-4 py-1 rounded text-white text-xs font-bold" style={{ backgroundColor: '#b8832b' }}>
                 Capital/Connection
               </div>
             </div>
             
             {/* Left arrow with Participation */}
             <div className="relative">
-              <svg width="120" height="40" viewBox="0 0 120 40" className="text-current" style={{ color: '#173e4e' }}>
-                <path d="M110 20 L30 20 M45 5 L30 20 L45 35" stroke="currentColor" strokeWidth="5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              <svg width="140" height="50" viewBox="0 0 140 50" className="text-current" style={{ color: '#173e4e' }}>
+                {/* Arrow line */}
+                <path d="M125 25 L30 25" stroke="currentColor" strokeWidth="7" fill="none" strokeLinecap="round"/>
+                {/* Large arrowhead at left */}
+                <path d="M50 10 L30 25 L50 40" stroke="currentColor" strokeWidth="7" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 py-1 rounded text-white text-xs font-medium" style={{ backgroundColor: '#173e4e' }}>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-4 py-1 rounded text-white text-xs font-bold" style={{ backgroundColor: '#173e4e' }}>
                 Participation
               </div>
             </div>
