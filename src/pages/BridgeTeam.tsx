@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Users } from 'lucide-react';
@@ -93,7 +94,7 @@ const BridgeTeam = () => {
               }}
             >
               <div 
-                className="w-24 h-12 rounded-full flex items-center justify-center text-white font-medium text-sm shadow-lg border-2 border-white"
+                className="px-6 py-3 rounded-full flex items-center justify-center text-white font-medium text-sm shadow-lg border-2 border-white whitespace-nowrap"
                 style={{ backgroundColor: '#173e4e' }}
               >
                 Ben Wikner
@@ -112,7 +113,7 @@ const BridgeTeam = () => {
                 }}
               >
                 <div 
-                  className="w-24 h-12 rounded-full flex items-center justify-center text-white font-medium text-sm shadow-lg border-2 border-white hover:scale-105 transition-transform duration-200"
+                  className="px-6 py-3 rounded-full flex items-center justify-center text-white font-medium text-sm shadow-lg border-2 border-white hover:scale-105 transition-transform duration-200 whitespace-nowrap"
                   style={{ backgroundColor: '#b8832b' }}
                 >
                   {member.name}
