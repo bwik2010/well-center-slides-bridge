@@ -1,6 +1,8 @@
+
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Presentation } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Presentation, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import TitleSlide from './slides/TitleSlide';
 import MissionSlide from './slides/MissionSlide';
 import BridgeSlide from './slides/BridgeSlide';
@@ -49,9 +51,23 @@ const PresentationTemplate = () => {
             </div>
           </div>
           
-          {/* Slide Counter */}
-          <div className="text-sm text-gray-600 bg-white px-3 py-1 rounded-full shadow-sm">
-            {currentSlide + 1} of {slides.length}
+          <div className="flex items-center gap-4">
+            {/* Financial Projections Link */}
+            <Link to="/financial-projections">
+              <Button 
+                variant="outline"
+                className="flex items-center gap-2 hover:opacity-80"
+                style={{ borderColor: '#b8832b', color: '#173e4e' }}
+              >
+                <TrendingUp className="h-4 w-4" />
+                Financial Projections
+              </Button>
+            </Link>
+            
+            {/* Slide Counter */}
+            <div className="text-sm text-gray-600 bg-white px-3 py-1 rounded-full shadow-sm">
+              {currentSlide + 1} of {slides.length}
+            </div>
           </div>
         </div>
         
