@@ -4,18 +4,18 @@ import { Users } from 'lucide-react';
 
 const BridgeTeamSlide = () => {
   const teamMembers = [
-    { name: "Trish Weaver", position: { x: 200, y: 100 } },
-    { name: "Pamela Roussos", position: { x: 500, y: 80 } },
-    { name: "KC Whang", position: { x: 800, y: 120 } },
-    { name: "Omar Palos", position: { x: 900, y: 280 } },
-    { name: "Jay Gerson", position: { x: 700, y: 450 } },
-    { name: "Larry Bram", position: { x: 400, y: 480 } },
-    { name: "Mayrin Munguia", position: { x: 100, y: 380 } },
-    { name: "Lucia Zegara", position: { x: 250, y: 220 } },
-    { name: "David Son", position: { x: 850, y: 200 } },
-    { name: "Jasmine Dero", position: { x: 650, y: 320 } },
-    { name: "Robin McKinney", position: { x: 150, y: 480 } },
-    { name: "Gloria Kalotra", position: { x: 350, y: 120 } }
+    { name: "Trish Weaver", position: { x: 150, y: 120 } },
+    { name: "Pamela Roussos", position: { x: 400, y: 80 } },
+    { name: "KC Whang", position: { x: 750, y: 120 } },
+    { name: "Omar Palos", position: { x: 850, y: 300 } },
+    { name: "Jay Gerson", position: { x: 750, y: 450 } },
+    { name: "Larry Bram", position: { x: 500, y: 480 } },
+    { name: "Mayrin Munguia", position: { x: 150, y: 400 } },
+    { name: "Lucia Zegara", position: { x: 300, y: 200 } },
+    { name: "David Son", position: { x: 700, y: 200 } },
+    { name: "Jasmine Dero", position: { x: 600, y: 350 } },
+    { name: "Robin McKinney", position: { x: 250, y: 450 } },
+    { name: "Gloria Kalotra", position: { x: 550, y: 120 } }
   ];
 
   const centerPosition = { x: 500, y: 280 };
