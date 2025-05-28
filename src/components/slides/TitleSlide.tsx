@@ -20,7 +20,7 @@ const TitleSlide = () => {
       
       <div className="relative z-10 max-w-5xl px-8">
         <div className="mb-6">
-          <div className="w-64 h-64 bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg border border-white/10 p-6">
+          <div className="w-64 h-40 bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg border border-white/10 p-6">
             <img 
               src="/lovable-uploads/79668293-242e-481e-b2b3-393660634277.png" 
               alt="The Well Center Logo" 
