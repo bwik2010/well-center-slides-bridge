@@ -21,6 +21,20 @@ const BridgeTeam = () => {
   ];
 
   const centerPosition = { x: 300, y: 275 };
+  const benWikner = { name: "Ben Wikner", position: centerPosition };
+  const allMembers = [benWikner, ...teamMembers];
+
+  // Generate all possible connections between team members
+  const connections = [];
+  for (let i = 0; i < allMembers.length; i++) {
+    for (let j = i + 1; j < allMembers.length; j++) {
+      connections.push({
+        from: allMembers[i].position,
+        to: allMembers[j].position,
+        key: `${i}-${j}`
+      });
+    }
+  }
 
   return (
     <div className="min-h-screen p-6" style={{ background: 'linear-gradient(135deg, #8aa1a920 0%, #173e4e20 100%)' }}>
@@ -53,19 +67,19 @@ const BridgeTeam = () => {
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <div className="relative w-full h-[600px] overflow-hidden">
             <svg className="absolute inset-0 w-full h-full">
-              {/* Lines connecting Ben Wikner to all team members */}
-              {teamMembers.map((member, index) => (
+              {/* Lines connecting all team members to each other */}
+              {connections.map((connection, index) => (
                 <line
-                  key={index}
-                  x1={centerPosition.x}
-                  y1={centerPosition.y}
-                  x2={member.position.x}
-                  y2={member.position.y}
+                  key={connection.key}
+                  x1={connection.from.x}
+                  y1={connection.from.y}
+                  x2={connection.to.x}
+                  y2={connection.to.y}
                   stroke="#8aa1a9"
-                  strokeWidth="2"
-                  strokeOpacity="0.6"
+                  strokeWidth="1"
+                  strokeOpacity="0.3"
                   className="animate-fade-in"
-                  style={{ animationDelay: `${index * 0.1}s` }}
+                  style={{ animationDelay: `${index * 0.02}s` }}
                 />
               ))}
             </svg>
@@ -123,8 +137,8 @@ const BridgeTeam = () => {
             <div className="text-sm text-gray-600">Team Lead</div>
           </div>
           <div className="bg-white rounded-xl p-4 text-center shadow-lg">
-            <div className="text-2xl font-bold mb-1" style={{ color: '#8aa1a9' }}>12</div>
-            <div className="text-sm text-gray-600">Bridge Team Members</div>
+            <div className="text-2xl font-bold mb-1" style={{ color: '#8aa1a9' }}>78</div>
+            <div className="text-sm text-gray-600">Total Connections</div>
           </div>
         </div>
       </div>
