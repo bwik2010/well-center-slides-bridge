@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { ArrowRight, ArrowLeft, ArrowUp, ArrowDown } from 'lucide-react';
 
 const BridgeSlide = () => {
   return (
@@ -12,43 +11,43 @@ const BridgeSlide = () => {
       
       <div className="max-w-7xl mx-auto h-5/6 relative">
         {/* Top Partners */}
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 flex gap-8">
-          <div className="rounded-2xl px-4 py-3 text-white text-center min-w-32" style={{ backgroundColor: '#8aa1a9' }}>
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 flex gap-6">
+          <div className="rounded-2xl px-4 py-3 text-white text-center min-w-36" style={{ backgroundColor: '#8aa1a9' }}>
             <p className="font-semibold text-sm">Chambers of Commerce</p>
           </div>
-          <div className="rounded-2xl px-4 py-3 text-white text-center min-w-32" style={{ backgroundColor: '#8aa1a9' }}>
+          <div className="rounded-2xl px-4 py-3 text-white text-center min-w-36" style={{ backgroundColor: '#8aa1a9' }}>
             <p className="font-semibold text-sm">Weaving Impact</p>
           </div>
-          <div className="rounded-2xl px-4 py-3 text-white text-center min-w-32" style={{ backgroundColor: '#8aa1a9' }}>
+          <div className="rounded-2xl px-4 py-3 text-white text-center min-w-36" style={{ backgroundColor: '#8aa1a9' }}>
             <p className="font-semibold text-sm">Non-Profit Montgomery</p>
           </div>
         </div>
 
         {/* Left Side - Included/Most-served */}
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
-          <div className="rounded-3xl p-6 text-white text-center w-48" style={{ backgroundColor: '#8aa1a9' }}>
-            <h3 className="font-bold text-lg mb-2">Included/</h3>
-            <h3 className="font-bold text-lg">The most-served</h3>
+        <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
+          <div className="rounded-3xl p-6 text-white text-center w-52" style={{ backgroundColor: '#8aa1a9' }}>
+            <h3 className="font-bold text-xl mb-2">Included/</h3>
+            <h3 className="font-bold text-xl">The most-served</h3>
           </div>
         </div>
 
         {/* Right Side - Excluded/Least-served */}
-        <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
-          <div className="rounded-3xl p-6 text-white text-center w-48" style={{ backgroundColor: '#8aa1a9' }}>
-            <h3 className="font-bold text-lg mb-2">Excluded/</h3>
-            <h3 className="font-bold text-lg">The least-served</h3>
+        <div className="absolute right-4 top-1/2 transform -translate-y-1/2">
+          <div className="rounded-3xl p-6 text-white text-center w-52" style={{ backgroundColor: '#8aa1a9' }}>
+            <h3 className="font-bold text-xl mb-2">Excluded/</h3>
+            <h3 className="font-bold text-xl">The least-served</h3>
           </div>
         </div>
 
         {/* Bottom Partners */}
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex gap-8">
-          <div className="rounded-2xl px-4 py-3 text-white text-center min-w-32" style={{ backgroundColor: '#8aa1a9' }}>
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex gap-6">
+          <div className="rounded-2xl px-4 py-3 text-white text-center min-w-36" style={{ backgroundColor: '#8aa1a9' }}>
             <p className="font-semibold text-sm">USG/MC/MCPS</p>
           </div>
-          <div className="rounded-2xl px-4 py-3 text-white text-center min-w-32" style={{ backgroundColor: '#8aa1a9' }}>
+          <div className="rounded-2xl px-4 py-3 text-white text-center min-w-36" style={{ backgroundColor: '#8aa1a9' }}>
             <p className="font-semibold text-sm">Kidsco</p>
           </div>
-          <div className="rounded-2xl px-4 py-3 text-white text-center min-w-32" style={{ backgroundColor: '#8aa1a9' }}>
+          <div className="rounded-2xl px-4 py-3 text-white text-center min-w-36" style={{ backgroundColor: '#8aa1a9' }}>
             <p className="font-semibold text-sm">Worksource Montgomery</p>
           </div>
         </div>
@@ -61,59 +60,80 @@ const BridgeSlide = () => {
           </div>
         </div>
 
-        {/* Arrows and Labels */}
-        {/* Top Arrow - Entrepreneurial system development */}
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2">
+        {/* Top Arrow with text inside */}
+        <div className="absolute top-20 left-1/2 transform -translate-x-1/2">
           <div className="flex flex-col items-center">
-            <ArrowDown className="h-8 w-8 mb-2" style={{ color: '#173e4e' }} />
-            <div className="text-center bg-white px-3 py-1 rounded" style={{ backgroundColor: '#b8832b20' }}>
-              <p className="text-xs font-medium" style={{ color: '#173e4e' }}>Entrepreneurial</p>
-              <p className="text-xs font-medium" style={{ color: '#173e4e' }}>system development</p>
+            <div className="relative">
+              <svg width="80" height="120" viewBox="0 0 80 120" className="text-current" style={{ color: '#173e4e' }}>
+                <path d="M40 10 L40 90 M25 75 L40 90 L55 75" stroke="currentColor" strokeWidth="6" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-2 py-1 rounded text-white text-xs font-medium" style={{ backgroundColor: '#b8832b' }}>
+                <p>Entrepreneurial</p>
+                <p>system development</p>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Arrow - Family and community development */}
-        <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2">
+        {/* Bottom Arrow with text inside */}
+        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2">
           <div className="flex flex-col items-center">
-            <div className="text-center bg-white px-3 py-1 rounded mb-2" style={{ backgroundColor: '#b8832b20' }}>
-              <p className="text-xs font-medium" style={{ color: '#173e4e' }}>Family and</p>
-              <p className="text-xs font-medium" style={{ color: '#173e4e' }}>community development</p>
+            <div className="relative">
+              <svg width="80" height="120" viewBox="0 0 80 120" className="text-current" style={{ color: '#173e4e' }}>
+                <path d="M40 110 L40 30 M25 45 L40 30 L55 45" stroke="currentColor" strokeWidth="6" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-2 py-1 rounded text-white text-xs font-medium" style={{ backgroundColor: '#b8832b' }}>
+                <p>Family and</p>
+                <p>community development</p>
+              </div>
             </div>
-            <ArrowUp className="h-8 w-8" style={{ color: '#173e4e' }} />
           </div>
         </div>
 
-        {/* Left Arrows */}
-        <div className="absolute left-52 top-1/2 transform -translate-y-1/2">
-          <div className="flex flex-col items-center gap-4">
-            <div className="flex items-center gap-2">
-              <ArrowRight className="h-6 w-6" style={{ color: '#173e4e' }} />
-              <div className="text-center bg-white px-2 py-1 rounded text-xs font-medium" style={{ backgroundColor: '#173e4e', color: 'white' }}>
+        {/* Left Arrows with text inside */}
+        <div className="absolute left-64 top-1/2 transform -translate-y-1/2">
+          <div className="flex flex-col items-center gap-8">
+            {/* Right arrow with Time and Talent */}
+            <div className="relative">
+              <svg width="120" height="40" viewBox="0 0 120 40" className="text-current" style={{ color: '#173e4e' }}>
+                <path d="M10 20 L90 20 M75 5 L90 20 L75 35" stroke="currentColor" strokeWidth="5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 py-1 rounded text-white text-xs font-medium" style={{ backgroundColor: '#173e4e' }}>
                 Time and Talent
               </div>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="text-center bg-white px-2 py-1 rounded text-xs font-medium" style={{ backgroundColor: '#b8832b', color: 'white' }}>
+            
+            {/* Left arrow with Satisfaction/Connection */}
+            <div className="relative">
+              <svg width="120" height="40" viewBox="0 0 120 40" className="text-current" style={{ color: '#b8832b' }}>
+                <path d="M110 20 L30 20 M45 5 L30 20 L45 35" stroke="currentColor" strokeWidth="5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 py-1 rounded text-white text-xs font-medium" style={{ backgroundColor: '#b8832b' }}>
                 Satisfaction/Connection
               </div>
-              <ArrowLeft className="h-6 w-6" style={{ color: '#b8832b' }} />
             </div>
           </div>
         </div>
 
-        {/* Right Arrows */}
-        <div className="absolute right-52 top-1/2 transform -translate-y-1/2">
-          <div className="flex flex-col items-center gap-4">
-            <div className="flex items-center gap-2">
-              <div className="text-center bg-white px-2 py-1 rounded text-xs font-medium" style={{ backgroundColor: '#b8832b', color: 'white' }}>
+        {/* Right Arrows with text inside */}
+        <div className="absolute right-64 top-1/2 transform -translate-y-1/2">
+          <div className="flex flex-col items-center gap-8">
+            {/* Right arrow with Capital/Connection */}
+            <div className="relative">
+              <svg width="120" height="40" viewBox="0 0 120 40" className="text-current" style={{ color: '#b8832b' }}>
+                <path d="M10 20 L90 20 M75 5 L90 20 L75 35" stroke="currentColor" strokeWidth="5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 py-1 rounded text-white text-xs font-medium" style={{ backgroundColor: '#b8832b' }}>
                 Capital/Connection
               </div>
-              <ArrowRight className="h-6 w-6" style={{ color: '#b8832b' }} />
             </div>
-            <div className="flex items-center gap-2">
-              <ArrowLeft className="h-6 w-6" style={{ color: '#173e4e' }} />
-              <div className="text-center bg-white px-2 py-1 rounded text-xs font-medium" style={{ backgroundColor: '#173e4e', color: 'white' }}>
+            
+            {/* Left arrow with Participation */}
+            <div className="relative">
+              <svg width="120" height="40" viewBox="0 0 120 40" className="text-current" style={{ color: '#173e4e' }}>
+                <path d="M110 20 L30 20 M45 5 L30 20 L45 35" stroke="currentColor" strokeWidth="5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-3 py-1 rounded text-white text-xs font-medium" style={{ backgroundColor: '#173e4e' }}>
                 Participation
               </div>
             </div>
