@@ -4,21 +4,21 @@ import { Users } from 'lucide-react';
 
 const BridgeTeamSlide = () => {
   const teamMembers = [
-    { name: "Trish Weaver", position: { x: 120, y: 60 } },
-    { name: "Pamela Roussos", position: { x: 280, y: 80 } },
-    { name: "KC Whang", position: { x: 400, y: 120 } },
-    { name: "Omar Palos", position: { x: 380, y: 240 } },
-    { name: "Jay Gerson", position: { x: 280, y: 280 } },
-    { name: "Larry Bram", position: { x: 160, y: 260 } },
-    { name: "Mayrin Munguia", position: { x: 80, y: 180 } },
-    { name: "Lucia Zegara", position: { x: 140, y: 100 } },
-    { name: "David Son", position: { x: 420, y: 80 } },
-    { name: "Jasmine Dero", position: { x: 360, y: 200 } },
-    { name: "Robin McKinney", position: { x: 60, y: 220 } },
-    { name: "Gloria Kalotra", position: { x: 320, y: 40 } }
+    { name: "Trish Weaver", position: { x: 150, y: 80 } },
+    { name: "Pamela Roussos", position: { x: 350, y: 60 } },
+    { name: "KC Whang", position: { x: 550, y: 90 } },
+    { name: "Omar Palos", position: { x: 520, y: 200 } },
+    { name: "Jay Gerson", position: { x: 450, y: 310 } },
+    { name: "Larry Bram", position: { x: 250, y: 330 } },
+    { name: "Mayrin Munguia", position: { x: 80, y: 250 } },
+    { name: "Lucia Zegara", position: { x: 200, y: 150 } },
+    { name: "David Son", position: { x: 600, y: 150 } },
+    { name: "Jasmine Dero", position: { x: 480, y: 250 } },
+    { name: "Robin McKinney", position: { x: 120, y: 330 } },
+    { name: "Gloria Kalotra", position: { x: 420, y: 80 } }
   ];
 
-  const centerPosition = { x: 240, y: 160 };
+  const centerPosition = { x: 360, y: 200 };
   const benWikner = { name: "Ben Wikner", position: centerPosition };
   const allMembers = [benWikner, ...teamMembers];
 
@@ -83,7 +83,7 @@ const BridgeTeamSlide = () => {
               }}
             >
               <div 
-                className="px-4 py-2 rounded-full flex items-center justify-center text-white font-medium text-xs shadow-lg border-2 border-white whitespace-nowrap"
+                className="px-6 py-3 rounded-full flex items-center justify-center text-white font-medium text-base shadow-lg border-2 border-white whitespace-nowrap"
                 style={{
                   backgroundColor: '#173e4e'
                 }}
@@ -103,7 +103,7 @@ const BridgeTeamSlide = () => {
                 }}
               >
                 <div 
-                  className="px-4 py-2 rounded-full flex items-center justify-center text-white font-medium text-xs shadow-lg border-2 border-white hover:scale-105 transition-transform duration-200 whitespace-nowrap"
+                  className="px-5 py-2.5 rounded-full flex items-center justify-center text-white font-medium text-sm shadow-lg border-2 border-white hover:scale-105 transition-transform duration-200 whitespace-nowrap"
                   style={{
                     backgroundColor: '#b8832b'
                   }}
