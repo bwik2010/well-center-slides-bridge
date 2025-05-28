@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Users } from 'lucide-react';
@@ -94,13 +93,10 @@ const BridgeTeam = () => {
               }}
             >
               <div 
-                className="w-32 h-32 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-xl border-4 border-white"
+                className="w-24 h-12 rounded-full flex items-center justify-center text-white font-medium text-sm shadow-lg border-2 border-white"
                 style={{ backgroundColor: '#173e4e' }}
               >
-                <div className="text-center">
-                  <div>Ben</div>
-                  <div>Wikner</div>
-                </div>
+                Ben Wikner
               </div>
             </div>
 
@@ -116,7 +112,7 @@ const BridgeTeam = () => {
                 }}
               >
                 <div 
-                  className="px-4 py-2 rounded-full text-white font-medium text-sm shadow-lg border-2 border-white hover:scale-105 transition-transform duration-200"
+                  className="w-24 h-12 rounded-full flex items-center justify-center text-white font-medium text-sm shadow-lg border-2 border-white hover:scale-105 transition-transform duration-200"
                   style={{ backgroundColor: '#b8832b' }}
                 >
                   {member.name}
