@@ -8,6 +8,7 @@ import MissionSlide from './slides/MissionSlide';
 import BridgeSlide from './slides/BridgeSlide';
 import ContentSlide from './slides/ContentSlide';
 import ImpactSlide from './slides/ImpactSlide';
+import FinancialProjectionsSlide from './slides/FinancialProjectionsSlide';
 import CallToActionSlide from './slides/CallToActionSlide';
 
 const slides = [
@@ -16,7 +17,8 @@ const slides = [
   { id: 3, component: BridgeSlide, title: "Bridge Diagram" },
   { id: 4, component: ContentSlide, title: "Content Slide" },
   { id: 5, component: ImpactSlide, title: "Impact & Results" },
-  { id: 6, component: CallToActionSlide, title: "Call to Action" }
+  { id: 6, component: FinancialProjectionsSlide, title: "Financial Projections" },
+  { id: 7, component: CallToActionSlide, title: "Call to Action" }
 ];
 
 const PresentationTemplate = () => {
