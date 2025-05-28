@@ -15,7 +15,7 @@ const BridgeTeamSlide = () => {
     { name: "David Son", position: { x: 850, y: 200 } },
     { name: "Jasmine Dero", position: { x: 650, y: 320 } },
     { name: "Robin McKinney", position: { x: 150, y: 480 } },
-    { name: "Gloria Kalotra", position: { x: 600, y: 100 } }
+    { name: "Gloria Kalotra", position: { x: 750, y: 100 } }
   ];
 
   const centerPosition = { x: 500, y: 280 };
