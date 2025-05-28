@@ -38,7 +38,7 @@ const CallToActionSlide = () => {
                 <div>
                   <h4 className="font-semibold mb-1 text-sm" style={{
                   color: '#173e4e'
-                }}>Volunteer</h4>
+                }}>Join the Well team</h4>
                   <p className="text-gray-600 text-xs">Join our community programs and initiatives</p>
                 </div>
               </div>
@@ -73,7 +73,7 @@ const CallToActionSlide = () => {
                   <h4 className="font-semibold mb-1 text-sm" style={{
                   color: '#173e4e'
                 }}>Support</h4>
-                  <p className="text-gray-600 text-xs">Help fund our community impact programs</p>
+                  <p className="text-gray-600 text-xs">Help fund this project and build the bridge!</p>
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ const CallToActionSlide = () => {
                   <p className="font-medium text-sm" style={{
                   color: '#173e4e'
                 }}>Location</p>
-                  <p className="text-gray-600 text-sm">Montgomery County, MD</p>
+                  <p className="text-gray-600 text-sm">630 E. Diamond Ave Gaithersburg, MD 20877</p>
                 </div>
               </div>
             </div>
