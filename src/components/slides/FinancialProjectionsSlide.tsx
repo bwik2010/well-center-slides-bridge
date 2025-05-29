@@ -50,93 +50,96 @@ const FinancialProjectionsSlide = () => {
         </p>
       </div>
 
-      {/* Chart Container */}
-      <div className="flex-1 bg-white rounded-xl p-4 shadow-lg border border-gray-200 mb-4">
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={chartData} margin={{ top: 20, right: 30, left: 20, bottom: 20 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="rgba(138, 161, 169, 0.3)" />
-            <XAxis 
-              dataKey="year" 
-              tick={{ fill: '#173e4e', fontSize: 11, fontWeight: 'bold' }}
-              axisLine={{ stroke: '#173e4e' }}
-              tickLine={{ stroke: '#173e4e' }}
-            />
-            <YAxis 
-              tick={{ fill: '#173e4e', fontSize: 10 }}
-              axisLine={{ stroke: '#173e4e' }}
-              tickLine={{ stroke: '#173e4e' }}
-              tickFormatter={formatCurrency}
-            />
-            <Tooltip content={<CustomTooltip />} />
-            <Legend 
-              wrapperStyle={{ 
-                color: '#173e4e', 
-                fontSize: '12px', 
-                fontWeight: 'bold'
-              }}
-            />
-            <Line 
-              type="monotone" 
-              dataKey="revenue" 
-              stroke="#b8832b" 
-              strokeWidth={3}
-              dot={{ fill: '#b8832b', stroke: '#ffffff', strokeWidth: 2, r: 6 }}
-              activeDot={{ r: 8, stroke: '#ffffff', strokeWidth: 2 }}
-              name="Total Revenue"
-            />
-            <Line 
-              type="monotone" 
-              dataKey="expenses" 
-              stroke="#173e4e" 
-              strokeWidth={3}
-              dot={{ fill: '#173e4e', stroke: '#ffffff', strokeWidth: 2, r: 6 }}
-              activeDot={{ r: 8, stroke: '#ffffff', strokeWidth: 2 }}
-              name="Operating Expenses"
-            />
-          </LineChart>
-        </ResponsiveContainer>
-      </div>
-
-      {/* Summary Cards */}
-      <div className="grid grid-cols-4 gap-3">
-        <div className="text-white p-3 rounded-lg text-center border-2" 
-             style={{ 
-               background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)',
-               borderColor: 'rgba(184, 131, 43, 0.3)'
-             }}>
-          <div className="text-xs opacity-90 mb-1">2025 Revenue</div>
-          <div className="text-lg font-bold">$214K</div>
-          <div className="text-xs opacity-80">Launch Year</div>
+      {/* Main Content - Horizontal Layout */}
+      <div className="flex-1 flex gap-6">
+        {/* Chart Container - Left Side with more vertical space */}
+        <div className="flex-1 bg-white rounded-xl p-4 shadow-lg border border-gray-200" style={{ minWidth: '60%' }}>
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={chartData} margin={{ top: 20, right: 30, left: 20, bottom: 20 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(138, 161, 169, 0.3)" />
+              <XAxis 
+                dataKey="year" 
+                tick={{ fill: '#173e4e', fontSize: 11, fontWeight: 'bold' }}
+                axisLine={{ stroke: '#173e4e' }}
+                tickLine={{ stroke: '#173e4e' }}
+              />
+              <YAxis 
+                tick={{ fill: '#173e4e', fontSize: 10 }}
+                axisLine={{ stroke: '#173e4e' }}
+                tickLine={{ stroke: '#173e4e' }}
+                tickFormatter={formatCurrency}
+              />
+              <Tooltip content={<CustomTooltip />} />
+              <Legend 
+                wrapperStyle={{ 
+                  color: '#173e4e', 
+                  fontSize: '12px', 
+                  fontWeight: 'bold'
+                }}
+              />
+              <Line 
+                type="monotone" 
+                dataKey="revenue" 
+                stroke="#b8832b" 
+                strokeWidth={3}
+                dot={{ fill: '#b8832b', stroke: '#ffffff', strokeWidth: 2, r: 6 }}
+                activeDot={{ r: 8, stroke: '#ffffff', strokeWidth: 2 }}
+                name="Total Revenue"
+              />
+              <Line 
+                type="monotone" 
+                dataKey="expenses" 
+                stroke="#173e4e" 
+                strokeWidth={3}
+                dot={{ fill: '#173e4e', stroke: '#ffffff', strokeWidth: 2, r: 6 }}
+                activeDot={{ r: 8, stroke: '#ffffff', strokeWidth: 2 }}
+                name="Operating Expenses"
+              />
+            </LineChart>
+          </ResponsiveContainer>
         </div>
 
-        <div className="text-white p-3 rounded-lg text-center border-2" 
-             style={{ 
-               background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)',
-               borderColor: 'rgba(184, 131, 43, 0.3)'
-             }}>
-          <div className="text-xs opacity-90 mb-1">2030 Revenue</div>
-          <div className="text-lg font-bold">$612K</div>
-          <div className="text-xs opacity-80">+185% Growth</div>
-        </div>
+        {/* Summary Cards - Right Side in 2x2 Grid */}
+        <div className="grid grid-cols-2 gap-4" style={{ width: '35%' }}>
+          <div className="text-white p-4 rounded-lg text-center border-2" 
+               style={{ 
+                 background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)',
+                 borderColor: 'rgba(184, 131, 43, 0.3)'
+               }}>
+            <div className="text-xs opacity-90 mb-2">2025 Revenue</div>
+            <div className="text-xl font-bold">$214K</div>
+            <div className="text-xs opacity-80">Launch Year</div>
+          </div>
 
-        <div className="text-white p-3 rounded-lg text-center border-2" 
-             style={{ 
-               background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)',
-               borderColor: 'rgba(184, 131, 43, 0.3)'
-             }}>
-          <div className="text-xs opacity-90 mb-1">2026 Coverage</div>
-          <div className="text-lg font-bold">52%</div>
-          <div className="text-xs opacity-80">Revenue vs Expenses</div>
-        </div>
+          <div className="text-white p-4 rounded-lg text-center border-2" 
+               style={{ 
+                 background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)',
+                 borderColor: 'rgba(184, 131, 43, 0.3)'
+               }}>
+            <div className="text-xs opacity-90 mb-2">2030 Revenue</div>
+            <div className="text-xl font-bold">$612K</div>
+            <div className="text-xs opacity-80">+185% Growth</div>
+          </div>
 
-        <div className="text-white p-3 rounded-lg text-center border-2" 
-             style={{ 
-               background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)',
-               borderColor: 'rgba(184, 131, 43, 0.3)'
-             }}>
-          <div className="text-xs opacity-90 mb-1">2030 Coverage</div>
-          <div className="text-lg font-bold">80%</div>
-          <div className="text-xs opacity-80">Revenue vs Expenses</div>
+          <div className="text-white p-4 rounded-lg text-center border-2" 
+               style={{ 
+                 background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)',
+                 borderColor: 'rgba(184, 131, 43, 0.3)'
+               }}>
+            <div className="text-xs opacity-90 mb-2">2026 Coverage</div>
+            <div className="text-xl font-bold">52%</div>
+            <div className="text-xs opacity-80">Revenue vs Expenses</div>
+          </div>
+
+          <div className="text-white p-4 rounded-lg text-center border-2" 
+               style={{ 
+                 background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)',
+                 borderColor: 'rgba(184, 131, 43, 0.3)'
+               }}>
+            <div className="text-xs opacity-90 mb-2">2030 Coverage</div>
+            <div className="text-xl font-bold">80%</div>
+            <div className="text-xs opacity-80">Revenue vs Expenses</div>
+          </div>
         </div>
       </div>
     </div>
