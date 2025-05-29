@@ -9,6 +9,7 @@ import BridgeSlide from './slides/BridgeSlide';
 import BridgeTeamSlide from './slides/BridgeTeamSlide';
 import ContentSlide from './slides/ContentSlide';
 import ImpactSlide from './slides/ImpactSlide';
+import SourcesOfRevenueSlide from './slides/SourcesOfRevenueSlide';
 import FinancialProjectionsSlide from './slides/FinancialProjectionsSlide';
 import CallToActionSlide from './slides/CallToActionSlide';
 
@@ -19,8 +20,9 @@ const slides = [
   { id: 4, component: BridgeTeamSlide, title: "Bridge Team" },
   { id: 5, component: ContentSlide, title: "Content Slide" },
   { id: 6, component: ImpactSlide, title: "Impact & Results" },
-  { id: 7, component: FinancialProjectionsSlide, title: "Financial Projections" },
-  { id: 8, component: CallToActionSlide, title: "Call to Action" }
+  { id: 7, component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
+  { id: 8, component: FinancialProjectionsSlide, title: "Financial Projections" },
+  { id: 9, component: CallToActionSlide, title: "Call to Action" }
 ];
 
 const PresentationTemplate = () => {
