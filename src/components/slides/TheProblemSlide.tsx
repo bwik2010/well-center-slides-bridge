@@ -27,49 +27,53 @@ const TheProblemSlide = () => {
   ];
 
   return (
-    <div className="w-full h-full p-8" style={{ aspectRatio: '16/9' }}>
-      <div className="text-center mb-8">
-        <h2 className="text-4xl font-bold mb-4" style={{ color: '#173e4e' }}>
+    <div className="w-full h-full p-6 flex flex-col" style={{ aspectRatio: '16/9' }}>
+      <div className="text-center mb-6">
+        <h2 className="text-3xl font-bold mb-3" style={{ color: '#173e4e' }}>
           The Problem
         </h2>
-        <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#b8832b' }}></div>
+        <div className="w-20 h-1 mx-auto" style={{ backgroundColor: '#b8832b' }}></div>
       </div>
       
-      <div className="max-w-6xl mx-auto">
-        <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 mb-6">
-          <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            Over the past generation, the wealth and opportunity gap has widened dramatically in Montgomery County. 
-            Suburban planning strategies have encouraged social disconnection and were unprepared for the immigrant influx over the past 20 years. 
-            The COVID-19 pandemic has worsened these challenges.
-          </p>
-          
-          <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            Despite being among the top 20 wealthiest counties in America, Montgomery County faces an acute housing crisis and exhausted social services. 
-            Multiple census tracts show 30-40% child poverty rates, while 70% of Cross Community's population earns less than $40,000 annually—far below the county's $129,000 median income.
-          </p>
-          
-          <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            With median rent at $2,100 monthly for a two-bedroom apartment, upward mobility seems impossible for most households. 
-            Support infrastructure hasn't kept pace with growing needs over two decades, and existing social services lack the capacity, flexibility, and creativity to address these challenges.
-          </p>
-          
-          <p className="text-lg text-gray-700 leading-relaxed font-semibold" style={{ color: '#173e4e' }}>
-            This has created a growing chasm of social and economic disparity, trapping struggling Montgomery County residents in cycles of poverty and hopelessness.
-          </p>
+      <div className="flex-1 flex gap-6">
+        {/* Main Content - Left Side */}
+        <div className="flex-1 pr-4">
+          <div className="bg-white rounded-xl p-5 shadow-lg border border-gray-100 h-full flex flex-col justify-center">
+            <p className="text-base text-gray-700 leading-relaxed mb-3">
+              Over the past generation, the wealth and opportunity gap has widened dramatically in Montgomery County. 
+              Suburban planning strategies have encouraged social disconnection and were unprepared for the immigrant influx over the past 20 years. 
+              The COVID-19 pandemic has worsened these challenges.
+            </p>
+            
+            <p className="text-base text-gray-700 leading-relaxed mb-3">
+              Despite being among the top 20 wealthiest counties in America, Montgomery County faces an acute housing crisis and exhausted social services. 
+              Multiple census tracts show 30-40% child poverty rates, while 70% of Cross Community's population earns less than $40,000 annually—far below the county's $129,000 median income.
+            </p>
+            
+            <p className="text-base text-gray-700 leading-relaxed mb-3">
+              With median rent at $2,100 monthly for a two-bedroom apartment, upward mobility seems impossible for most households. 
+              Support infrastructure hasn't kept pace with growing needs over two decades.
+            </p>
+            
+            <p className="text-base text-gray-700 leading-relaxed font-semibold" style={{ color: '#173e4e' }}>
+              This has created a growing chasm of social and economic disparity, trapping struggling Montgomery County residents in cycles of poverty and hopelessness.
+            </p>
+          </div>
         </div>
         
-        <div className="grid grid-cols-4 gap-4">
+        {/* Data Boxes - Right Side */}
+        <div className="w-80 flex flex-col gap-3">
           {keyStatistics.map((item, index) => {
             const IconComponent = item.icon;
             return (
               <div key={index} className="bg-white rounded-xl p-4 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-all duration-300">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-3" style={{
+                <div className="w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-2" style={{
                   backgroundColor: '#173e4e20'
                 }}>
                   <IconComponent className="h-5 w-5" style={{ color: '#173e4e' }} />
                 </div>
-                <div className="text-2xl font-bold mb-1" style={{ color: '#b8832b' }}>{item.stat}</div>
-                <div className="text-sm text-gray-600">{item.label}</div>
+                <div className="text-xl font-bold mb-1" style={{ color: '#b8832b' }}>{item.stat}</div>
+                <div className="text-sm text-gray-600 leading-tight">{item.label}</div>
               </div>
             );
           })}
