@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import TitleSlide from './slides/TitleSlide';
 import MissionSlide from './slides/MissionSlide';
+import TheProblemSlide from './slides/TheProblemSlide';
 import ProblemSlide from './slides/ProblemSlide';
 import BridgeSlide from './slides/BridgeSlide';
 import BridgeTeamSlide from './slides/BridgeTeamSlide';
@@ -16,15 +17,16 @@ import CallToActionSlide from './slides/CallToActionSlide';
 
 const slides = [
   { id: 1, component: TitleSlide, title: "Title Slide" },
-  { id: 2, component: MissionSlide, title: "Mission Statement" },
-  { id: 3, component: ProblemSlide, title: "Montgomery County Problem" },
-  { id: 4, component: BridgeSlide, title: "Bridge Diagram" },
-  { id: 5, component: BridgeTeamSlide, title: "Bridge Team" },
-  { id: 6, component: ContentSlide, title: "Content Slide" },
-  { id: 7, component: ImpactSlide, title: "Impact & Results" },
-  { id: 8, component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
-  { id: 9, component: FinancialProjectionsSlide, title: "Financial Projections" },
-  { id: 10, component: CallToActionSlide, title: "Call to Action" }
+  { id: 2, component: TheProblemSlide, title: "The Problem" },
+  { id: 3, component: MissionSlide, title: "Mission Statement" },
+  { id: 4, component: ProblemSlide, title: "Montgomery County Problem" },
+  { id: 5, component: BridgeSlide, title: "Bridge Diagram" },
+  { id: 6, component: BridgeTeamSlide, title: "Bridge Team" },
+  { id: 7, component: ContentSlide, title: "Content Slide" },
+  { id: 8, component: ImpactSlide, title: "Impact & Results" },
+  { id: 9, component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
+  { id: 10, component: FinancialProjectionsSlide, title: "Financial Projections" },
+  { id: 11, component: CallToActionSlide, title: "Call to Action" }
 ];
 
 const PresentationTemplate = () => {
