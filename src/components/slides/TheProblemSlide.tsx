@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { TrendingDown, Home, Users, DollarSign } from 'lucide-react';
 
@@ -30,28 +29,30 @@ const TheProblemSlide = () => {
         {/* Main Content - Left Side */}
         <div className="flex-1 pr-2">
           <div className="bg-white rounded-xl p-3 shadow-lg border border-gray-100 h-full flex flex-col justify-center">
-            <p className="text-xs text-gray-700 leading-relaxed mb-2">
-              Over the past generation, the wealth and opportunity gap has widened in Montgomery County. 
-              Suburban planning strategies have encouraged social disconnection and were unprepared for the 
-              immigrant influx over the past 20 years. The COVID-19 pandemic has worsened these challenges.
-            </p>
-            
-            <p className="text-xs text-gray-700 leading-relaxed mb-2">
-              Despite being among the top 20 wealthiest counties in America, Montgomery County faces an acute 
-              housing crisis and exhausted social services. Multiple census tracts show 30-40% child poverty rates. 
-              The mean income of the lowest 20% of households is $26,598, while the mean income for the highest 20% 
-              of households is $414,085.
-            </p>
-            
-            <p className="text-xs text-gray-700 leading-relaxed mb-2">
-              With median rent at $2,100 monthly for a two-bedroom apartment, upward mobility seems impossible 
-              for most households. Support infrastructure hasn't kept pace with growing needs over two decades.
-            </p>
-            
-            <p className="text-xs text-gray-700 leading-relaxed font-semibold" style={{ color: '#173e4e' }}>
-              This has created a growing chasm of social and economic disparity, trapping struggling Montgomery 
-              County residents in cycles of poverty and hopelessness.
-            </p>
+            <ul className="text-xs text-gray-700 leading-relaxed space-y-2 list-disc pl-4">
+              <li>
+                Over the past generation, the wealth and opportunity gap has widened in Montgomery County. 
+                Suburban planning strategies have encouraged social disconnection and were unprepared for the 
+                immigrant influx over the past 20 years. The COVID-19 pandemic has worsened these challenges.
+              </li>
+              
+              <li>
+                Despite being among the top 20 wealthiest counties in America, Montgomery County faces an acute 
+                housing crisis and exhausted social services. Multiple census tracts show 30-40% child poverty rates. 
+                The mean income of the lowest 20% of households is $26,598, while the mean income for the highest 20% 
+                of households is $414,085.
+              </li>
+              
+              <li>
+                With median rent at $2,100 monthly for a two-bedroom apartment, upward mobility seems impossible 
+                for most households. Support infrastructure hasn't kept pace with growing needs over two decades.
+              </li>
+              
+              <li className="font-semibold" style={{ color: '#173e4e' }}>
+                This has created a growing chasm of social and economic disparity, trapping struggling Montgomery 
+                County residents in cycles of poverty and hopelessness.
+              </li>
+            </ul>
           </div>
         </div>
         
