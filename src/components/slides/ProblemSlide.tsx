@@ -33,17 +33,26 @@ const ProblemSlide = () => {
           Montgomery County has a Problem
         </h2>
         <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#b8832b' }}></div>
-        <h3 className="text-2xl font-semibold mb-6" style={{ color: '#8aa1a9' }}>
-          Creating sustainable, generational solutions
-        </h3>
       </div>
       
       <div className="max-w-6xl mx-auto">
         <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 mb-6">
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
             <span className="font-semibold" style={{ color: '#173e4e' }}>Social economic bridging</span> connects people across different economic classes and income levels. 
             Modern societies often become segmented along economic lines with limited interaction between different income groups. 
             We create opportunities for meaningful contact and collaboration across these divides.
+          </p>
+          
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            The result is an acute housing crisis and exhausted social and family services. In a county that still boasts being in the top 20 wealthiest in the country, there are multiple local census tracts with 30 and 40 percent child poverty. While the median household income in the county is $129,000, 70 percent of the population Cross Community serves earns less than $40,000 annually.
+          </p>
+          
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            With median rent for a 2-bedroom apartment in Gaithersburg being $2,100 a month, upward mobility seems hopeless for most households. These problems have trended worse over the past two decades as the support infrastructure has not been able to keep up with the increasing need. The existing public and private social service infrastructure does not have the capacity, flexibility, or creativity to counter these challenges.
+          </p>
+          
+          <p className="text-lg text-gray-700 leading-relaxed font-semibold" style={{ color: '#173e4e' }}>
+            This has produced a growing chasm of social and economic disparity and disconnection that keeps struggling residents in Montgomery County stuck in a cycle of poverty and hopelessness.
           </p>
         </div>
         
