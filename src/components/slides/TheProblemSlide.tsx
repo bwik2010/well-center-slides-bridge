@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { TrendingDown, Home, Users, DollarSign } from 'lucide-react';
 
@@ -17,19 +18,19 @@ const TheProblemSlide = () => {
   }];
 
   return (
-    <div className="w-full h-full p-3 flex flex-col" style={{ aspectRatio: '16/9' }}>
-      <div className="text-center mb-3">
-        <h2 className="text-xl font-bold mb-2" style={{ color: '#173e4e' }}>
+    <div className="w-full h-full p-4 flex flex-col" style={{ aspectRatio: '16/9' }}>
+      <div className="text-center mb-4">
+        <h2 className="text-2xl font-bold mb-2" style={{ color: '#173e4e' }}>
           The Problem
         </h2>
         <div className="w-16 h-1 mx-auto" style={{ backgroundColor: '#b8832b' }}></div>
       </div>
       
-      <div className="flex-1 flex gap-3 min-h-0">
+      <div className="flex-1 flex gap-4 min-h-0">
         {/* Main Content - Left Side */}
-        <div className="flex-1 pr-2">
-          <div className="bg-white rounded-xl p-3 shadow-lg border border-gray-100 h-full flex flex-col justify-center">
-            <ul className="text-xs text-gray-700 leading-relaxed space-y-2 list-disc pl-4">
+        <div className="flex-1">
+          <div className="bg-white rounded-xl p-4 shadow-lg border border-gray-100 h-full flex flex-col justify-center">
+            <ul className="text-sm text-gray-700 leading-relaxed space-y-3 list-disc pl-5">
               <li>
                 Over the past generation, the wealth and opportunity gap has widened in Montgomery County. 
                 Suburban planning strategies have encouraged social disconnection and were unprepared for the 
@@ -57,16 +58,16 @@ const TheProblemSlide = () => {
         </div>
         
         {/* Data Boxes - Right Side */}
-        <div className="w-64 flex flex-col gap-2">
+        <div className="w-64 flex flex-col gap-3">
           {keyStatistics.map((item, index) => {
             const IconComponent = item.icon;
             return (
-              <div key={index} className="bg-white rounded-xl p-3 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-all duration-300">
-                <div className="w-8 h-8 rounded-full flex items-center justify-center mx-auto mb-1" style={{ backgroundColor: '#173e4e20' }}>
-                  <IconComponent className="h-4 w-4" style={{ color: '#173e4e' }} />
+              <div key={index} className="bg-white rounded-xl p-4 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-all duration-300">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-2" style={{ backgroundColor: '#173e4e20' }}>
+                  <IconComponent className="h-5 w-5" style={{ color: '#173e4e' }} />
                 </div>
-                <div className="text-base font-bold mb-1" style={{ color: '#b8832b' }}>{item.stat}</div>
-                <div className="text-xs text-gray-600 leading-tight">{item.label}</div>
+                <div className="text-lg font-bold mb-1" style={{ color: '#b8832b' }}>{item.stat}</div>
+                <div className="text-sm text-gray-600 leading-tight">{item.label}</div>
               </div>
             );
           })}
