@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { TrendingDown, Home, Users, DollarSign } from 'lucide-react';
 
@@ -9,8 +8,8 @@ const TheProblemSlide = () => {
     label: "Child poverty in local census tracts"
   }, {
     icon: DollarSign,
-    stat: "$26,598",
-    label: "Mean income of lowest 20% of households"
+    stat: "$26.6K / $414K",
+    label: "Mean income: lowest 20% / highest 20%"
   }, {
     icon: Home,
     stat: "$2,100",
