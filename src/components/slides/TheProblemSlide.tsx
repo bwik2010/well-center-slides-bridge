@@ -31,7 +31,7 @@ const TheProblemSlide = () => {
       <div className="flex-1 flex gap-3 min-h-0">
         {/* Main Content - Left Side */}
         <div className="flex-1">
-          <div className="bg-white p-3 shadow-lg border border-gray-100 h-full flex flex-col justify-center rounded-md">
+          <div className="bg-white p-3 shadow-lg border border-gray-100 h-full flex flex-col justify-center rounded-md py-0">
             <ul className="text-base text-gray-700 leading-relaxed space-y-3 list-disc pl-4">
               <li>
                 The wealth gap has widened dramatically in Montgomery County. Suburban planning created social 
