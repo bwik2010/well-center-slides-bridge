@@ -1,6 +1,5 @@
 import React from 'react';
 import { TrendingDown, Home, Users, DollarSign } from 'lucide-react';
-
 const TheProblemSlide = () => {
   const keyStatistics = [{
     icon: TrendingDown,
@@ -15,14 +14,18 @@ const TheProblemSlide = () => {
     stat: "$2,100",
     label: "Median rent for 2-bedroom apartment"
   }];
-
-  return (
-    <div className="w-full h-full p-4 flex flex-col" style={{ aspectRatio: '16/9' }}>
+  return <div className="w-full h-full p-4 flex flex-col" style={{
+    aspectRatio: '16/9'
+  }}>
       <div className="text-center mb-4">
-        <h2 className="text-2xl font-bold mb-2" style={{ color: '#173e4e' }}>
+        <h2 className="text-2xl font-bold mb-2" style={{
+        color: '#173e4e'
+      }}>
           The Problem
         </h2>
-        <div className="w-16 h-1 mx-auto" style={{ backgroundColor: '#b8832b' }}></div>
+        <div className="w-16 h-1 mx-auto" style={{
+        backgroundColor: '#b8832b'
+      }}></div>
       </div>
       
       <div className="flex-1 flex gap-4 min-h-0">
@@ -48,10 +51,9 @@ const TheProblemSlide = () => {
                 for most households. Support infrastructure hasn't kept pace with growing needs over two decades.
               </li>
               
-              <li className="font-semibold" style={{ color: '#173e4e' }}>
-                This has created a growing chasm of social and economic disparity, trapping struggling Montgomery 
-                County residents in cycles of poverty and hopelessness.
-              </li>
+              <li className="font-semibold" style={{
+              color: '#173e4e'
+            }}>There is a widening social and economic disconnect and disparity, which is unsustainable and harmful for everyone.</li>
             </ul>
           </div>
         </div>
@@ -59,21 +61,23 @@ const TheProblemSlide = () => {
         {/* Data Boxes - Right Side */}
         <div className="w-64 flex flex-col gap-3">
           {keyStatistics.map((item, index) => {
-            const IconComponent = item.icon;
-            return (
-              <div key={index} className="bg-white rounded-xl p-4 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-all duration-300">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-2" style={{ backgroundColor: '#173e4e20' }}>
-                  <IconComponent className="h-5 w-5" style={{ color: '#173e4e' }} />
+          const IconComponent = item.icon;
+          return <div key={index} className="bg-white rounded-xl p-4 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-all duration-300">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-2" style={{
+              backgroundColor: '#173e4e20'
+            }}>
+                  <IconComponent className="h-5 w-5" style={{
+                color: '#173e4e'
+              }} />
                 </div>
-                <div className="text-lg font-bold mb-1" style={{ color: '#b8832b' }}>{item.stat}</div>
+                <div className="text-lg font-bold mb-1" style={{
+              color: '#b8832b'
+            }}>{item.stat}</div>
                 <div className="text-sm text-gray-600 leading-tight">{item.label}</div>
-              </div>
-            );
-          })}
+              </div>;
+        })}
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default TheProblemSlide;
