@@ -19,7 +19,7 @@ const TheProblemSlide = () => {
 
   return (
     <div className="w-full h-full p-3 flex flex-col" style={{ aspectRatio: '16/9' }}>
-      <div className="text-center mb-3">
+      <div className="text-center mb-2">
         <h2 className="text-3xl font-bold mb-1" style={{ color: '#173e4e' }}>
           The Problem
         </h2>
@@ -30,7 +30,7 @@ const TheProblemSlide = () => {
         {/* Main Content - Left Side */}
         <div className="flex-1">
           <div className="bg-white rounded-xl p-3 shadow-lg border border-gray-100 h-full flex flex-col justify-center">
-            <ul className="text-base text-gray-700 leading-relaxed space-y-1 list-disc pl-4">
+            <ul className="text-base text-gray-700 leading-relaxed space-y-3 list-disc pl-4">
               <li>
                 The wealth gap has widened dramatically in Montgomery County. Suburban planning created social 
                 disconnection and couldn't handle the immigrant influx of the past 20 years. COVID-19 made it worse.
