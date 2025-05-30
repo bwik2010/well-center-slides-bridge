@@ -38,10 +38,7 @@ const TheProblemSlide = () => {
           <div className="bg-white rounded-xl p-5 shadow-lg border border-gray-100 h-full flex flex-col justify-center">
             <p className="text-base text-gray-700 leading-relaxed mb-3">Over the past generation, the wealth and opportunity gap has widened in Montgomery County. Suburban planning strategies have encouraged social disconnection and were unprepared for the immigrant influx over the past 20 years. The COVID-19 pandemic has worsened these challenges.</p>
             
-            <p className="text-base text-gray-700 leading-relaxed mb-3">
-              Despite being among the top 20 wealthiest counties in America, Montgomery County faces an acute housing crisis and exhausted social services. 
-              Multiple census tracts show 30-40% child poverty rates, while 70% of Cross Community's population earns less than $40,000 annually—far below the county's $129,000 median income.
-            </p>
+            <p className="text-base text-gray-700 leading-relaxed mb-3">Despite being among the top 20 wealthiest counties in America, Montgomery County faces an acute housing crisis and exhausted social services. Multiple census tracts show 30-40% child poverty rates. The mean income of the lowest quintile (20% of households with the lowest income) is $26,598, while the mean income for the highest quintile (20% of households with the highest income) is $414,085.  </p>
             
             <p className="text-base text-gray-700 leading-relaxed mb-3">
               With median rent at $2,100 monthly for a two-bedroom apartment, upward mobility seems impossible for most households. 
