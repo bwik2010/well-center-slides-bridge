@@ -63,7 +63,7 @@ const ContentSlide = () => {
                 
                 <div className="space-y-4">
                   <div className="bg-white bg-opacity-20 rounded-xl p-4">
-                    <div className="text-3xl font-bold mb-2" style={{ color: '#b8832b' }}>
+                    <div className="text-3xl font-bold mb-2" style={{ color: '#ffd700' }}>
                       $2,250,000
                     </div>
                     <p className="text-sm opacity-90">Capital Funding Committed</p>
