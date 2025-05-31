@@ -67,7 +67,7 @@ const OurAskSlide = () => {
             <CardContent>
               <div className="space-y-4">
                 <div className="text-center">
-                  <div className="text-3xl font-bold mb-2" style={{ color: '#b8832b' }}>
+                  <div className="text-2xl font-bold mb-2" style={{ color: '#b8832b' }}>
                     69%
                   </div>
                   <p className="text-sm text-gray-600 mb-3">
@@ -86,10 +86,10 @@ const OurAskSlide = () => {
                 </div>
                 
                 <div className="text-center">
-                  <div className="text-xl font-bold mb-1" style={{ color: '#173e4e' }}>
+                  <div className="text-4xl font-bold mb-1" style={{ color: '#173e4e' }}>
                     80%
                   </div>
-                  <p className="text-xs text-gray-500">
+                  <p className="text-base font-semibold text-gray-700">
                     By 2030
                   </p>
                 </div>
