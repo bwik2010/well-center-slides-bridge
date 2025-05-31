@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Building, Users, Network, Award, ShoppingBag, Baby, Briefcase } from 'lucide-react';
 
@@ -24,7 +25,7 @@ const SourcesOfRevenueSlide = () => {
     {
       icon: Award,
       title: "Sponsorships and Consulting",
-      description: "Corporate partnerships and event sponsorship opportunities",
+      description: "Corporate partnerships and expansion consulting",
       color: "#173e4e"
     },
     {
