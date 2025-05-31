@@ -83,14 +83,48 @@ const SourcesOfRevenueSlide = () => {
       </div>
       
       <div className="max-w-6xl mx-auto">
-        {/* Revenue Distribution Section */}
-        <div className="bg-white rounded-xl p-4 shadow-lg border border-gray-100">
-          <h3 className="text-lg font-bold text-center mb-4" style={{ color: '#173e4e' }}>
-            Revenue Distribution
-          </h3>
-          
-          <div className="grid grid-cols-2 gap-6 items-center">
-            {/* Pie Chart */}
+        <div className="grid grid-cols-2 gap-6 items-center">
+          {/* Revenue Sources List */}
+          <div className="space-y-1">
+            {revenueSources.map((source, index) => {
+              const IconComponent = source.icon;
+              return (
+                <div key={index} className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                  {/* Color indicator */}
+                  <div 
+                    className="w-4 h-4 rounded-full flex-shrink-0"
+                    style={{ backgroundColor: source.color }}
+                  ></div>
+                  
+                  {/* Icon */}
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{
+                    backgroundColor: source.color + '20'
+                  }}>
+                    <IconComponent className="h-4 w-4" style={{ color: source.color }} />
+                  </div>
+                  
+                  {/* Content */}
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between">
+                      <h4 className="font-semibold text-sm" style={{ color: '#173e4e' }}>
+                        {source.title}
+                      </h4>
+                      <span className="font-bold text-sm" style={{ color: source.color }}>
+                        {source.percentage}%
+                      </span>
+                    </div>
+                    <p className="text-gray-600 text-xs leading-tight">{source.description}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Pie Chart with Title */}
+          <div className="flex flex-col items-center justify-center">
+            <h3 className="text-lg font-bold mb-3" style={{ color: '#173e4e' }}>
+              Revenue Distribution
+            </h3>
             <div className="h-64">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
@@ -111,42 +145,6 @@ const SourcesOfRevenueSlide = () => {
                   <Tooltip content={<CustomTooltip />} />
                 </PieChart>
               </ResponsiveContainer>
-            </div>
-
-            {/* Revenue Sources List */}
-            <div className="space-y-2">
-              {revenueSources.map((source, index) => {
-                const IconComponent = source.icon;
-                return (
-                  <div key={index} className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
-                    {/* Color indicator */}
-                    <div 
-                      className="w-4 h-4 rounded-full flex-shrink-0"
-                      style={{ backgroundColor: source.color }}
-                    ></div>
-                    
-                    {/* Icon */}
-                    <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{
-                      backgroundColor: source.color + '20'
-                    }}>
-                      <IconComponent className="h-4 w-4" style={{ color: source.color }} />
-                    </div>
-                    
-                    {/* Content */}
-                    <div className="flex-1">
-                      <div className="flex items-center justify-between">
-                        <h4 className="font-semibold text-sm" style={{ color: '#173e4e' }}>
-                          {source.title}
-                        </h4>
-                        <span className="font-bold text-sm" style={{ color: source.color }}>
-                          {source.percentage}%
-                        </span>
-                      </div>
-                      <p className="text-gray-600 text-xs leading-tight">{source.description}</p>
-                    </div>
-                  </div>
-                );
-              })}
             </div>
           </div>
         </div>
