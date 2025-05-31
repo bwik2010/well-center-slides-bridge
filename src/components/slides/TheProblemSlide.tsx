@@ -25,10 +25,10 @@ const TheProblemSlide = () => {
   ];
 
   return (
-    <div className="w-full h-full p-4 flex flex-col" style={{ aspectRatio: '16/9' }}>
+    <div className="w-full h-full p-3 flex flex-col" style={{ aspectRatio: '16/9' }}>
       {/* Header Section */}
-      <div className="text-center mb-4">
-        <div className="flex items-center justify-center gap-3 mb-3">
+      <div className="text-center mb-3">
+        <div className="flex items-center justify-center gap-3 mb-2">
           <div className="p-2 rounded-full" style={{ backgroundColor: '#173e4e20' }}>
             <AlertTriangle className="h-6 w-6" style={{ color: '#173e4e' }} />
           </div>
@@ -40,29 +40,29 @@ const TheProblemSlide = () => {
       </div>
       
       {/* Main Content Area */}
-      <div className="flex-1 grid grid-cols-12 gap-4">
+      <div className="flex-1 grid grid-cols-12 gap-3">
         {/* Left Column - Key Statistics */}
-        <div className="col-span-4 space-y-3">
+        <div className="col-span-4 flex flex-col justify-between h-full">
           {keyStatistics.map((item, index) => {
             const IconComponent = item.icon;
             return (
               <div 
                 key={index} 
-                className="bg-white rounded-xl p-3 shadow-lg border-l-4 hover:shadow-xl transition-all duration-300"
-                style={{ borderLeftColor: item.color }}
+                className="bg-white rounded-xl p-4 shadow-lg border-l-4 hover:shadow-xl transition-all duration-300 flex-1 flex items-center"
+                style={{ borderLeftColor: item.color, minHeight: '120px' }}
               >
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-4 w-full">
                   <div 
-                    className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
+                    className="w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0"
                     style={{ backgroundColor: item.color + '20' }}
                   >
-                    <IconComponent className="h-5 w-5" style={{ color: item.color }} />
+                    <IconComponent className="h-7 w-7" style={{ color: item.color }} />
                   </div>
-                  <div>
-                    <div className="text-xl font-bold" style={{ color: item.color }}>
+                  <div className="flex-1">
+                    <div className="text-2xl font-bold mb-1" style={{ color: item.color }}>
                       {item.stat}
                     </div>
-                    <div className="text-xs text-gray-600 leading-tight">
+                    <div className="text-sm text-gray-600 leading-tight">
                       {item.label}
                     </div>
                   </div>
@@ -75,14 +75,14 @@ const TheProblemSlide = () => {
         {/* Right Column - Main Problem Statement */}
         <div className="col-span-8">
           <div 
-            className="h-full rounded-xl p-4 text-white shadow-lg flex flex-col justify-center"
+            className="h-full rounded-xl p-5 text-white shadow-lg flex flex-col justify-center"
             style={{
               background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)'
             }}
           >
-            <div className="space-y-3">
-              <div className="bg-white bg-opacity-20 rounded-lg p-3 backdrop-blur-sm">
-                <h3 className="text-lg font-bold mb-2" style={{ color: '#b8832b' }}>
+            <div className="space-y-4">
+              <div className="bg-white bg-opacity-20 rounded-lg p-4 backdrop-blur-sm">
+                <h3 className="text-xl font-bold mb-3" style={{ color: '#b8832b' }}>
                   The Crisis
                 </h3>
                 <p className="text-sm leading-relaxed">
@@ -90,8 +90,8 @@ const TheProblemSlide = () => {
                 </p>
               </div>
               
-              <div className="bg-white bg-opacity-20 rounded-lg p-3 backdrop-blur-sm">
-                <h3 className="text-lg font-bold mb-2" style={{ color: '#b8832b' }}>
+              <div className="bg-white bg-opacity-20 rounded-lg p-4 backdrop-blur-sm">
+                <h3 className="text-xl font-bold mb-3" style={{ color: '#b8832b' }}>
                   The Impact
                 </h3>
                 <p className="text-sm leading-relaxed">
@@ -99,8 +99,8 @@ const TheProblemSlide = () => {
                 </p>
               </div>
               
-              <div className="bg-white bg-opacity-20 rounded-lg p-3 backdrop-blur-sm">
-                <h3 className="text-lg font-bold mb-2" style={{ color: '#b8832b' }}>
+              <div className="bg-white bg-opacity-20 rounded-lg p-4 backdrop-blur-sm">
+                <h3 className="text-xl font-bold mb-3" style={{ color: '#b8832b' }}>
                   The Future Risk
                 </h3>
                 <p className="text-sm leading-relaxed font-semibold">
@@ -113,7 +113,7 @@ const TheProblemSlide = () => {
       </div>
       
       {/* Bottom Accent Bar */}
-      <div className="mt-3 flex justify-center">
+      <div className="mt-2 flex justify-center">
         <div className="flex items-center gap-2">
           <div className="w-6 h-1.5 rounded-full" style={{ backgroundColor: '#173e4e' }}></div>
           <div className="w-6 h-1.5 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
