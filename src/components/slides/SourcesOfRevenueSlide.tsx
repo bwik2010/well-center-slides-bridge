@@ -56,6 +56,9 @@ const SourcesOfRevenueSlide = () => {
     color: source.color
   }));
 
+  console.log('Chart data:', chartData);
+  console.log('Revenue sources:', revenueSources);
+
   const CustomTooltip = ({ active, payload }: any) => {
     if (active && payload && payload.length) {
       return (
@@ -125,7 +128,7 @@ const SourcesOfRevenueSlide = () => {
             <h3 className="text-lg font-bold mb-3" style={{ color: '#173e4e' }}>
               Revenue Distribution
             </h3>
-            <div className="h-64">
+            <div className="w-80 h-64 border border-gray-200 rounded-lg bg-gray-50">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                   <Pie
@@ -133,10 +136,13 @@ const SourcesOfRevenueSlide = () => {
                     cx="50%"
                     cy="50%"
                     outerRadius={80}
+                    innerRadius={0}
                     fill="#8884d8"
                     dataKey="value"
                     label={({ name, value }) => `${value}%`}
                     labelLine={false}
+                    stroke="#fff"
+                    strokeWidth={2}
                   >
                     {chartData.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={entry.color} />
