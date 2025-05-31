@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { DollarSign, TrendingUp, Target, Calendar } from 'lucide-react';
+import { DollarSign, TrendingUp, Target } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -54,38 +54,6 @@ const OurAsk = () => {
                   </div>
                 </CardContent>
               </Card>
-
-              <Card className="border-2 transition-transform duration-300 hover:scale-105" 
-                    style={{ borderColor: '#8aa1a9' }}>
-                <CardHeader className="text-center pb-4">
-                  <div className="flex justify-center mb-3">
-                    <Calendar className="h-8 w-8" style={{ color: '#173e4e' }} />
-                  </div>
-                  <CardTitle className="text-xl" style={{ color: '#173e4e' }}>
-                    Timeline & Impact
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                      <span className="font-semibold" style={{ color: '#173e4e' }}>
-                        Years 1-3
-                      </span>
-                      <span className="text-sm text-gray-600">
-                        Grant funding support
-                      </span>
-                    </div>
-                    <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                      <span className="font-semibold" style={{ color: '#173e4e' }}>
-                        Year 4+
-                      </span>
-                      <span className="text-sm text-gray-600">
-                        Self-sustaining operations
-                      </span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
 
             {/* Right Column - Sustainability Metrics */}
@@ -130,38 +98,6 @@ const OurAsk = () => {
                       </p>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-
-              <Card className="text-white border-2" 
-                    style={{ 
-                      background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)',
-                      borderColor: 'rgba(184, 131, 43, 0.3)'
-                    }}>
-                <CardHeader>
-                  <CardTitle className="text-xl text-center">
-                    Why This Investment Matters
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3 text-sm">
-                    <li className="flex items-start gap-2">
-                      <span className="text-yellow-300 mt-1">•</span>
-                      <span>Establishes sustainable community infrastructure</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-yellow-300 mt-1">•</span>
-                      <span>Creates long-term economic opportunities</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-yellow-300 mt-1">•</span>
-                      <span>Builds pathway to financial independence</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-yellow-300 mt-1">•</span>
-                      <span>Strengthens community connections and support</span>
-                    </li>
-                  </ul>
                 </CardContent>
               </Card>
             </div>
