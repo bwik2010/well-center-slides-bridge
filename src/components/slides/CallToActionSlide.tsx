@@ -38,7 +38,7 @@ const CallToActionSlide = () => {
                 <div>
                   <h4 className="font-semibold mb-1 text-sm" style={{
                   color: '#173e4e'
-                }}>Join the Well team</h4>
+                }}>Join The Well team</h4>
                   <p className="text-gray-600 text-xs">Join our community programs and initiatives</p>
                 </div>
               </div>
@@ -105,7 +105,7 @@ const CallToActionSlide = () => {
                   <p className="font-medium text-sm" style={{
                   color: '#173e4e'
                 }}>Email</p>
-                  <p className="text-gray-600 text-sm">info@thewellcenter.org</p>
+                  <p className="text-gray-600 text-sm">ben@cross-community.org</p>
                 </div>
               </div>
               
@@ -119,7 +119,7 @@ const CallToActionSlide = () => {
                   <p className="font-medium text-sm" style={{
                   color: '#173e4e'
                 }}>Phone</p>
-                  <p className="text-gray-600 text-sm">(555) 123-4567</p>
+                  <p className="text-gray-600 text-sm">(240) 994-8614</p>
                 </div>
               </div>
               
