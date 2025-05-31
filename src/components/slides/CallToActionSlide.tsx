@@ -1,6 +1,7 @@
+
 import React from 'react';
-import { ArrowRight, Mail, Phone, MapPin } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Mail, Phone, MapPin } from 'lucide-react';
+
 const CallToActionSlide = () => {
   return <div className="w-full h-full p-6" style={{
     aspectRatio: '16/9'
@@ -77,13 +78,6 @@ const CallToActionSlide = () => {
                 </div>
               </div>
             </div>
-            
-            <Button className="w-full mt-6 text-base py-4 text-white hover:opacity-90 transition-opacity" style={{
-            backgroundColor: '#b8832b'
-          }}>
-              Learn More About Our Programs
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
           </div>
           
           {/* Right: Contact Information */}
@@ -149,4 +143,5 @@ const CallToActionSlide = () => {
       </div>
     </div>;
 };
+
 export default CallToActionSlide;
