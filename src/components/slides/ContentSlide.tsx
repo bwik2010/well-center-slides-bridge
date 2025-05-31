@@ -1,13 +1,14 @@
+
 import React from 'react';
 import { CheckCircle, Users, Building2, Heart } from 'lucide-react';
+
 const ContentSlide = () => {
-  return <div className="w-full h-full p-6" style={{
-    aspectRatio: '16/9'
-  }}>
+  return (
+    <div className="w-full h-full p-6" style={{ aspectRatio: '16/9' }}>
       <div className="max-w-6xl mx-auto h-full">
-        <h2 className="text-3xl font-bold mb-6 text-center" style={{
-        color: '#173e4e'
-      }}>Key Partners & Collaborations</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center" style={{ color: '#173e4e' }}>
+          Key Partners & Collaborations
+        </h2>
         
         <div className="grid grid-cols-2 gap-8 items-center h-5/6">
           {/* Left Content - Partners */}
@@ -55,16 +56,16 @@ const ContentSlide = () => {
           {/* Right Content - Funding */}
           <div className="relative">
             <div className="rounded-2xl p-6 h-64" style={{
-            background: 'linear-gradient(135deg, #8aa1a9 0%, #173e4e 100%)'
-          }}>
+              background: 'linear-gradient(135deg, #8aa1a9 0%, #173e4e 100%)'
+            }}>
               <div className="text-center text-white">
                 <h4 className="text-xl font-semibold mb-4">Funding Commitment</h4>
                 
                 <div className="space-y-4">
                   <div className="bg-white bg-opacity-20 rounded-xl p-4">
-                    <div className="text-3xl font-bold mb-2" style={{
-                    color: '#b8832b'
-                  }}>$2.25M</div>
+                    <div className="text-3xl font-bold mb-2" style={{ color: '#b8832b' }}>
+                      $2,250,000
+                    </div>
                     <p className="text-sm opacity-90">Capital Funding Committed</p>
                   </div>
                   
@@ -92,6 +93,8 @@ const ContentSlide = () => {
           </div>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default ContentSlide;
