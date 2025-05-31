@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Presentation, TrendingUp, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -16,8 +17,8 @@ import CallToActionSlide from './slides/CallToActionSlide';
 const slides = [
   { id: 1, component: TitleSlide, title: "Title Slide" },
   { id: 2, component: TheProblemSlide, title: "The Problem" },
-  { id: 3, component: MissionSlide, title: "Mission Statement" },
-  { id: 4, component: BridgeSlide, title: "Bridge Diagram" },
+  { id: 3, component: BridgeSlide, title: "Bridge Diagram" },
+  { id: 4, component: MissionSlide, title: "Mission Statement" },
   { id: 5, component: BridgeTeamSlide, title: "Bridge Team" },
   { id: 6, component: ContentSlide, title: "Content Slide" },
   { id: 7, component: ImpactSlide, title: "Impact & Results" },
