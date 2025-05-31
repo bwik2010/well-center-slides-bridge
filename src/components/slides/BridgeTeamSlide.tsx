@@ -9,7 +9,7 @@ const BridgeTeamSlide = () => {
     { name: "KC Whang", position: { x: 750, y: 120 } },
     { name: "Omar Palos", position: { x: 850, y: 300 } },
     { name: "Jay Gerson", position: { x: 750, y: 450 } },
-    { name: "Larry Bram", position: { x: 500, y: 480 } },
+    { name: "Bruce Baker", position: { x: 500, y: 480 } },
     { name: "Mayrin Munguia", position: { x: 150, y: 400 } },
     { name: "Lucia Zegara", position: { x: 300, y: 200 } },
     { name: "David Son", position: { x: 700, y: 200 } },
