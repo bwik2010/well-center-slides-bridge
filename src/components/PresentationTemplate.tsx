@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Presentation, TrendingUp, Users } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Presentation, TrendingUp, Users, DollarSign } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import TitleSlide from './slides/TitleSlide';
@@ -80,6 +80,18 @@ const PresentationTemplate = () => {
               >
                 <TrendingUp className="h-4 w-4" />
                 Financial Projections
+              </Button>
+            </Link>
+
+            {/* Our Ask Link */}
+            <Link to="/our-ask">
+              <Button 
+                variant="outline"
+                className="flex items-center gap-2 hover:opacity-80"
+                style={{ borderColor: '#8aa1a9', color: '#173e4e' }}
+              >
+                <DollarSign className="h-4 w-4" />
+                Our Ask
               </Button>
             </Link>
             
