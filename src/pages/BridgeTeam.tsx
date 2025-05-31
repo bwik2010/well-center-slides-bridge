@@ -6,22 +6,23 @@ import { Button } from '@/components/ui/button';
 
 const BridgeTeam = () => {
   const teamMembers = [
-    { name: "Trish Weaver", position: { x: 200, y: 100 } },
-    { name: "Pamela Roussos", position: { x: 400, y: 150 } },
-    { name: "KC Whang", position: { x: 500, y: 300 } },
-    { name: "Omar Palos", position: { x: 450, y: 450 } },
-    { name: "Jay Gerson", position: { x: 300, y: 500 } },
-    { name: "Bruce Baker", position: { x: 150, y: 450 } },
-    { name: "Mayrin Munguia", position: { x: 100, y: 300 } },
-    { name: "Lucia Zegara", position: { x: 150, y: 150 } },
-    { name: "David Son", position: { x: 600, y: 200 } },
-    { name: "Jasmine Dero", position: { x: 550, y: 400 } },
-    { name: "Robin McKinney", position: { x: 50, y: 400 } },
-    { name: "Gloria Kalotra", position: { x: 350, y: 50 } }
+    { name: "Trish Weaver", title: "Attorney", position: { x: 200, y: 100 } },
+    { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 400, y: 150 } },
+    { name: "KC Whang", title: "Commercial Real Estate", position: { x: 500, y: 300 } },
+    { name: "Omar Palos", title: "Business Owner: Sweet Seasons", position: { x: 450, y: 450 } },
+    { name: "Jay Gerson", title: "Business Owner: Kidsco", position: { x: 300, y: 500 } },
+    { name: "Bruce Baker", title: "Non-Profit Executive", position: { x: 150, y: 450 } },
+    { name: "Mayrin Munguia", title: "Chick Fil A Franchise Owner", position: { x: 100, y: 300 } },
+    { name: "Lucia Zegara", title: "", position: { x: 150, y: 150 } },
+    { name: "David Son", title: "Pastor and Business Owner", position: { x: 600, y: 200 } },
+    { name: "Jasmine Dero", title: "Teacher, Business Owner", position: { x: 550, y: 400 } },
+    { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 50, y: 400 } },
+    { name: "Gloria Kalotra", title: "Community Leader", position: { x: 350, y: 50 } },
+    { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 250, y: 250 } }
   ];
 
   const centerPosition = { x: 300, y: 275 };
-  const benWikner = { name: "Ben Wikner", position: centerPosition };
+  const benWikner = { name: "Ben Wikner", title: "", position: centerPosition };
   const allMembers = [benWikner, ...teamMembers];
 
   // Generate all possible connections between team members
@@ -113,10 +114,11 @@ const BridgeTeam = () => {
                 }}
               >
                 <div 
-                  className="px-6 py-3 rounded-full flex items-center justify-center text-white font-medium text-sm shadow-lg border-2 border-white hover:scale-105 transition-transform duration-200 whitespace-nowrap"
+                  className="px-4 py-2 rounded-full flex flex-col items-center justify-center text-white font-medium text-xs shadow-lg border-2 border-white hover:scale-105 transition-transform duration-200 whitespace-nowrap text-center"
                   style={{ backgroundColor: '#b8832b' }}
                 >
-                  {member.name}
+                  <div className="font-semibold">{member.name}</div>
+                  {member.title && <div className="text-[10px] opacity-90">{member.title}</div>}
                 </div>
               </div>
             ))}
@@ -126,7 +128,7 @@ const BridgeTeam = () => {
         {/* Team Stats */}
         <div className="mt-6 grid grid-cols-3 gap-4">
           <div className="bg-white rounded-xl p-4 text-center shadow-lg">
-            <div className="text-2xl font-bold mb-1" style={{ color: '#173e4e' }}>13</div>
+            <div className="text-2xl font-bold mb-1" style={{ color: '#173e4e' }}>14</div>
             <div className="text-sm text-gray-600">Total Team Members</div>
           </div>
           <div className="bg-white rounded-xl p-4 text-center shadow-lg">
@@ -134,7 +136,7 @@ const BridgeTeam = () => {
             <div className="text-sm text-gray-600">Team Lead</div>
           </div>
           <div className="bg-white rounded-xl p-4 text-center shadow-lg">
-            <div className="text-2xl font-bold mb-1" style={{ color: '#8aa1a9' }}>78</div>
+            <div className="text-2xl font-bold mb-1" style={{ color: '#8aa1a9' }}>91</div>
             <div className="text-sm text-gray-600">Total Connections</div>
           </div>
         </div>
