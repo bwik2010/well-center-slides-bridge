@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Presentation, TrendingUp, Users, DollarSign } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -11,6 +12,7 @@ import ContentSlide from './slides/ContentSlide';
 import ImpactSlide from './slides/ImpactSlide';
 import SourcesOfRevenueSlide from './slides/SourcesOfRevenueSlide';
 import FinancialProjectionsSlide from './slides/FinancialProjectionsSlide';
+import OurAskSlide from './slides/OurAskSlide';
 import CallToActionSlide from './slides/CallToActionSlide';
 
 const slides = [
@@ -22,8 +24,9 @@ const slides = [
   { id: 6, component: ImpactSlide, title: "Impact & Results" },
   { id: 7, component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
   { id: 8, component: FinancialProjectionsSlide, title: "Financial Projections" },
-  { id: 9, component: BridgeTeamSlide, title: "Bridge Team" },
-  { id: 10, component: CallToActionSlide, title: "Call to Action" }
+  { id: 9, component: OurAskSlide, title: "Our Ask" },
+  { id: 10, component: BridgeTeamSlide, title: "Bridge Team" },
+  { id: 11, component: CallToActionSlide, title: "Call to Action" }
 ];
 
 const PresentationTemplate = () => {
