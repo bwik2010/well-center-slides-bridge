@@ -85,7 +85,7 @@ const PrintView = () => {
       </div>
 
       {/* Print Styles */}
-      <style jsx>{`
+      <style>{`
         @media print {
           @page {
             margin: 0.5in;
