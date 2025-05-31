@@ -79,32 +79,32 @@ const SourcesOfRevenueSlide = () => {
   };
 
   return (
-    <div className="w-full h-full p-6" style={{ aspectRatio: '16/9' }}>
-      <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold mb-3" style={{ color: '#173e4e' }}>Sources of Revenue</h2>
-        <div className="w-20 h-1 mx-auto mb-4" style={{ backgroundColor: '#b8832b' }}></div>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+    <div className="w-full h-full p-4" style={{ aspectRatio: '16/9' }}>
+      <div className="text-center mb-4">
+        <h2 className="text-2xl font-bold mb-2" style={{ color: '#173e4e' }}>Sources of Revenue</h2>
+        <div className="w-16 h-1 mx-auto mb-3" style={{ backgroundColor: '#b8832b' }}></div>
+        <p className="text-base text-gray-600 max-w-3xl mx-auto">
           Diversified revenue streams to ensure sustainable operations and community impact
         </p>
       </div>
       
       <div className="max-w-6xl mx-auto">
         {/* Pie Chart and Revenue List Side by Side */}
-        <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 mb-6">
-          <h3 className="text-xl font-bold text-center mb-6" style={{ color: '#173e4e' }}>
+        <div className="bg-white rounded-xl p-4 shadow-lg border border-gray-100 mb-4">
+          <h3 className="text-lg font-bold text-center mb-4" style={{ color: '#173e4e' }}>
             Revenue Distribution
           </h3>
           
-          <div className="grid grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-2 gap-6 items-center">
             {/* Pie Chart */}
-            <div className="h-80">
+            <div className="h-64">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                   <Pie
                     data={chartData}
                     cx="50%"
                     cy="50%"
-                    outerRadius={100}
+                    outerRadius={80}
                     fill="#8884d8"
                     dataKey="value"
                     label={({ name, value }) => `${value}%`}
@@ -120,35 +120,35 @@ const SourcesOfRevenueSlide = () => {
             </div>
 
             {/* Revenue Sources List */}
-            <div className="space-y-4">
+            <div className="space-y-2">
               {revenueSources.slice(0, 6).map((source, index) => {
                 const IconComponent = source.icon;
                 return (
-                  <div key={index} className="flex items-center gap-4 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+                  <div key={index} className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
                     {/* Color indicator */}
                     <div 
-                      className="w-4 h-4 rounded-full flex-shrink-0"
+                      className="w-3 h-3 rounded-full flex-shrink-0"
                       style={{ backgroundColor: source.color }}
                     ></div>
                     
                     {/* Icon */}
-                    <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{
+                    <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{
                       backgroundColor: source.color + '20'
                     }}>
-                      <IconComponent className="h-5 w-5" style={{ color: source.color }} />
+                      <IconComponent className="h-4 w-4" style={{ color: source.color }} />
                     </div>
                     
                     {/* Content */}
                     <div className="flex-1">
                       <div className="flex items-center justify-between">
-                        <h4 className="font-semibold text-lg" style={{ color: '#173e4e' }}>
+                        <h4 className="font-semibold text-sm" style={{ color: '#173e4e' }}>
                           {source.title}
                         </h4>
-                        <span className="font-bold text-lg" style={{ color: source.color }}>
+                        <span className="font-bold text-sm" style={{ color: source.color }}>
                           {source.percentage}%
                         </span>
                       </div>
-                      <p className="text-gray-600 text-sm">{source.description}</p>
+                      <p className="text-gray-600 text-xs">{source.description}</p>
                     </div>
                   </div>
                 );
@@ -159,14 +159,14 @@ const SourcesOfRevenueSlide = () => {
 
         {/* Bottom row - Enterprise Expansion Consulting centered */}
         <div className="flex justify-center">
-          <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 text-center" style={{ width: '300px' }}>
-            <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3" style={{
+          <div className="bg-white rounded-xl p-3 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 text-center" style={{ width: '280px' }}>
+            <div className="w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-2" style={{
               backgroundColor: revenueSources[6].color + '20'
             }}>
-              <Briefcase className="h-6 w-6" style={{ color: revenueSources[6].color }} />
+              <Briefcase className="h-5 w-5" style={{ color: revenueSources[6].color }} />
             </div>
-            <h3 className="text-lg font-bold mb-2" style={{ color: '#173e4e' }}>{revenueSources[6].title}</h3>
-            <p className="text-gray-600 text-sm">{revenueSources[6].description}</p>
+            <h3 className="text-base font-bold mb-1" style={{ color: '#173e4e' }}>{revenueSources[6].title}</h3>
+            <p className="text-gray-600 text-xs">{revenueSources[6].description}</p>
           </div>
         </div>
       </div>
