@@ -6,19 +6,19 @@ import { Button } from '@/components/ui/button';
 
 const BridgeTeam = () => {
   const teamMembers = [
-    { name: "Trish Weaver", title: "Attorney", position: { x: 200, y: 100 } },
-    { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 400, y: 150 } },
-    { name: "KC Whang", title: "Commercial Real Estate", position: { x: 500, y: 300 } },
-    { name: "Omar Palos", title: "Business Owner: Sweet Seasons", position: { x: 450, y: 450 } },
-    { name: "Jay Gerson", title: "Business Owner: Kidsco", position: { x: 300, y: 500 } },
-    { name: "Bruce Baker", title: "Non-Profit Executive", position: { x: 150, y: 450 } },
-    { name: "Mayrin Munguia", title: "Chick Fil A Franchise Owner", position: { x: 100, y: 300 } },
-    { name: "Lucia Zegara", title: "", position: { x: 150, y: 150 } },
-    { name: "David Son", title: "Pastor and Business Owner", position: { x: 600, y: 200 } },
-    { name: "Jasmine Dero", title: "Teacher, Business Owner", position: { x: 550, y: 400 } },
-    { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 50, y: 400 } },
-    { name: "Gloria Kalotra", title: "Community Leader", position: { x: 350, y: 50 } },
-    { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 250, y: 250 } }
+    { name: "Trish Weaver", title: "Attorney", position: { x: 150, y: 80 } },
+    { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 420, y: 120 } },
+    { name: "KC Whang", title: "Commercial Real Estate", position: { x: 550, y: 250 } },
+    { name: "Omar Palos", title: "Business Owner: Sweet Seasons", position: { x: 480, y: 450 } },
+    { name: "Jay Gerson", title: "Business Owner: Kidsco", position: { x: 280, y: 520 } },
+    { name: "Bruce Baker", title: "Non-Profit Executive", position: { x: 120, y: 480 } },
+    { name: "Mayrin Munguia", title: "Chick Fil A Franchise Owner", position: { x: 80, y: 280 } },
+    { name: "Lucia Zegara", title: "", position: { x: 180, y: 180 } },
+    { name: "David Son", title: "Pastor and Business Owner", position: { x: 580, y: 160 } },
+    { name: "Jasmine Dero", title: "Teacher, Business Owner", position: { x: 520, y: 380 } },
+    { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 60, y: 380 } },
+    { name: "Gloria Kalotra", title: "Community Leader", position: { x: 380, y: 60 } },
+    { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 220, y: 320 } }
   ];
 
   const centerPosition = { x: 300, y: 275 };
