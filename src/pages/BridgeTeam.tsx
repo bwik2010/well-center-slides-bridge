@@ -11,7 +11,7 @@ const BridgeTeam = () => {
     { name: "KC Whang", position: { x: 500, y: 300 } },
     { name: "Omar Palos", position: { x: 450, y: 450 } },
     { name: "Jay Gerson", position: { x: 300, y: 500 } },
-    { name: "Larry Bram", position: { x: 150, y: 450 } },
+    { name: "Bruce Baker", position: { x: 150, y: 450 } },
     { name: "Mayrin Munguia", position: { x: 100, y: 300 } },
     { name: "Lucia Zegara", position: { x: 150, y: 150 } },
     { name: "David Son", position: { x: 600, y: 200 } },
