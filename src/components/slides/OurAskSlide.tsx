@@ -75,16 +75,6 @@ const OurAskSlide = () => {
                   </p>
                 </div>
                 
-                <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
-                  <div 
-                    className="h-full rounded-full transition-all duration-1000"
-                    style={{ 
-                      width: '69%', 
-                      background: 'linear-gradient(90deg, #b8832b 0%, #173e4e 100%)'
-                    }}
-                  ></div>
-                </div>
-                
                 <div className="text-center">
                   <div className="text-4xl font-bold mb-1" style={{ color: '#173e4e' }}>
                     80%
