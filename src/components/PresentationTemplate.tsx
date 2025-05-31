@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Presentation, TrendingUp, Users, DollarSign } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Presentation, TrendingUp, Users, DollarSign, Printer } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import TitleSlide from './slides/TitleSlide';
@@ -62,6 +62,18 @@ const PresentationTemplate = () => {
           </div>
           
           <div className="flex items-center gap-4">
+            {/* Print View Link */}
+            <Link to="/print-view">
+              <Button 
+                variant="outline"
+                className="flex items-center gap-2 hover:opacity-80"
+                style={{ borderColor: '#173e4e', color: '#173e4e' }}
+              >
+                <Printer className="h-4 w-4" />
+                Print View
+              </Button>
+            </Link>
+            
             {/* Bridge Team Link */}
             <Link to="/bridge-team">
               <Button 

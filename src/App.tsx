@@ -9,6 +9,7 @@ import FinancialProjections from "./pages/FinancialProjections";
 import BridgeTeam from "./pages/BridgeTeam";
 import OurAsk from "./pages/OurAsk";
 import NotFound from "./pages/NotFound";
+import PrintView from "./components/PrintView";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/financial-projections" element={<FinancialProjections />} />
           <Route path="/bridge-team" element={<BridgeTeam />} />
           <Route path="/our-ask" element={<OurAsk />} />
+          <Route path="/print-view" element={<PrintView />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
