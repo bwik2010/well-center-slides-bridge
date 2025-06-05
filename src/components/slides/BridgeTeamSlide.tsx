@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Users } from 'lucide-react';
 
@@ -11,11 +10,10 @@ const BridgeTeamSlide = () => {
     { name: "Jay Gerson", title: "Business Owner: Kidsco", position: { x: 780, y: 480 } },
     { name: "Bruce Baker", title: "Non-Profit Executive", position: { x: 520, y: 500 } },
     { name: "Mayrin Munguia", title: "Chick Fil A Franchise Owner", position: { x: 120, y: 420 } },
-    { name: "Lucia Zegara", title: "", position: { x: 280, y: 180 } },
     { name: "David Son", title: "Pastor and Business Owner", position: { x: 720, y: 180 } },
     { name: "Jasmine Dero", title: "Teacher, Business Owner", position: { x: 620, y: 380 } },
     { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 220, y: 480 } },
-    { name: "Gloria Kalotra", title: "Community Leader", position: { x: 580, y: 80 } },
+    { name: "Gloria Kalotra", title: "Higher Education Specialist", position: { x: 580, y: 80 } },
     { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 420, y: 380 } }
   ];
 

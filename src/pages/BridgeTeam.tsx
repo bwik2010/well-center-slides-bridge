@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Users } from 'lucide-react';
@@ -13,11 +12,10 @@ const BridgeTeam = () => {
     { name: "Jay Gerson", title: "Business Owner: Kidsco", position: { x: 280, y: 520 } },
     { name: "Bruce Baker", title: "Non-Profit Executive", position: { x: 120, y: 480 } },
     { name: "Mayrin Munguia", title: "Chick Fil A Franchise Owner", position: { x: 80, y: 280 } },
-    { name: "Lucia Zegara", title: "", position: { x: 180, y: 180 } },
     { name: "David Son", title: "Pastor and Business Owner", position: { x: 580, y: 160 } },
     { name: "Jasmine Dero", title: "Teacher, Business Owner", position: { x: 520, y: 380 } },
     { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 60, y: 380 } },
-    { name: "Gloria Kalotra", title: "Community Leader", position: { x: 380, y: 60 } },
+    { name: "Gloria Kalotra", title: "Higher Education Specialist", position: { x: 380, y: 60 } },
     { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 220, y: 320 } }
   ];
 
@@ -128,7 +126,7 @@ const BridgeTeam = () => {
         {/* Team Stats */}
         <div className="mt-6 grid grid-cols-3 gap-4">
           <div className="bg-white rounded-xl p-4 text-center shadow-lg">
-            <div className="text-2xl font-bold mb-1" style={{ color: '#173e4e' }}>14</div>
+            <div className="text-2xl font-bold mb-1" style={{ color: '#173e4e' }}>13</div>
             <div className="text-sm text-gray-600">Total Team Members</div>
           </div>
           <div className="bg-white rounded-xl p-4 text-center shadow-lg">
@@ -136,7 +134,7 @@ const BridgeTeam = () => {
             <div className="text-sm text-gray-600">Team Lead</div>
           </div>
           <div className="bg-white rounded-xl p-4 text-center shadow-lg">
-            <div className="text-2xl font-bold mb-1" style={{ color: '#8aa1a9' }}>91</div>
+            <div className="text-2xl font-bold mb-1" style={{ color: '#8aa1a9' }}>78</div>
             <div className="text-sm text-gray-600">Total Connections</div>
           </div>
         </div>
