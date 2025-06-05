@@ -4,18 +4,18 @@ import { Users } from 'lucide-react';
 
 const BridgeTeamSlide = () => {
   const teamMembers = [
-    { name: "Trish Weaver", title: "Attorney", position: { x: 200, y: 120 } },
-    { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 450, y: 80 } },
-    { name: "KC Whang", title: "Commercial Real Estate", position: { x: 700, y: 120 } },
-    { name: "Omar Palos", title: "Business Owner: Sweet Seasons", position: { x: 800, y: 280 } },
-    { name: "Jay Gerson", title: "Business Owner: Kidsco", position: { x: 720, y: 450 } },
-    { name: "Bruce Baker", title: "Non-Profit Executive", position: { x: 480, y: 520 } },
-    { name: "Mayrin Munguia", title: "Chick Fil A Franchise Owner", position: { x: 220, y: 480 } },
-    { name: "David Son", title: "Pastor and Business Owner", position: { x: 120, y: 350 } },
-    { name: "Jasmine Dero", title: "Teacher, Business Owner", position: { x: 150, y: 200 } },
-    { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 320, y: 120 } },
-    { name: "Gloria Kalotra", title: "Higher Education Specialist", position: { x: 580, y: 80 } },
-    { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 650, y: 380 } }
+    { name: "Trish Weaver", title: "Attorney", position: { x: 150, y: 100 } },
+    { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 350, y: 60 } },
+    { name: "KC Whang", title: "Commercial Real Estate", position: { x: 750, y: 120 } },
+    { name: "Omar Palos", title: "Business Owner: Sweet Seasons", position: { x: 850, y: 300 } },
+    { name: "Jay Gerson", title: "Business Owner: Kidsco", position: { x: 750, y: 480 } },
+    { name: "Bruce Baker", title: "Non-Profit Executive", position: { x: 450, y: 540 } },
+    { name: "Mayrin Munguia", title: "Chick Fil A Franchise Owner", position: { x: 150, y: 480 } },
+    { name: "David Son", title: "Pastor and Business Owner", position: { x: 50, y: 350 } },
+    { name: "Jasmine Dero", title: "Teacher, Business Owner", position: { x: 120, y: 180 } },
+    { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 280, y: 100 } },
+    { name: "Gloria Kalotra", title: "Higher Education Specialist", position: { x: 650, y: 60 } },
+    { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 680, y: 400 } }
   ];
 
   const centerPosition = { x: 500, y: 280 };
