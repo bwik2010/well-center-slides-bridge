@@ -4,18 +4,18 @@ import { Users } from 'lucide-react';
 
 const BridgeTeamSlide = () => {
   const teamMembers = [
-    { name: "Trish Weaver", title: "Attorney", position: { x: 150, y: 100 } },
-    { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 350, y: 60 } },
-    { name: "KC Whang", title: "Commercial Real Estate", position: { x: 750, y: 120 } },
-    { name: "Omar Palos", title: "Business Owner: Sweet Seasons", position: { x: 850, y: 300 } },
-    { name: "Jay Gerson", title: "Business Owner: Kidsco", position: { x: 750, y: 480 } },
-    { name: "Bruce Baker", title: "Non-Profit Executive", position: { x: 450, y: 540 } },
-    { name: "Mayrin Munguia", title: "Chick Fil A Franchise Owner", position: { x: 150, y: 480 } },
-    { name: "David Son", title: "Pastor and Business Owner", position: { x: 50, y: 350 } },
-    { name: "Jasmine Dero", title: "Teacher, Business Owner", position: { x: 120, y: 180 } },
-    { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 280, y: 100 } },
-    { name: "Gloria Kalotra", title: "Higher Education Specialist", position: { x: 650, y: 60 } },
-    { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 680, y: 400 } }
+    { name: "Trish Weaver", title: "Attorney", position: { x: 180, y: 140 } },
+    { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 380, y: 80 } },
+    { name: "KC Whang", title: "Commercial Real Estate", position: { x: 720, y: 140 } },
+    { name: "Omar Palos", title: "Business Owner: Sweet Seasons", position: { x: 800, y: 320 } },
+    { name: "Jay Gerson", title: "Business Owner: Kidsco", position: { x: 720, y: 460 } },
+    { name: "Bruce Baker", title: "Non-Profit Executive", position: { x: 480, y: 500 } },
+    { name: "Mayrin Munguia", title: "Chick Fil A Franchise Owner", position: { x: 180, y: 460 } },
+    { name: "David Son", title: "Pastor and Business Owner", position: { x: 100, y: 380 } },
+    { name: "Jasmine Dero", title: "Teacher, Business Owner", position: { x: 150, y: 220 } },
+    { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 310, y: 140 } },
+    { name: "Gloria Kalotra", title: "Higher Education Specialist", position: { x: 620, y: 80 } },
+    { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 650, y: 420 } }
   ];
 
   const centerPosition = { x: 500, y: 280 };
@@ -56,9 +56,9 @@ const BridgeTeamSlide = () => {
 
       {/* Team Network Diagram */}
       <div className="flex-1 mx-6 mb-6">
-        <div className="bg-white rounded-2xl shadow-xl p-4 h-full">
+        <div className="bg-white rounded-2xl shadow-xl p-6 h-full">
           <div className="relative w-full h-full overflow-hidden">
-            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1000 560">
+            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 900 520">
               {/* Lines connecting all team members to each other */}
               {connections.map((connection, index) => (
                 <line
@@ -78,8 +78,8 @@ const BridgeTeamSlide = () => {
             <div 
               className="absolute transform -translate-x-1/2 -translate-y-1/2"
               style={{
-                left: `${(centerPosition.x / 1000) * 100}%`,
-                top: `${(centerPosition.y / 560) * 100}%`
+                left: `${(centerPosition.x / 900) * 100}%`,
+                top: `${(centerPosition.y / 520) * 100}%`
               }}
             >
               <div 
@@ -98,8 +98,8 @@ const BridgeTeamSlide = () => {
                 key={member.name}
                 className="absolute transform -translate-x-1/2 -translate-y-1/2"
                 style={{
-                  left: `${(member.position.x / 1000) * 100}%`,
-                  top: `${(member.position.y / 560) * 100}%`
+                  left: `${(member.position.x / 900) * 100}%`,
+                  top: `${(member.position.y / 520) * 100}%`
                 }}
               >
                 <div 
