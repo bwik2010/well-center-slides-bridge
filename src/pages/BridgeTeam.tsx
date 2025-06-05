@@ -1,11 +1,12 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import DraggableNode from '@/components/DraggableNode';
 
 const BridgeTeam = () => {
-  const teamMembers = [
+  const [teamMembers, setTeamMembers] = useState([
     { name: "Trish Weaver", title: "Attorney", position: { x: 150, y: 120 } },
     { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 350, y: 60 } },
     { name: "KC Whang", title: "Commercial Real Estate", position: { x: 520, y: 100 } },
@@ -18,11 +19,21 @@ const BridgeTeam = () => {
     { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 250, y: 100 } },
     { name: "Gloria Kalotra", title: "Higher Education Specialist", position: { x: 450, y: 60 } },
     { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 480, y: 380 } }
-  ];
+  ]);
 
-  const centerPosition = { x: 300, y: 275 };
+  const [centerPosition, setCenterPosition] = useState({ x: 300, y: 275 });
   const benWikner = { name: "Ben Wikner", title: "", position: centerPosition };
   const allMembers = [benWikner, ...teamMembers];
+
+  const updateMemberPosition = (index: number, newPosition: { x: number; y: number }) => {
+    setTeamMembers(prev => prev.map((member, i) => 
+      i === index ? { ...member, position: newPosition } : member
+    ));
+  };
+
+  const updateCenterPosition = (newPosition: { x: number; y: number }) => {
+    setCenterPosition(newPosition);
+  };
 
   // Generate all possible connections between team members
   const connections = [];
@@ -36,6 +47,8 @@ const BridgeTeam = () => {
     }
   }
 
+  const containerBounds = { width: 600, height: 600 };
+
   return (
     <div className="min-h-screen p-6" style={{ background: 'linear-gradient(135deg, #8aa1a920 0%, #173e4e20 100%)' }}>
       <div className="max-w-7xl mx-auto">
@@ -47,7 +60,7 @@ const BridgeTeam = () => {
             </div>
             <div>
               <h1 className="text-2xl font-bold" style={{ color: '#173e4e' }}>Well Center Bridge Team</h1>
-              <p className="text-sm text-gray-600">Team Network Visualization</p>
+              <p className="text-sm text-gray-600">Team Network Visualization - Drag nodes to reposition</p>
             </div>
           </div>
           
@@ -85,41 +98,25 @@ const BridgeTeam = () => {
             </svg>
 
             {/* Ben Wikner - Center Node */}
-            <div 
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 animate-scale-in"
-              style={{ 
-                left: centerPosition.x, 
-                top: centerPosition.y,
-                animationDelay: '0.5s'
-              }}
-            >
-              <div 
-                className="px-6 py-3 rounded-full flex items-center justify-center text-white font-medium text-sm shadow-lg border-2 border-white whitespace-nowrap"
-                style={{ backgroundColor: '#173e4e' }}
-              >
-                Ben Wikner
-              </div>
-            </div>
+            <DraggableNode
+              name="Ben Wikner"
+              title=""
+              position={centerPosition}
+              onPositionChange={updateCenterPosition}
+              isCenter={true}
+              containerBounds={containerBounds}
+            />
 
             {/* Team Members */}
             {teamMembers.map((member, index) => (
-              <div
+              <DraggableNode
                 key={member.name}
-                className="absolute transform -translate-x-1/2 -translate-y-1/2 animate-fade-in"
-                style={{ 
-                  left: member.position.x, 
-                  top: member.position.y,
-                  animationDelay: `${(index + 1) * 0.1}s`
-                }}
-              >
-                <div 
-                  className="px-4 py-2 rounded-full flex flex-col items-center justify-center text-white font-medium text-xs shadow-lg border-2 border-white hover:scale-105 transition-transform duration-200 whitespace-nowrap text-center"
-                  style={{ backgroundColor: '#b8832b' }}
-                >
-                  <div className="font-semibold">{member.name}</div>
-                  {member.title && <div className="text-[10px] opacity-90">{member.title}</div>}
-                </div>
-              </div>
+                name={member.name}
+                title={member.title}
+                position={member.position}
+                onPositionChange={(newPosition) => updateMemberPosition(index, newPosition)}
+                containerBounds={containerBounds}
+              />
             ))}
           </div>
         </div>

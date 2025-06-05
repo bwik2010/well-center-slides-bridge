@@ -1,9 +1,10 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Users } from 'lucide-react';
+import DraggableNode from '../DraggableNode';
 
 const BridgeTeamSlide = () => {
-  const teamMembers = [
+  const [teamMembers, setTeamMembers] = useState([
     { name: "Trish Weaver", title: "Attorney", position: { x: 200, y: 120 } },
     { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 400, y: 60 } },
     { name: "KC Whang", title: "Commercial Real Estate", position: { x: 650, y: 100 } },
@@ -16,11 +17,21 @@ const BridgeTeamSlide = () => {
     { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 320, y: 100 } },
     { name: "Gloria Kalotra", title: "Higher Education Specialist", position: { x: 550, y: 60 } },
     { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 580, y: 380 } }
-  ];
+  ]);
 
-  const centerPosition = { x: 500, y: 280 };
+  const [centerPosition, setCenterPosition] = useState({ x: 500, y: 280 });
   const benWikner = { name: "Ben Wikner", title: "", position: centerPosition };
   const allMembers = [benWikner, ...teamMembers];
+
+  const updateMemberPosition = (index: number, newPosition: { x: number; y: number }) => {
+    setTeamMembers(prev => prev.map((member, i) => 
+      i === index ? { ...member, position: newPosition } : member
+    ));
+  };
+
+  const updateCenterPosition = (newPosition: { x: number; y: number }) => {
+    setCenterPosition(newPosition);
+  };
 
   // Generate all possible connections between team members
   const connections = [];
@@ -33,6 +44,8 @@ const BridgeTeamSlide = () => {
       });
     }
   }
+
+  const containerBounds = { width: 900, height: 520 };
 
   return (
     <div className="w-full h-full flex flex-col" style={{
@@ -75,43 +88,25 @@ const BridgeTeamSlide = () => {
             </svg>
 
             {/* Ben Wikner - Center Node */}
-            <div 
-              className="absolute transform -translate-x-1/2 -translate-y-1/2"
-              style={{
-                left: `${(centerPosition.x / 900) * 100}%`,
-                top: `${(centerPosition.y / 520) * 100}%`
-              }}
-            >
-              <div 
-                className="px-6 py-3 rounded-full flex items-center justify-center text-white font-medium text-base shadow-lg border-2 border-white whitespace-nowrap"
-                style={{
-                  backgroundColor: '#173e4e'
-                }}
-              >
-                Ben Wikner
-              </div>
-            </div>
+            <DraggableNode
+              name="Ben Wikner"
+              title=""
+              position={centerPosition}
+              onPositionChange={updateCenterPosition}
+              isCenter={true}
+              containerBounds={containerBounds}
+            />
 
             {/* Team Members */}
             {teamMembers.map((member, index) => (
-              <div
+              <DraggableNode
                 key={member.name}
-                className="absolute transform -translate-x-1/2 -translate-y-1/2"
-                style={{
-                  left: `${(member.position.x / 900) * 100}%`,
-                  top: `${(member.position.y / 520) * 100}%`
-                }}
-              >
-                <div 
-                  className="px-4 py-2 rounded-full flex flex-col items-center justify-center text-white font-medium text-xs shadow-lg border-2 border-white hover:scale-105 transition-transform duration-200 whitespace-nowrap text-center"
-                  style={{
-                    backgroundColor: '#b8832b'
-                  }}
-                >
-                  <div className="font-semibold">{member.name}</div>
-                  {member.title && <div className="text-[10px] opacity-90">{member.title}</div>}
-                </div>
-              </div>
+                name={member.name}
+                title={member.title}
+                position={member.position}
+                onPositionChange={(newPosition) => updateMemberPosition(index, newPosition)}
+                containerBounds={containerBounds}
+              />
             ))}
           </div>
         </div>
