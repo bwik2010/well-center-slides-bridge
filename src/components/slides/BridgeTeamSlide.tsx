@@ -1,12 +1,11 @@
-
 import React from 'react';
 import { Users } from 'lucide-react';
 
 const BridgeTeamSlide = () => {
   // Load saved positions from localStorage or use defaults if none exist
   const getSavedPositions = () => {
-    const savedTeamMembers = localStorage.getItem('bridgeTeamPositionsPage');
-    const savedCenterPosition = localStorage.getItem('bridgeTeamCenterPositionPage');
+    const savedTeamMembers = localStorage.getItem('bridgeTeamPositions');
+    const savedCenterPosition = localStorage.getItem('bridgeTeamCenterPosition');
     
     const defaultTeamMembers = [
       { name: "Trish Weaver", title: "Attorney", position: { x: 150, y: 80 } },
