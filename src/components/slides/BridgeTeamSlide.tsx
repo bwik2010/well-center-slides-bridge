@@ -1,10 +1,12 @@
 
-import React, { useState } from 'react';
-import { Users } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Users, Save } from 'lucide-react';
 import DraggableNode from '../DraggableNode';
+import { Button } from '@/components/ui/button';
+import { toast } from 'sonner';
 
 const BridgeTeamSlide = () => {
-  const [teamMembers, setTeamMembers] = useState([
+  const defaultTeamMembers = [
     { name: "Trish Weaver", title: "Attorney", position: { x: 150, y: 80 } },
     { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 300, y: 50 } },
     { name: "KC Whang", title: "Commercial Real Estate", position: { x: 500, y: 70 } },
@@ -17,9 +19,21 @@ const BridgeTeamSlide = () => {
     { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 250, y: 80 } },
     { name: "Gloria Kalotra", title: "Higher Education Specialist", position: { x: 400, y: 50 } },
     { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 500, y: 280 } }
-  ]);
+  ];
 
-  const [centerPosition, setCenterPosition] = useState({ x: 400, y: 200 });
+  const defaultCenterPosition = { x: 400, y: 200 };
+
+  // Load saved positions from localStorage or use defaults
+  const [teamMembers, setTeamMembers] = useState(() => {
+    const saved = localStorage.getItem('bridgeTeamPositions');
+    return saved ? JSON.parse(saved) : defaultTeamMembers;
+  });
+
+  const [centerPosition, setCenterPosition] = useState(() => {
+    const saved = localStorage.getItem('bridgeTeamCenterPosition');
+    return saved ? JSON.parse(saved) : defaultCenterPosition;
+  });
+
   const benWikner = { name: "Ben Wikner", title: "", position: centerPosition };
   const allMembers = [benWikner, ...teamMembers];
 
@@ -31,6 +45,20 @@ const BridgeTeamSlide = () => {
 
   const updateCenterPosition = (newPosition: { x: number; y: number }) => {
     setCenterPosition(newPosition);
+  };
+
+  const savePositions = () => {
+    localStorage.setItem('bridgeTeamPositions', JSON.stringify(teamMembers));
+    localStorage.setItem('bridgeTeamCenterPosition', JSON.stringify(centerPosition));
+    toast.success('Node positions saved!');
+  };
+
+  const resetPositions = () => {
+    setTeamMembers(defaultTeamMembers);
+    setCenterPosition(defaultCenterPosition);
+    localStorage.removeItem('bridgeTeamPositions');
+    localStorage.removeItem('bridgeTeamCenterPosition');
+    toast.info('Positions reset to default');
   };
 
   // Generate all possible connections between team members
@@ -52,7 +80,7 @@ const BridgeTeamSlide = () => {
       background: 'linear-gradient(135deg, #8aa1a920 0%, #173e4e20 100%)'
     }}>
       {/* Header */}
-      <div className="flex items-center justify-center pt-6 pb-3">
+      <div className="flex items-center justify-between pt-6 pb-3 px-6">
         <div className="flex items-center gap-3">
           <div className="p-2 rounded-lg" style={{
             backgroundColor: '#173e4e'
@@ -64,6 +92,26 @@ const BridgeTeamSlide = () => {
               color: '#173e4e'
             }}>Well Center Bridge Team</h1>
           </div>
+        </div>
+        
+        <div className="flex gap-2">
+          <Button
+            onClick={savePositions}
+            size="sm"
+            className="flex items-center gap-2"
+            style={{ backgroundColor: '#173e4e' }}
+          >
+            <Save className="h-4 w-4" />
+            Save Layout
+          </Button>
+          <Button
+            onClick={resetPositions}
+            variant="outline"
+            size="sm"
+            style={{ borderColor: '#8aa1a9', color: '#173e4e' }}
+          >
+            Reset
+          </Button>
         </div>
       </div>
 
