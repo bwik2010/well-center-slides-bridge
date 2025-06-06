@@ -1,65 +1,39 @@
 
-import React, { useState, useEffect } from 'react';
-import { Users, Save } from 'lucide-react';
-import DraggableNode from '../DraggableNode';
-import { Button } from '@/components/ui/button';
-import { toast } from 'sonner';
+import React from 'react';
+import { Users } from 'lucide-react';
 
 const BridgeTeamSlide = () => {
-  const defaultTeamMembers = [
-    { name: "Trish Weaver", title: "Attorney", position: { x: 150, y: 80 } },
-    { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 300, y: 50 } },
-    { name: "KC Whang", title: "Commercial Real Estate", position: { x: 500, y: 70 } },
-    { name: "Omar Palos", title: "Business Owner: Sweet Seasons", position: { x: 650, y: 150 } },
-    { name: "Jay Gerson", title: "Business Owner: Kidsco", position: { x: 600, y: 300 } },
-    { name: "Bruce Baker", title: "Non-Profit Executive", position: { x: 450, y: 350 } },
-    { name: "Mayrin Munguia", title: "Chick Fil A Franchise Owner", position: { x: 200, y: 320 } },
-    { name: "David Son", title: "Pastor and Business Owner", position: { x: 80, y: 250 } },
-    { name: "Jasmine Dero", title: "Teacher, Business Owner", position: { x: 120, y: 150 } },
-    { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 250, y: 80 } },
-    { name: "Gloria Kalotra", title: "Higher Education Specialist", position: { x: 400, y: 50 } },
-    { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 500, y: 280 } }
-  ];
+  // Load saved positions from localStorage or use defaults if none exist
+  const getSavedPositions = () => {
+    const savedTeamMembers = localStorage.getItem('bridgeTeamPositions');
+    const savedCenterPosition = localStorage.getItem('bridgeTeamCenterPosition');
+    
+    const defaultTeamMembers = [
+      { name: "Trish Weaver", title: "Attorney", position: { x: 150, y: 80 } },
+      { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 300, y: 50 } },
+      { name: "KC Whang", title: "Commercial Real Estate", position: { x: 500, y: 70 } },
+      { name: "Omar Palos", title: "Business Owner: Sweet Seasons", position: { x: 650, y: 150 } },
+      { name: "Jay Gerson", title: "Business Owner: Kidsco", position: { x: 600, y: 300 } },
+      { name: "Bruce Baker", title: "Non-Profit Executive", position: { x: 450, y: 350 } },
+      { name: "Mayrin Munguia", title: "Chick Fil A Franchise Owner", position: { x: 200, y: 320 } },
+      { name: "David Son", title: "Pastor and Business Owner", position: { x: 80, y: 250 } },
+      { name: "Jasmine Dero", title: "Teacher, Business Owner", position: { x: 120, y: 150 } },
+      { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 250, y: 80 } },
+      { name: "Gloria Kalotra", title: "Higher Education Specialist", position: { x: 400, y: 50 } },
+      { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 500, y: 280 } }
+    ];
+    
+    const defaultCenterPosition = { x: 400, y: 200 };
+    
+    return {
+      teamMembers: savedTeamMembers ? JSON.parse(savedTeamMembers) : defaultTeamMembers,
+      centerPosition: savedCenterPosition ? JSON.parse(savedCenterPosition) : defaultCenterPosition
+    };
+  };
 
-  const defaultCenterPosition = { x: 400, y: 200 };
-
-  // Load saved positions from localStorage or use defaults
-  const [teamMembers, setTeamMembers] = useState(() => {
-    const saved = localStorage.getItem('bridgeTeamPositions');
-    return saved ? JSON.parse(saved) : defaultTeamMembers;
-  });
-
-  const [centerPosition, setCenterPosition] = useState(() => {
-    const saved = localStorage.getItem('bridgeTeamCenterPosition');
-    return saved ? JSON.parse(saved) : defaultCenterPosition;
-  });
-
+  const { teamMembers, centerPosition } = getSavedPositions();
   const benWikner = { name: "Ben Wikner", title: "", position: centerPosition };
   const allMembers = [benWikner, ...teamMembers];
-
-  const updateMemberPosition = (index: number, newPosition: { x: number; y: number }) => {
-    setTeamMembers(prev => prev.map((member, i) => 
-      i === index ? { ...member, position: newPosition } : member
-    ));
-  };
-
-  const updateCenterPosition = (newPosition: { x: number; y: number }) => {
-    setCenterPosition(newPosition);
-  };
-
-  const savePositions = () => {
-    localStorage.setItem('bridgeTeamPositions', JSON.stringify(teamMembers));
-    localStorage.setItem('bridgeTeamCenterPosition', JSON.stringify(centerPosition));
-    toast.success('Node positions saved!');
-  };
-
-  const resetPositions = () => {
-    setTeamMembers(defaultTeamMembers);
-    setCenterPosition(defaultCenterPosition);
-    localStorage.removeItem('bridgeTeamPositions');
-    localStorage.removeItem('bridgeTeamCenterPosition');
-    toast.info('Positions reset to default');
-  };
 
   // Generate all possible connections between team members
   const connections = [];
@@ -73,7 +47,27 @@ const BridgeTeamSlide = () => {
     }
   }
 
-  const containerBounds = { width: 800, height: 400 };
+  const StaticNode = ({ name, title, position, isCenter = false }) => (
+    <div
+      className="absolute transform -translate-x-1/2 -translate-y-1/2 select-none z-10"
+      style={{
+        left: `${position.x}px`,
+        top: `${position.y}px`,
+      }}
+    >
+      <div 
+        className={`px-4 py-2 rounded-full flex flex-col items-center justify-center text-white font-medium text-xs shadow-lg border-2 border-white whitespace-nowrap text-center ${
+          isCenter ? 'px-6 py-3 text-base' : ''
+        }`}
+        style={{
+          backgroundColor: isCenter ? '#173e4e' : '#b8832b'
+        }}
+      >
+        <div className="font-semibold">{name}</div>
+        {title && <div className="text-[10px] opacity-90">{title}</div>}
+      </div>
+    </div>
+  );
 
   return (
     <div className="w-full h-full flex flex-col" style={{
@@ -92,26 +86,6 @@ const BridgeTeamSlide = () => {
               color: '#173e4e'
             }}>Well Center Bridge Team</h1>
           </div>
-        </div>
-        
-        <div className="flex gap-2">
-          <Button
-            onClick={savePositions}
-            size="sm"
-            className="flex items-center gap-2"
-            style={{ backgroundColor: '#173e4e' }}
-          >
-            <Save className="h-4 w-4" />
-            Save Layout
-          </Button>
-          <Button
-            onClick={resetPositions}
-            variant="outline"
-            size="sm"
-            style={{ borderColor: '#8aa1a9', color: '#173e4e' }}
-          >
-            Reset
-          </Button>
         </div>
       </div>
 
@@ -136,24 +110,20 @@ const BridgeTeamSlide = () => {
             </svg>
 
             {/* Ben Wikner - Center Node */}
-            <DraggableNode
+            <StaticNode
               name="Ben Wikner"
               title=""
               position={centerPosition}
-              onPositionChange={updateCenterPosition}
               isCenter={true}
-              containerBounds={containerBounds}
             />
 
             {/* Team Members */}
             {teamMembers.map((member, index) => (
-              <DraggableNode
+              <StaticNode
                 key={member.name}
                 name={member.name}
                 title={member.title}
                 position={member.position}
-                onPositionChange={(newPosition) => updateMemberPosition(index, newPosition)}
-                containerBounds={containerBounds}
               />
             ))}
           </div>
