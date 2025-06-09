@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { TrendingDown, Home, Users, DollarSign, AlertTriangle } from 'lucide-react';
 
@@ -17,9 +16,9 @@ const TheProblemSlide = () => {
       color: "#b8832b"
     },
     {
-      icon: Home,
-      stat: "$2,100",
-      label: "Median rent for 2-bedroom apartment",
+      icon: Users,
+      stat: "75% vs 88%",
+      label: "Black/Brown children face downward mobility vs white children's upward mobility in neighborhoods",
       color: "#8aa1a9"
     }
   ];
