@@ -1,6 +1,6 @@
-
 import React from 'react';
-import { Printer } from 'lucide-react';
+import { Printer, ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import TitleSlide from './slides/TitleSlide';
 import MissionSlide from './slides/MissionSlide';
 import TheProblemSlide from './slides/TheProblemSlide';
@@ -49,14 +49,26 @@ const PrintView = () => {
             </div>
           </div>
           
-          <button
-            onClick={handlePrint}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg text-white hover:opacity-90 transition-opacity"
-            style={{ backgroundColor: '#173e4e' }}
-          >
-            <Printer className="h-4 w-4" />
-            Print / Save as PDF
-          </button>
+          <div className="flex items-center gap-3">
+            <Link to="/">
+              <button
+                className="flex items-center gap-2 px-4 py-2 rounded-lg border-2 hover:opacity-90 transition-opacity"
+                style={{ borderColor: '#173e4e', color: '#173e4e' }}
+              >
+                <ArrowLeft className="h-4 w-4" />
+                Back to Presentation
+              </button>
+            </Link>
+            
+            <button
+              onClick={handlePrint}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg text-white hover:opacity-90 transition-opacity"
+              style={{ backgroundColor: '#173e4e' }}
+            >
+              <Printer className="h-4 w-4" />
+              Print / Save as PDF
+            </button>
+          </div>
         </div>
       </div>
 
