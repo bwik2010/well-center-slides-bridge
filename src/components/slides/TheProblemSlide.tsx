@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { TrendingDown, Home, Users, DollarSign, AlertTriangle } from 'lucide-react';
+import { TrendingDown, Home, Users, DollarSign, AlertTriangle, ArrowDown, ArrowUp } from 'lucide-react';
 
 const TheProblemSlide = () => {
   const keyStatistics = [
@@ -17,7 +18,11 @@ const TheProblemSlide = () => {
     },
     {
       icon: Users,
-      stat: "75% vs 88%",
+      stat: (
+        <span className="flex items-center gap-1">
+          75% <ArrowDown className="h-4 w-4" style={{ color: "#dc2626" }} /> vs 88% <ArrowUp className="h-4 w-4" style={{ color: "#16a34a" }} />
+        </span>
+      ),
       label: "Black/Brown children face downward mobility vs white children's upward mobility in neighborhoods",
       color: "#8aa1a9"
     }
