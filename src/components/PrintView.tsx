@@ -12,6 +12,7 @@ import SourcesOfRevenueSlide from './slides/SourcesOfRevenueSlide';
 import FinancialProjectionsSlide from './slides/FinancialProjectionsSlide';
 import OurAskSlide from './slides/OurAskSlide';
 import CallToActionSlide from './slides/CallToActionSlide';
+import QuoteSlide from './slides/QuoteSlide';
 
 const slides = [
   { id: 1, component: TitleSlide, title: "Title Slide" },
@@ -24,7 +25,8 @@ const slides = [
   { id: 8, component: FinancialProjectionsSlide, title: "Financial Projections" },
   { id: 9, component: OurAskSlide, title: "Our Ask" },
   { id: 10, component: BridgeTeamSlide, title: "Bridge Team" },
-  { id: 11, component: CallToActionSlide, title: "Call to Action" }
+  { id: 11, component: QuoteSlide, title: "Inspirational Quote" },
+  { id: 12, component: CallToActionSlide, title: "Call to Action" }
 ];
 
 const PrintView = () => {
