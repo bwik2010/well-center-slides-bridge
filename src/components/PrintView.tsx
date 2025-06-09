@@ -15,9 +15,9 @@ import CallToActionSlide from './slides/CallToActionSlide';
 
 const slides = [
   { id: 1, component: TitleSlide, title: "Title Slide" },
-  { id: 2, component: TheProblemSlide, title: "The Problem" },
-  { id: 3, component: BridgeSlide, title: "Bridge Diagram" },
-  { id: 4, component: MissionSlide, title: "Mission Statement" },
+  { id: 2, component: MissionSlide, title: "Mission Statement" },
+  { id: 3, component: TheProblemSlide, title: "The Problem" },
+  { id: 4, component: BridgeSlide, title: "Bridge Diagram" },
   { id: 5, component: ContentSlide, title: "Key Partners & Collaborations" },
   { id: 6, component: ImpactSlide, title: "Impact & Results" },
   { id: 7, component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
