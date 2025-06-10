@@ -29,55 +29,55 @@ const CitationsSlide = () => {
   ];
 
   return (
-    <div className="w-full h-full p-8 flex flex-col" style={{ aspectRatio: '16/9' }}>
+    <div className="w-full h-full p-6 flex flex-col" style={{ aspectRatio: '16/9' }}>
       {/* Header */}
-      <div className="text-center mb-8">
-        <div className="flex items-center justify-center gap-3 mb-4">
-          <div className="p-3 rounded-full" style={{ backgroundColor: '#173e4e20' }}>
-            <BookOpen className="h-8 w-8" style={{ color: '#173e4e' }} />
+      <div className="text-center mb-6">
+        <div className="flex items-center justify-center gap-3 mb-3">
+          <div className="p-2 rounded-full" style={{ backgroundColor: '#173e4e20' }}>
+            <BookOpen className="h-6 w-6" style={{ color: '#173e4e' }} />
           </div>
-          <h2 className="text-4xl font-bold" style={{ color: '#173e4e' }}>
+          <h2 className="text-3xl font-bold" style={{ color: '#173e4e' }}>
             Citations & References
           </h2>
         </div>
-        <div className="w-24 h-1 mx-auto" style={{ backgroundColor: '#b8832b' }}></div>
+        <div className="w-20 h-1 mx-auto" style={{ backgroundColor: '#b8832b' }}></div>
       </div>
       
       {/* Citations List */}
-      <div className="flex-1 space-y-6">
+      <div className="flex-1 space-y-4 overflow-y-auto">
         {citations.map((citation) => (
           <div 
             key={citation.number}
-            className="bg-white rounded-xl p-6 shadow-lg border-l-4 hover:shadow-xl transition-all duration-300"
+            className="bg-white rounded-lg p-4 shadow-md border-l-4 hover:shadow-lg transition-all duration-300"
             style={{ borderLeftColor: '#173e4e' }}
           >
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-3">
               {/* Citation Number */}
               <div 
-                className="w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1"
+                className="w-6 h-6 rounded-full flex items-center justify-center text-white font-bold text-xs flex-shrink-0 mt-0.5"
                 style={{ backgroundColor: '#173e4e' }}
               >
                 {citation.number}
               </div>
               
               {/* Citation Content */}
-              <div className="flex-1">
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex-1">
+              <div className="flex-1 min-w-0">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex-1 min-w-0">
                     {citation.author && (
-                      <p className="text-sm font-medium text-gray-600 mb-1">
+                      <p className="text-xs font-medium text-gray-600 mb-1">
                         {citation.author}
                       </p>
                     )}
-                    <h3 className="text-lg font-bold mb-2" style={{ color: '#173e4e' }}>
+                    <h3 className="text-sm font-bold mb-1 leading-tight" style={{ color: '#173e4e' }}>
                       {citation.title}
                     </h3>
                     {citation.date && (
-                      <p className="text-sm text-gray-500 mb-2">
+                      <p className="text-xs text-gray-500 mb-1">
                         {citation.date}
                       </p>
                     )}
-                    <p className="text-sm text-gray-600 mb-3">
+                    <p className="text-xs text-gray-600 mb-2 leading-tight">
                       {citation.description}
                     </p>
                   </div>
@@ -87,17 +87,17 @@ const CitationsSlide = () => {
                     href={citation.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 px-3 py-1 rounded-lg text-sm font-medium hover:opacity-80 transition-opacity"
+                    className="flex items-center gap-1 px-2 py-1 rounded-md text-xs font-medium hover:opacity-80 transition-opacity flex-shrink-0"
                     style={{ backgroundColor: '#b8832b20', color: '#b8832b' }}
                   >
                     <ExternalLink className="h-3 w-3" />
-                    View Source
+                    View
                   </a>
                 </div>
                 
                 {/* URL */}
-                <div className="bg-gray-50 p-3 rounded-lg">
-                  <p className="text-xs text-gray-500 font-mono break-all">
+                <div className="bg-gray-50 p-2 rounded-md">
+                  <p className="text-xs text-gray-500 font-mono break-all leading-tight">
                     {citation.url}
                   </p>
                 </div>
@@ -108,11 +108,11 @@ const CitationsSlide = () => {
       </div>
       
       {/* Bottom Accent */}
-      <div className="mt-6 flex justify-center">
+      <div className="mt-4 flex justify-center">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-2 rounded-full" style={{ backgroundColor: '#173e4e' }}></div>
-          <div className="w-8 h-2 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
-          <div className="w-8 h-2 rounded-full" style={{ backgroundColor: '#8aa1a9' }}></div>
+          <div className="w-6 h-1.5 rounded-full" style={{ backgroundColor: '#173e4e' }}></div>
+          <div className="w-6 h-1.5 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
+          <div className="w-6 h-1.5 rounded-full" style={{ backgroundColor: '#8aa1a9' }}></div>
         </div>
       </div>
     </div>
