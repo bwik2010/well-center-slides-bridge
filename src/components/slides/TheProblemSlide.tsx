@@ -8,13 +8,15 @@ const TheProblemSlide = () => {
       icon: TrendingDown,
       stat: "30-40%",
       label: "Child poverty in local census tracts",
-      color: "#173e4e"
+      color: "#173e4e",
+      footnote: 1
     },
     {
       icon: DollarSign,
       stat: "$26.6K / $414K",
       label: "Mean income: lowest 20% / highest 20%",
-      color: "#b8832b"
+      color: "#b8832b",
+      footnote: 2
     },
     {
       icon: Users,
@@ -24,7 +26,8 @@ const TheProblemSlide = () => {
         </span>
       ),
       label: "Black/Brown children face downward mobility vs white children's upward mobility in neighborhoods",
-      color: "#8aa1a9"
+      color: "#8aa1a9",
+      footnote: 3
     }
   ];
 
@@ -68,6 +71,9 @@ const TheProblemSlide = () => {
                     </div>
                     <div className="text-sm text-gray-600 leading-tight">
                       {item.label}
+                      <sup className="ml-1 text-xs font-semibold" style={{ color: item.color }}>
+                        {item.footnote}
+                      </sup>
                     </div>
                   </div>
                 </div>

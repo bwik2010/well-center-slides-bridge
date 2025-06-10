@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Printer, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -13,6 +14,7 @@ import FinancialProjectionsSlide from './slides/FinancialProjectionsSlide';
 import OurAskSlide from './slides/OurAskSlide';
 import CallToActionSlide from './slides/CallToActionSlide';
 import QuoteSlide from './slides/QuoteSlide';
+import CitationsSlide from './slides/CitationsSlide';
 
 const slides = [
   { id: 1, component: TitleSlide, title: "Title Slide" },
@@ -26,7 +28,8 @@ const slides = [
   { id: 9, component: OurAskSlide, title: "Our Ask" },
   { id: 10, component: BridgeTeamSlide, title: "Bridge Team" },
   { id: 11, component: QuoteSlide, title: "Inspirational Quote" },
-  { id: 12, component: CallToActionSlide, title: "Call to Action" }
+  { id: 12, component: CallToActionSlide, title: "Call to Action" },
+  { id: 13, component: CitationsSlide, title: "Citations & References" }
 ];
 
 const PrintView = () => {
