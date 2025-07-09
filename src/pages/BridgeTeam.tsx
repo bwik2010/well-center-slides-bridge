@@ -8,21 +8,21 @@ import { toast } from 'sonner';
 
 const BridgeTeam = () => {
   const defaultTeamMembers = [
-    { name: "Trish Weaver", title: "Attorney", position: { x: 150, y: 120 } },
-    { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 350, y: 60 } },
-    { name: "KC Whang", title: "Commercial Real Estate", position: { x: 520, y: 100 } },
-    { name: "Omar Palos", title: "Business Owner: Sweet Seasons", position: { x: 580, y: 280 } },
-    { name: "Jay Gerson", title: "Business Owner: Kidsco", position: { x: 520, y: 420 } },
-    { name: "Bruce Baker", title: "Non-Profit Executive", position: { x: 350, y: 460 } },
-    { name: "Mayrin Munguia", title: "Chick Fil A Franchise Owner", position: { x: 150, y: 420 } },
-    { name: "David Son", title: "Pastor and Business Owner", position: { x: 60, y: 350 } },
-    { name: "Jasmine Dero", title: "Teacher, Business Owner", position: { x: 100, y: 200 } },
-    { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 250, y: 100 } },
-    { name: "Gloria Kalotra", title: "Higher Education Specialist", position: { x: 450, y: 60 } },
-    { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 480, y: 380 } }
+    { name: "Trish Weaver", title: "Attorney", position: { x: 100, y: 150 } },
+    { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 200, y: 80 } },
+    { name: "KC Whang", title: "Commercial Real Estate", position: { x: 450, y: 80 } },
+    { name: "Omar Palos", title: "Business Owner: Sweet Seasons", position: { x: 500, y: 200 } },
+    { name: "Jay Gerson", title: "Business Owner: Kidsco", position: { x: 480, y: 320 } },
+    { name: "Bruce Baker", title: "Non-Profit Executive", position: { x: 300, y: 380 } },
+    { name: "Mayrin Munguia", title: "Chick Fil A Franchise Owner", position: { x: 150, y: 380 } },
+    { name: "David Son", title: "Pastor and Business Owner", position: { x: 50, y: 300 } },
+    { name: "Jasmine Dero", title: "Teacher, Business Owner", position: { x: 80, y: 220 } },
+    { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 180, y: 120 } },
+    { name: "Gloria Kalotra", title: "Higher Education Specialist", position: { x: 350, y: 80 } },
+    { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 380, y: 320 } }
   ];
 
-  const defaultCenterPosition = { x: 300, y: 275 };
+  const defaultCenterPosition = { x: 280, y: 200 };
 
   // Load saved positions from localStorage or use defaults
   const [teamMembers, setTeamMembers] = useState(() => {
