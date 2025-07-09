@@ -4,25 +4,25 @@ import { Users } from 'lucide-react';
 const BridgeTeamSlide = () => {
   // Load saved positions from localStorage or use defaults if none exist
   const getSavedPositions = () => {
-    const savedTeamMembers = localStorage.getItem('bridgeTeamPositions');
-    const savedCenterPosition = localStorage.getItem('bridgeTeamCenterPosition');
+    const savedTeamMembers = localStorage.getItem('bridgeTeamPositionsPage');
+    const savedCenterPosition = localStorage.getItem('bridgeTeamCenterPositionPage');
     
     const defaultTeamMembers = [
-      { name: "Trish Weaver", title: "Attorney", position: { x: 150, y: 80 } },
-      { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 300, y: 50 } },
-      { name: "KC Whang", title: "Commercial Real Estate", position: { x: 500, y: 70 } },
-      { name: "Omar Palos", title: "Business Owner: Sweet Seasons", position: { x: 650, y: 150 } },
-      { name: "Jay Gerson", title: "Business Owner: Kidsco", position: { x: 600, y: 300 } },
-      { name: "Bruce Baker", title: "Non-Profit Executive", position: { x: 450, y: 350 } },
-      { name: "Mayrin Munguia", title: "Chick Fil A Franchise Owner", position: { x: 200, y: 320 } },
-      { name: "David Son", title: "Pastor and Business Owner", position: { x: 80, y: 250 } },
-      { name: "Jasmine Dero", title: "Teacher, Business Owner", position: { x: 120, y: 150 } },
-      { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 250, y: 80 } },
-      { name: "Gloria Kalotra", title: "Higher Education Specialist", position: { x: 400, y: 50 } },
-      { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 500, y: 280 } }
+      { name: "Trish Weaver", title: "Attorney", position: { x: 150, y: 120 } },
+      { name: "Pamela Roussos", title: "CEO Weaving Impact", position: { x: 350, y: 60 } },
+      { name: "KC Whang", title: "Commercial Real Estate", position: { x: 520, y: 100 } },
+      { name: "Omar Palos", title: "Business Owner: Sweet Seasons", position: { x: 580, y: 280 } },
+      { name: "Jay Gerson", title: "Business Owner: Kidsco", position: { x: 520, y: 420 } },
+      { name: "Bruce Baker", title: "Non-Profit Executive", position: { x: 350, y: 460 } },
+      { name: "Mayrin Munguia", title: "Chick Fil A Franchise Owner", position: { x: 150, y: 420 } },
+      { name: "David Son", title: "Pastor and Business Owner", position: { x: 60, y: 350 } },
+      { name: "Jasmine Dero", title: "Teacher, Business Owner", position: { x: 100, y: 200 } },
+      { name: "Robin McKinney", title: "Non-Profit Executive", position: { x: 250, y: 100 } },
+      { name: "Gloria Kalotra", title: "Higher Education Specialist", position: { x: 450, y: 60 } },
+      { name: "Rajesh Prabhu", title: "Entrepreneur", position: { x: 480, y: 380 } }
     ];
     
-    const defaultCenterPosition = { x: 400, y: 200 };
+    const defaultCenterPosition = { x: 300, y: 275 };
     
     return {
       teamMembers: savedTeamMembers ? JSON.parse(savedTeamMembers) : defaultTeamMembers,
@@ -92,7 +92,7 @@ const BridgeTeamSlide = () => {
       <div className="flex-1 mx-6 mb-6">
         <div className="bg-white rounded-2xl shadow-xl p-6 h-full">
           <div className="relative w-full h-full overflow-hidden">
-            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 800 400">
+            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 600 600">
               {/* Lines connecting all team members to each other */}
               {connections.map((connection, index) => (
                 <line
