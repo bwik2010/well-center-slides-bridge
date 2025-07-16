@@ -12,7 +12,6 @@ import ContentSlide from './slides/ContentSlide';
 import ImpactSlide from './slides/ImpactSlide';
 import SourcesOfRevenueSlide from './slides/SourcesOfRevenueSlide';
 import FinancialProjectionsSlide from './slides/FinancialProjectionsSlide';
-import OurAskSlide from './slides/OurAskSlide';
 import CallToActionSlide from './slides/CallToActionSlide';
 import QuoteSlide from './slides/QuoteSlide';
 import CitationsSlide from './slides/CitationsSlide';
@@ -26,10 +25,9 @@ const slides = [
   { id: 6, component: ImpactSlide, title: "Impact & Results" },
   { id: 7, component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
   { id: 8, component: FinancialProjectionsSlide, title: "Financial Projections" },
-  { id: 9, component: OurAskSlide, title: "Our Ask" },
-  { id: 10, component: QuoteSlide, title: "Inspirational Quote" },
-  { id: 11, component: CallToActionSlide, title: "Call to Action" },
-  { id: 12, component: CitationsSlide, title: "Citations & References" }
+  { id: 9, component: QuoteSlide, title: "Inspirational Quote" },
+  { id: 10, component: CallToActionSlide, title: "Call to Action" },
+  { id: 11, component: CitationsSlide, title: "Citations & References" }
 ];
 
 const PresentationTemplate = () => {
