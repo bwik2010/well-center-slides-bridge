@@ -1,7 +1,5 @@
-
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
-
 const CallToActionSlide = () => {
   return <div className="w-full h-full p-6" style={{
     aspectRatio: '16/9'
@@ -135,7 +133,7 @@ const CallToActionSlide = () => {
             <div className="mt-6 p-3 rounded-xl text-white text-center" style={{
             backgroundColor: '#173e4e'
           }}>
-              <p className="font-medium text-sm">Ready to make a difference?</p>
+              <p className="font-medium text-sm">Your support is needed!</p>
               <p className="text-xs opacity-90 mt-1">Reach out today to get started!</p>
             </div>
           </div>
@@ -143,5 +141,4 @@ const CallToActionSlide = () => {
       </div>
     </div>;
 };
-
 export default CallToActionSlide;
