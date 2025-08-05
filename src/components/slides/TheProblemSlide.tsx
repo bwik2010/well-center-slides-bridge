@@ -6,7 +6,7 @@ const TheProblemSlide = () => {
   const keyStatistics = [
     {
       icon: TrendingDown,
-      stat: "30-40%",
+      stat: "30-42%",
       label: "Child poverty in local census tracts",
       color: "#173e4e",
       footnote: 1
