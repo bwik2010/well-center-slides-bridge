@@ -72,14 +72,18 @@ const ContentSlide = () => {
                     <p className="text-sm opacity-90">Capital Funding Committed</p>
                   </div>
                   
-                  <div className="grid grid-cols-2 gap-3">
-                    <div className="bg-white bg-opacity-15 rounded-lg p-3">
-                      <p className="font-semibold text-sm">State of Maryland</p>
-                      <p className="text-xs opacity-80">Government Partner</p>
+                  <div className="grid grid-cols-3 gap-2">
+                    <div className="bg-white bg-opacity-15 rounded-lg p-2">
+                      <p className="font-semibold text-xs">State of Maryland</p>
+                      <p className="text-xs opacity-80">Government</p>
                     </div>
-                    <div className="bg-white bg-opacity-15 rounded-lg p-3">
-                      <p className="font-semibold text-sm">Montgomery County</p>
-                      <p className="text-xs opacity-80">Local Government</p>
+                    <div className="bg-white bg-opacity-15 rounded-lg p-2">
+                      <p className="font-semibold text-xs">Montgomery County</p>
+                      <p className="text-xs opacity-80">Local Gov</p>
+                    </div>
+                    <div className="bg-white bg-opacity-15 rounded-lg p-2">
+                      <p className="font-semibold text-xs">City of Gaithersburg</p>
+                      <p className="text-xs opacity-80">Municipal</p>
                     </div>
                   </div>
                 </div>
