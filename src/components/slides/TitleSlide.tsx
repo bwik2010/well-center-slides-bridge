@@ -52,17 +52,17 @@ const TitleSlide = () => {
         
         {/* Enhanced values section */}
         <div className="flex items-center justify-center gap-8 text-lg animate-[fade-in_2.2s_ease-out]">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover-scale">
+          <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
             <span className="font-medium">Human Dignity</span>
           </div>
           <div className="w-1 h-8 bg-gradient-to-b from-transparent via-white/40 to-transparent"></div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover-scale">
+          <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
             <span className="font-medium">Personal Freedom</span>
           </div>
           <div className="w-1 h-8 bg-gradient-to-b from-transparent via-white/40 to-transparent"></div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover-scale">
+          <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
             <span className="font-medium">Community Solidarity</span>
           </div>
