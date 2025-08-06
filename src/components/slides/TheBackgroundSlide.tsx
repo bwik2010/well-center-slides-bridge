@@ -97,7 +97,7 @@ const TheBackgroundSlide = () => {
               <img
                 src="/lovable-uploads/675f108a-ae28-44b9-b191-45dd023cd569.png"
                 alt="Early Childhood Development article"
-                className="w-72 h-48 mx-auto object-contain object-top rounded-lg"
+                className="w-80 h-52 mx-auto object-contain object-top rounded-lg"
               />
             </div>
           </div>
