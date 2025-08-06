@@ -72,7 +72,7 @@ const TheBackgroundSlide = () => {
                 <img
                   src="/lovable-uploads/67838f2e-edb6-485c-b4e1-630cd5ca6ed9.png"
                   alt="The Equity Center team"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               
@@ -98,7 +98,7 @@ const TheBackgroundSlide = () => {
                 <img
                   src="/lovable-uploads/675f108a-ae28-44b9-b191-45dd023cd569.png"
                   alt="Early Childhood Development article"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>
