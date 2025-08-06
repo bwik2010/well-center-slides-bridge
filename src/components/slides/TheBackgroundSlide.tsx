@@ -36,8 +36,50 @@ const TheBackgroundSlide = () => {
       {/* Main Content */}
       <div className="relative z-10 flex-1 px-8 pb-6">
         <div className="grid grid-cols-3 gap-6 h-full">
-          {/* Left Column - Empty */}
+          {/* Left Column - Timeline */}
           <div className="flex flex-col justify-center animate-[fade-in_1.5s_ease-out]">
+            <div className="space-y-4">
+              {/* Food */}
+              <div className="relative">
+                <h3 className="text-sm font-montserrat font-semibold flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
+                  Food
+                </h3>
+                {/* Arrow */}
+                <div className="absolute left-1 top-6 w-0.5 h-6" style={{ backgroundColor: '#b8832b' }}></div>
+                <div className="absolute left-0 top-12 w-2 h-2 border-r-2 border-b-2 rotate-45" style={{ borderColor: '#b8832b' }}></div>
+              </div>
+
+              {/* Community-Driven */}
+              <div className="relative mt-8">
+                <h3 className="text-sm font-montserrat font-semibold flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
+                  Community-Driven
+                </h3>
+                {/* Arrow */}
+                <div className="absolute left-1 top-6 w-0.5 h-6" style={{ backgroundColor: '#b8832b' }}></div>
+                <div className="absolute left-0 top-12 w-2 h-2 border-r-2 border-b-2 rotate-45" style={{ borderColor: '#b8832b' }}></div>
+              </div>
+
+              {/* Early Childhood Development */}
+              <div className="relative mt-8">
+                <h3 className="text-sm font-montserrat font-semibold flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
+                  Early Childhood Development
+                </h3>
+                {/* Arrow */}
+                <div className="absolute left-1 top-6 w-0.5 h-6" style={{ backgroundColor: '#b8832b' }}></div>
+                <div className="absolute left-0 top-12 w-2 h-2 border-r-2 border-b-2 rotate-45" style={{ borderColor: '#b8832b' }}></div>
+              </div>
+
+              {/* Social Enterprise */}
+              <div className="relative mt-8">
+                <h3 className="text-sm font-montserrat font-semibold flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
+                  Social Enterprise
+                </h3>
+              </div>
+            </div>
           </div>
           
           {/* Center Column - Video */}
