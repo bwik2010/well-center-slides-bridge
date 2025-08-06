@@ -34,6 +34,12 @@ const MissionSlide = () => {
           </div>
         </div>
         
+        <div className="text-center mb-4">
+          <h3 className="text-xl font-semibold" style={{
+            color: '#173e4e'
+          }}>Co-locating and Integrating the Power of Three Levers:</h3>
+        </div>
+        
         <div className="grid grid-cols-3 gap-4 flex-1">
           <div className="text-center p-4 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow" style={{
           borderTop: `3px solid #173e4e`
