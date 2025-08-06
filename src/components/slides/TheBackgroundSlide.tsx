@@ -35,26 +35,26 @@ const TheBackgroundSlide = () => {
 
       {/* Main Content */}
       <div className="relative z-10 flex-1 px-8 pb-6">
-        <div className="grid grid-cols-2 gap-6 h-full">
+        <div className="grid grid-cols-3 gap-6 h-full">
           {/* Left Column - Cross Community Story */}
           <div className="flex flex-col justify-center animate-[fade-in_1.5s_ease-out]">
             <div className="mb-4">
-              <h2 className="text-xl font-montserrat font-semibold mb-3 flex items-center gap-2">
+              <h2 className="text-lg font-montserrat font-semibold mb-3 flex items-center gap-2">
                 <Building2 className="h-5 w-5" style={{ color: '#b8832b' }} />
                 Cross Community Foundation
               </h2>
-              <p className="text-base leading-relaxed mb-4 opacity-95">
+              <p className="text-sm leading-relaxed mb-4 opacity-95">
                 Operating as <span className="font-semibold" style={{ color: '#b8832b' }}>The Equity Center</span>, Cross Community has been a trusted partner serving low-income, immigrant, and marginalized populations in Montgomery County, Maryland.
               </p>
               
               {/* Community Impact Stats */}
-              <div className="grid grid-cols-2 gap-3 mb-4">
+              <div className="grid grid-cols-1 gap-3 mb-4">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
                   <div className="flex items-center gap-2 mb-1">
                     <Users className="h-4 w-4" style={{ color: '#b8832b' }} />
                     <span className="text-xs opacity-80">Weekly Reach</span>
                   </div>
-                  <div className="text-xl font-bold">5,000+</div>
+                  <div className="text-lg font-bold">5,000+</div>
                   <div className="text-xs opacity-70">Individuals served</div>
                 </div>
                 
@@ -63,55 +63,68 @@ const TheBackgroundSlide = () => {
                     <Heart className="h-4 w-4" style={{ color: '#b8832b' }} />
                     <span className="text-xs opacity-80">Food Distribution</span>
                   </div>
-                  <div className="text-xl font-bold">2M+</div>
+                  <div className="text-lg font-bold">2M+</div>
                   <div className="text-xs opacity-70">Pounds distributed</div>
                 </div>
               </div>
 
-              <p className="text-sm opacity-90 leading-relaxed">
+              <p className="text-xs opacity-90 leading-relaxed">
                 With 70% of those served being native Spanish speakers and many being non-citizens, Cross Community has made 300-500 direct connections weekly, addressing immediate needs while fostering long-term empowerment.
               </p>
             </div>
           </div>
-
+          
+          {/* Center Column - Video */}
+          <div className="flex flex-col justify-center animate-[fade-in_1.8s_ease-out]">
+            <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20">
+              <iframe
+                src="https://www.youtube.com/embed/E3UImx4VLPk"
+                title="Cross Community Story"
+                className="w-full h-48"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
           {/* Right Column - Key Initiatives & Well Center Genesis */}
           <div className="flex flex-col justify-center animate-[fade-in_2s_ease-out]">
             <div className="mb-4">
-              <h2 className="text-xl font-montserrat font-semibold mb-3 flex items-center gap-2">
+              <h2 className="text-lg font-montserrat font-semibold mb-3 flex items-center gap-2">
                 <Home className="h-5 w-5" style={{ color: '#b8832b' }} />
                 Genesis of The Well Center
               </h2>
               
               {/* Key Initiatives */}
-              <div className="space-y-3 mb-4">
+              <div className="space-y-2 mb-4">
                 <div className="flex items-start gap-2">
-                  <BookOpen className="h-4 w-4 mt-1 flex-shrink-0" style={{ color: '#b8832b' }} />
+                  <BookOpen className="h-3 w-3 mt-1 flex-shrink-0" style={{ color: '#b8832b' }} />
                   <div>
-                    <h3 className="font-semibold mb-1 text-sm">Educational Equity Hub</h3>
-                    <p className="text-xs opacity-85">Supporting 1,400+ low-income students with virtual learning</p>
+                    <h3 className="font-semibold mb-1 text-xs">Educational Equity Hub</h3>
+                    <p className="text-xs opacity-85">1,400+ students supported</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-2">
-                  <Shield className="h-4 w-4 mt-1 flex-shrink-0" style={{ color: '#b8832b' }} />
+                  <Shield className="h-3 w-3 mt-1 flex-shrink-0" style={{ color: '#b8832b' }} />
                   <div>
-                    <h3 className="font-semibold mb-1 text-sm">Community Health Initiative</h3>
-                    <p className="text-xs opacity-85">1,500+ vaccine doses to Black and Brown communities</p>
+                    <h3 className="font-semibold mb-1 text-xs">Community Health Initiative</h3>
+                    <p className="text-xs opacity-85">1,500+ vaccine doses delivered</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-2">
-                  <Users className="h-4 w-4 mt-1 flex-shrink-0" style={{ color: '#b8832b' }} />
+                  <Users className="h-3 w-3 mt-1 flex-shrink-0" style={{ color: '#b8832b' }} />
                   <div>
-                    <h3 className="font-semibold mb-1 text-sm">Community-Based Hiring</h3>
-                    <p className="text-xs opacity-85">Employing staff from the communities we serve</p>
+                    <h3 className="font-semibold mb-1 text-xs">Community-Based Hiring</h3>
+                    <p className="text-xs opacity-85">Staff from served communities</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-r from-white/15 to-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
-                <p className="text-sm leading-relaxed">
-                  Through this deep community work, <span className="font-semibold" style={{ color: '#b8832b' }}>The Well Center</span> emerged as a vision to bridge social and economic gaps, creating sustainable living and community resilience.
+              <div className="bg-gradient-to-r from-white/15 to-white/10 backdrop-blur-sm rounded-lg p-2 border border-white/20">
+                <p className="text-xs leading-relaxed">
+                  Through this deep community work, <span className="font-semibold" style={{ color: '#b8832b' }}>The Well Center</span> emerged to bridge social and economic gaps.
                 </p>
               </div>
             </div>
