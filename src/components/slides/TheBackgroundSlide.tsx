@@ -39,7 +39,7 @@ const TheBackgroundSlide = () => {
           {/* Top Left - Food */}
           <div className="flex flex-col justify-start animate-[fade-in_1.5s_ease-out]">
             <div className="text-center">
-              <h2 className="text-lg font-montserrat font-bold mb-3 text-center">
+              <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{ color: '#b8832b' }}>
                 Food and Resource Support
               </h2>
               
@@ -63,7 +63,7 @@ const TheBackgroundSlide = () => {
           {/* Top Right - Community-Driven */}
           <div className="flex flex-col justify-start animate-[fade-in_1.7s_ease-out]">
             <div className="text-center">
-              <h2 className="text-lg font-montserrat font-bold mb-3 text-center">
+              <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{ color: '#b8832b' }}>
                 Community-Driven
               </h2>
               
@@ -89,7 +89,7 @@ const TheBackgroundSlide = () => {
           {/* Bottom Left - Early Childhood Development */}
           <div className="flex flex-col justify-center animate-[fade-in_1.9s_ease-out]">
             <div className="text-center">
-              <h2 className="text-lg font-montserrat font-bold mb-3 text-center">
+              <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{ color: '#b8832b' }}>
                 Early Childhood Development
               </h2>
             </div>
@@ -98,7 +98,7 @@ const TheBackgroundSlide = () => {
           {/* Bottom Right - Social Enterprise */}
           <div className="flex flex-col justify-center animate-[fade-in_2.1s_ease-out]">
             <div className="text-center">
-              <h2 className="text-lg font-montserrat font-bold mb-3 text-center">
+              <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{ color: '#b8832b' }}>
                 Social Enterprise
               </h2>
             </div>
