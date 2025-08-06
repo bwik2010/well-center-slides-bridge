@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Presentation, TrendingUp, Users, DollarSign, Printer } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Presentation, TrendingUp, Users, DollarSign, Printer, Maximize2, Minimize2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import TitleSlide from './slides/TitleSlide';
@@ -34,6 +34,7 @@ const slides = [
 
 const PresentationTemplate = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -48,6 +49,57 @@ const PresentationTemplate = () => {
   };
   
   const CurrentSlideComponent = slides[currentSlide].component;
+  
+  const toggleFullscreen = () => {
+    setIsFullscreen(!isFullscreen);
+  };
+
+  if (isFullscreen) {
+    return (
+      <div className="fixed inset-0 bg-black z-50 flex items-center justify-center">
+        <div className="w-full h-full max-w-none bg-white">
+          <CurrentSlideComponent />
+        </div>
+        
+        {/* Fullscreen controls overlay */}
+        <div className="absolute top-4 right-4 flex gap-2">
+          <Button 
+            onClick={prevSlide}
+            variant="outline"
+            size="sm"
+            className="bg-white/80 backdrop-blur-sm"
+            disabled={currentSlide === 0}
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </Button>
+          
+          <Button 
+            onClick={nextSlide}
+            variant="outline"
+            size="sm"
+            className="bg-white/80 backdrop-blur-sm"
+            disabled={currentSlide === slides.length - 1}
+          >
+            <ChevronRight className="h-4 w-4" />
+          </Button>
+          
+          <Button 
+            onClick={toggleFullscreen}
+            variant="outline"
+            size="sm"
+            className="bg-white/80 backdrop-blur-sm"
+          >
+            <Minimize2 className="h-4 w-4" />
+          </Button>
+        </div>
+        
+        {/* Slide counter overlay */}
+        <div className="absolute bottom-4 right-4 text-white bg-black/50 px-3 py-1 rounded-full text-sm backdrop-blur-sm">
+          {currentSlide + 1} of {slides.length}
+        </div>
+      </div>
+    );
+  }
   
   return (
     <div className="min-h-screen p-6" style={{ background: 'linear-gradient(135deg, #8aa1a920 0%, #173e4e20 100%)' }}>
@@ -124,6 +176,17 @@ const PresentationTemplate = () => {
                 Our Ask
               </Button>
             </Link>
+            
+            {/* Fullscreen Toggle */}
+            <Button 
+              onClick={toggleFullscreen}
+              variant="outline"
+              className="flex items-center gap-2 hover:opacity-80"
+              style={{ borderColor: '#173e4e', color: '#173e4e' }}
+            >
+              <Maximize2 className="h-4 w-4" />
+              Fullscreen
+            </Button>
             
             {/* Slide Counter */}
             <div className="text-sm text-gray-600 bg-white px-3 py-1 rounded-full shadow-sm">
