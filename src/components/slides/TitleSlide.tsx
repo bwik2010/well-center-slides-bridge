@@ -29,7 +29,7 @@ const TitleSlide = () => {
       <div className="relative z-10 max-w-6xl px-8 animate-[fade-in_1s_ease-out]">
         {/* Main Title with enhanced styling */}
         <div className="mb-8">
-          <h1 className="text-7xl font-montserrat font-bold mb-2 leading-tight animate-[scale-in_1.2s_ease-out]" style={{
+          <h1 className="text-7xl font-poppins font-bold mb-2 leading-tight animate-[scale-in_1.2s_ease-out]" style={{
             background: 'linear-gradient(135deg, #ffffff 0%, #f0f8ff 50%, #e6f3ff 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
