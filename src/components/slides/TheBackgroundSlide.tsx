@@ -45,7 +45,7 @@ const TheBackgroundSlide = () => {
               
               {/* Video under Food */}
               <div 
-                className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-44 h-44 mx-auto cursor-pointer hover:scale-105 transition-transform"
+                className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-52 h-36 mx-auto cursor-pointer hover:scale-105 transition-transform"
                 onClick={() => window.open('https://www.youtube.com/watch?v=E3UImx4VLPk', '_blank')}
               >
                 <iframe
@@ -68,7 +68,7 @@ const TheBackgroundSlide = () => {
               </h2>
               
               {/* Image under Community-Driven */}
-              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-44 h-44 mx-auto mb-3">
+              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-52 h-36 mx-auto mb-3">
                 <img
                   src="/lovable-uploads/67838f2e-edb6-485c-b4e1-630cd5ca6ed9.png"
                   alt="The Equity Center team"
@@ -94,7 +94,7 @@ const TheBackgroundSlide = () => {
               </h2>
               
               {/* Image under Early Childhood Development */}
-              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-44 h-44 mx-auto">
+              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-52 h-36 mx-auto">
                 <img
                   src="/lovable-uploads/675f108a-ae28-44b9-b191-45dd023cd569.png"
                   alt="Early Childhood Development article"
