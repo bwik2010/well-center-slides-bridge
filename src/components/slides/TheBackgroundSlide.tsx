@@ -68,11 +68,11 @@ const TheBackgroundSlide = () => {
               </h2>
               
               {/* Image under Community-Driven */}
-              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-36 h-14 mx-auto mb-3">
+              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-36 h-24 mx-auto mb-3">
                 <img
                   src="/lovable-uploads/e8373331-1623-4b21-8994-90024e48dc73.png"
                   alt="The Equity Center team"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-contain"
                 />
               </div>
               
