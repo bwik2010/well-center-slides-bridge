@@ -116,6 +116,15 @@ const TheBackgroundSlide = () => {
               <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{ color: '#b8832b' }}>
                 Social Enterprise
               </h2>
+              
+              {/* Social Enterprise graphic */}
+              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-80 h-52 mx-auto flex items-center justify-center">
+                <img
+                  src="/lovable-uploads/8496362d-51d1-4a32-9c38-832fa049bef5.png"
+                  alt="Social Enterprise diagram showing the interconnection of Market, Community, Profit, Passion, Innovation, and Mission"
+                  className="w-full h-full object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
