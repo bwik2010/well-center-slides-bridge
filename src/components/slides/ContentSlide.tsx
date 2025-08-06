@@ -7,9 +7,7 @@ const ContentSlide = () => {
       <div className="max-w-6xl mx-auto h-full">
         <h2 className="text-3xl font-bold mb-6 text-center" style={{
         color: '#173e4e'
-      }}>
-          Key Partners & Collaborations
-        </h2>
+      }}>Key Partners</h2>
         
         <div className="grid grid-cols-2 gap-8 items-center h-5/6">
           {/* Left Content - Partners */}
@@ -60,7 +58,7 @@ const ContentSlide = () => {
             background: 'linear-gradient(135deg, #8aa1a9 0%, #173e4e 100%)'
           }}>
               <div className="text-center text-white">
-                <h4 className="text-xl font-semibold mb-4">Funding Commitment</h4>
+                <h4 className="text-xl font-semibold mb-4">Funding Partners</h4>
                 
                 <div className="space-y-4">
                   <div className="bg-white bg-opacity-20 rounded-xl p-4">
