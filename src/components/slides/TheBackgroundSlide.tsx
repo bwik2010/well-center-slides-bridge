@@ -102,7 +102,7 @@ const TheBackgroundSlide = () => {
               />
               
               {/* Bullet point */}
-              <div className="text-center -mt-6">
+              <div className="text-center -mt-10">
                 <ul className="text-sm space-y-1">
                   <li>• Top barrier to economic mobility for low-income earners</li>
                 </ul>
