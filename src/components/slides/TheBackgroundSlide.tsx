@@ -81,6 +81,7 @@ const TheBackgroundSlide = () => {
                 <ul className="text-sm space-y-1">
                   <li>• Community JEDI's</li>
                   <li>• Community Survey of 1300 people (2021)</li>
+                  <li>• 400 member volunteer base</li>
                 </ul>
               </div>
             </div>
