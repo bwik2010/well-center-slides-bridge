@@ -37,7 +37,7 @@ const TheBackgroundSlide = () => {
       <div className="relative z-10 flex-1 px-6 pb-6">
         <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
           {/* Top Left - Food */}
-          <div className="flex flex-col justify-center animate-[fade-in_1.5s_ease-out]">
+          <div className="flex flex-col justify-start animate-[fade-in_1.5s_ease-out]">
             <div className="text-center">
               <h2 className="text-lg font-montserrat font-bold mb-3 text-center">
                 Food
@@ -58,7 +58,7 @@ const TheBackgroundSlide = () => {
           </div>
 
           {/* Top Right - Community-Driven */}
-          <div className="flex flex-col justify-center animate-[fade-in_1.7s_ease-out]">
+          <div className="flex flex-col justify-start animate-[fade-in_1.7s_ease-out]">
             <div className="text-center">
               <h2 className="text-lg font-montserrat font-bold mb-3 text-center">
                 Community-Driven
