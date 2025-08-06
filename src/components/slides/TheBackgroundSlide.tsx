@@ -95,47 +95,8 @@ const TheBackgroundSlide = () => {
               ></iframe>
             </div>
           </div>
-          {/* Right Column - Key Initiatives & Well Center Genesis */}
+          {/* Right Column - Empty */}
           <div className="flex flex-col justify-center animate-[fade-in_2s_ease-out]">
-            <div className="mb-4">
-              <h2 className="text-lg font-montserrat font-semibold mb-3 flex items-center gap-2">
-                <Home className="h-5 w-5" style={{ color: '#b8832b' }} />
-                Genesis of The Well Center
-              </h2>
-              
-              {/* Key Initiatives */}
-              <div className="space-y-2 mb-4">
-                <div className="flex items-start gap-2">
-                  <BookOpen className="h-3 w-3 mt-1 flex-shrink-0" style={{ color: '#b8832b' }} />
-                  <div>
-                    <h3 className="font-semibold mb-1 text-xs">Educational Equity Hub</h3>
-                    <p className="text-xs opacity-85">1,400+ students supported</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-2">
-                  <Shield className="h-3 w-3 mt-1 flex-shrink-0" style={{ color: '#b8832b' }} />
-                  <div>
-                    <h3 className="font-semibold mb-1 text-xs">Community Health Initiative</h3>
-                    <p className="text-xs opacity-85">1,500+ vaccine doses delivered</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-2">
-                  <Users className="h-3 w-3 mt-1 flex-shrink-0" style={{ color: '#b8832b' }} />
-                  <div>
-                    <h3 className="font-semibold mb-1 text-xs">Community-Based Hiring</h3>
-                    <p className="text-xs opacity-85">Staff from served communities</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-r from-white/15 to-white/10 backdrop-blur-sm rounded-lg p-2 border border-white/20">
-                <p className="text-xs leading-relaxed">
-                  Through this deep community work, <span className="font-semibold" style={{ color: '#b8832b' }}>The Well Center</span> emerged to bridge social and economic gaps.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
