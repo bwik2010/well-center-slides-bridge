@@ -18,8 +18,8 @@ const PDFPresentation = () => {
   const slides = [
     { component: TitleSlide, title: "Title Slide" },
     { component: TheBackgroundSlide, title: "The Background Story" },
-    { component: MissionSlide, title: "Mission Statement" },
     { component: TheProblemSlide, title: "The Problem" },
+    { component: MissionSlide, title: "Mission Statement" },
     { component: ContentSlide, title: "Key Partners & Collaborations" },
     { component: ImpactSlide, title: "Impact & Results" },
     { component: SourcesOfRevenueSlide, title: "Sources of Revenue" },

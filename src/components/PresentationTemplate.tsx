@@ -20,8 +20,8 @@ import CitationsSlide from './slides/CitationsSlide';
 const slides = [
   { id: 1, component: TitleSlide, title: "Title Slide" },
   { id: 2, component: TheBackgroundSlide, title: "The Background Story" },
-  { id: 3, component: MissionSlide, title: "Mission Statement" },
-  { id: 4, component: TheProblemSlide, title: "The Problem" },
+  { id: 3, component: TheProblemSlide, title: "The Problem" },
+  { id: 4, component: MissionSlide, title: "Mission Statement" },
   { id: 5, component: ContentSlide, title: "Key Partners & Collaborations" },
   { id: 6, component: ImpactSlide, title: "Impact & Results" },
   { id: 7, component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
