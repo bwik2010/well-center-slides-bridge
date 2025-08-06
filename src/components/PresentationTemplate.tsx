@@ -16,6 +16,7 @@ import FinancialProjectionsSlide from './slides/FinancialProjectionsSlide';
 import CallToActionSlide from './slides/CallToActionSlide';
 import QuoteSlide from './slides/QuoteSlide';
 import CitationsSlide from './slides/CitationsSlide';
+import PartnerBonaFidesSlide from './slides/PartnerBonaFidesSlide';
 
 const slides = [
   { id: 1, component: TitleSlide, title: "Title Slide" },
@@ -23,13 +24,14 @@ const slides = [
   { id: 3, component: TheProblemSlide, title: "The Problem" },
   { id: 4, component: MissionSlide, title: "Mission Statement" },
   { id: 5, component: ContentSlide, title: "Key Partners & Collaborations" },
-  { id: 6, component: ImpactSlide, title: "Impact & Results" },
-  { id: 7, component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
-  { id: 8, component: FinancialProjectionsSlide, title: "Financial Projections" },
-  { id: 9, component: QuoteSlide, title: "Inspirational Quote" },
-  { id: 10, component: CallToActionSlide, title: "Call to Action" },
-  { id: 11, component: CitationsSlide, title: "Citations & References" },
-  { id: 4, component: BridgeSlide, title: "Bridge Diagram" }
+  { id: 6, component: PartnerBonaFidesSlide, title: "Partner Bona Fides" },
+  { id: 7, component: ImpactSlide, title: "Impact & Results" },
+  { id: 8, component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
+  { id: 9, component: FinancialProjectionsSlide, title: "Financial Projections" },
+  { id: 10, component: QuoteSlide, title: "Inspirational Quote" },
+  { id: 11, component: CallToActionSlide, title: "Call to Action" },
+  { id: 12, component: CitationsSlide, title: "Citations & References" },
+  { id: 13, component: BridgeSlide, title: "Bridge Diagram" }
 ];
 
 const PresentationTemplate = () => {

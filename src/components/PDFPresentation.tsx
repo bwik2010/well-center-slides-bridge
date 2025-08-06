@@ -13,6 +13,7 @@ import CitationsSlide from './slides/CitationsSlide';
 import BridgeSlide from './slides/BridgeSlide';
 import { Button } from '@/components/ui/button';
 import { Printer, Download } from 'lucide-react';
+import PartnerBonaFidesSlide from './slides/PartnerBonaFidesSlide';
 
 const PDFPresentation = () => {
   const slides = [
@@ -21,6 +22,7 @@ const PDFPresentation = () => {
     { component: TheProblemSlide, title: "The Problem" },
     { component: MissionSlide, title: "Mission Statement" },
     { component: ContentSlide, title: "Key Partners & Collaborations" },
+    { component: PartnerBonaFidesSlide, title: "Partner Bona Fides" },
     { component: ImpactSlide, title: "Impact & Results" },
     { component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
     { component: FinancialProjectionsSlide, title: "Financial Projections" },
