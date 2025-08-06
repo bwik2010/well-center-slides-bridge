@@ -40,7 +40,7 @@ const TheBackgroundSlide = () => {
           <div className="flex flex-col justify-start animate-[fade-in_1.5s_ease-out]">
             <div className="text-center">
               <h2 className="text-lg font-montserrat font-bold mb-3 text-center">
-                Food
+                Food and Resource Support
               </h2>
               
               {/* Video under Food */}
