@@ -37,7 +37,7 @@ const TheBackgroundSlide = () => {
       <div className="relative z-10 flex-1 px-6 pb-6">
         <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
           {/* Top Left - Food */}
-          <div className="flex flex-col justify-center animate-[fade-in_1.5s_ease-out] relative">
+          <div className="flex flex-col justify-center animate-[fade-in_1.5s_ease-out]">
             <div className="text-center">
               <h2 className="text-lg font-montserrat font-bold mb-3 text-center">
                 Food
@@ -55,41 +55,23 @@ const TheBackgroundSlide = () => {
                 ></iframe>
               </div>
             </div>
-            
-            {/* Arrow to right */}
-            <div className="absolute -right-3 top-1/2 transform -translate-y-1/2 z-10">
-              <div className="w-6 h-0.5" style={{ backgroundColor: '#b8832b' }}></div>
-              <div className="absolute -right-1 top-1/2 transform -translate-y-1/2 w-2 h-2 border-r-2 border-t-2 rotate-45" style={{ borderColor: '#b8832b' }}></div>
-            </div>
           </div>
 
           {/* Top Right - Community-Driven */}
-          <div className="flex flex-col justify-center animate-[fade-in_1.7s_ease-out] relative">
+          <div className="flex flex-col justify-center animate-[fade-in_1.7s_ease-out]">
             <div className="text-center">
               <h2 className="text-lg font-montserrat font-bold mb-3 text-center">
                 Community-Driven
               </h2>
             </div>
-            
-            {/* Arrow down */}
-            <div className="absolute bottom-[-12px] right-1/2 transform translate-x-1/2 z-10">
-              <div className="w-0.5 h-6" style={{ backgroundColor: '#b8832b' }}></div>
-              <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-2 h-2 border-r-2 border-b-2 rotate-45" style={{ borderColor: '#b8832b' }}></div>
-            </div>
           </div>
 
           {/* Bottom Left - Early Childhood Development */}
-          <div className="flex flex-col justify-center animate-[fade-in_1.9s_ease-out] relative">
+          <div className="flex flex-col justify-center animate-[fade-in_1.9s_ease-out]">
             <div className="text-center">
               <h2 className="text-lg font-montserrat font-bold mb-3 text-center">
                 Early Childhood Development
               </h2>
-            </div>
-            
-            {/* Arrow to right */}
-            <div className="absolute -right-3 top-1/2 transform -translate-y-1/2 z-10">
-              <div className="w-6 h-0.5" style={{ backgroundColor: '#b8832b' }}></div>
-              <div className="absolute -right-1 top-1/2 transform -translate-y-1/2 w-2 h-2 border-r-2 border-t-2 rotate-45" style={{ borderColor: '#b8832b' }}></div>
             </div>
           </div>
 
