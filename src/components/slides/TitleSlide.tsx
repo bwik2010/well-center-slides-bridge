@@ -11,16 +11,6 @@ const TitleSlide = () => {
         {/* Animated gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent animate-pulse"></div>
         
-        {/* Floating elements */}
-        <div className="absolute top-8 left-12 w-32 h-32 rounded-full opacity-20 animate-[fade-in_2s_ease-out]" style={{
-          background: 'radial-gradient(circle, #b8832b 0%, transparent 70%)'
-        }}></div>
-        <div className="absolute bottom-16 right-24 w-20 h-20 bg-white/15 rounded-full animate-[fade-in_2.5s_ease-out]"></div>
-        <div className="absolute top-1/3 right-12 w-16 h-16 rounded-full opacity-25 animate-[fade-in_3s_ease-out]" style={{
-          background: 'radial-gradient(circle, #b8832b 0%, transparent 70%)'
-        }}></div>
-        <div className="absolute bottom-1/3 left-16 w-12 h-12 bg-white/10 rounded-full animate-[fade-in_3.5s_ease-out]"></div>
-        
         {/* Grid pattern */}
         <div className="absolute inset-0 opacity-5" style={{
           backgroundImage: 'radial-gradient(circle at 25% 25%, #b8832b 2px, transparent 2px)',
