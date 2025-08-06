@@ -20,14 +20,14 @@ const slides = [
   { id: 1, component: TitleSlide, title: "Title Slide" },
   { id: 2, component: MissionSlide, title: "Mission Statement" },
   { id: 3, component: TheProblemSlide, title: "The Problem" },
-  { id: 4, component: BridgeSlide, title: "Bridge Diagram" },
   { id: 5, component: ContentSlide, title: "Key Partners & Collaborations" },
   { id: 6, component: ImpactSlide, title: "Impact & Results" },
   { id: 7, component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
   { id: 8, component: FinancialProjectionsSlide, title: "Financial Projections" },
   { id: 9, component: QuoteSlide, title: "Inspirational Quote" },
   { id: 10, component: CallToActionSlide, title: "Call to Action" },
-  { id: 11, component: CitationsSlide, title: "Citations & References" }
+  { id: 11, component: CitationsSlide, title: "Citations & References" },
+  { id: 4, component: BridgeSlide, title: "Bridge Diagram" }
 ];
 
 const PresentationTemplate = () => {
