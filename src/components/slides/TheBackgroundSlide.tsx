@@ -97,8 +97,15 @@ const TheBackgroundSlide = () => {
               <img
                 src="/lovable-uploads/675f108a-ae28-44b9-b191-45dd023cd569.png"
                 alt="Early Childhood Development article"
-                className="w-80 h-52 mx-auto object-contain object-top rounded-lg"
+                className="w-80 h-52 mx-auto object-contain object-top rounded-lg mb-3"
               />
+              
+              {/* Bullet point */}
+              <div className="text-center">
+                <ul className="text-sm space-y-1">
+                  <li>• Top barrier to economic mobility for low-income earners</li>
+                </ul>
+              </div>
             </div>
           </div>
 
