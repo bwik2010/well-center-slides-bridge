@@ -1,5 +1,7 @@
 import React from 'react';
 import { CheckCircle, Users, Building2 } from 'lucide-react';
+import kidscoLogo from '@/assets/kidsco-logo.png';
+import weavingImpactLogo from '@/assets/weaving-impact-logo.png';
 
 const PartnerBonaFidesSlide = () => {
   return (
@@ -17,11 +19,12 @@ const PartnerBonaFidesSlide = () => {
           <div className="bg-white rounded-xl shadow-lg p-6 border-l-4" style={{ borderLeftColor: '#173e4e' }}>
             {/* KidsCo Logo Area */}
             <div className="text-center mb-6">
-              <div className="w-32 h-20 mx-auto mb-4 rounded-lg border-2 border-dashed flex items-center justify-center" style={{ borderColor: '#8aa1a9', backgroundColor: '#8aa1a920' }}>
-                <div className="text-center">
-                  <Building2 className="h-8 w-8 mx-auto mb-1" style={{ color: '#173e4e' }} />
-                  <span className="text-xs font-medium" style={{ color: '#173e4e' }}>KidsCo Logo</span>
-                </div>
+              <div className="w-40 h-24 mx-auto mb-4 rounded-lg flex items-center justify-center bg-white shadow-sm">
+                <img 
+                  src={kidscoLogo} 
+                  alt="KidsCo Logo" 
+                  className="max-w-full max-h-full object-contain"
+                />
               </div>
               <h3 className="text-2xl font-bold" style={{ color: '#173e4e' }}>KidsCo</h3>
             </div>
@@ -54,11 +57,12 @@ const PartnerBonaFidesSlide = () => {
           <div className="bg-white rounded-xl shadow-lg p-6 border-l-4" style={{ borderLeftColor: '#b8832b' }}>
             {/* Weaving Impact Logo Area */}
             <div className="text-center mb-6">
-              <div className="w-32 h-20 mx-auto mb-4 rounded-lg border-2 border-dashed flex items-center justify-center" style={{ borderColor: '#b8832b', backgroundColor: '#b8832b20' }}>
-                <div className="text-center">
-                  <Users className="h-8 w-8 mx-auto mb-1" style={{ color: '#173e4e' }} />
-                  <span className="text-xs font-medium" style={{ color: '#173e4e' }}>Weaving Impact Logo</span>
-                </div>
+              <div className="w-40 h-24 mx-auto mb-4 rounded-lg flex items-center justify-center bg-white shadow-sm">
+                <img 
+                  src={weavingImpactLogo} 
+                  alt="Weaving Impact Logo" 
+                  className="max-w-full max-h-full object-contain"
+                />
               </div>
               <h3 className="text-2xl font-bold" style={{ color: '#173e4e' }}>Weaving Impact</h3>
             </div>
