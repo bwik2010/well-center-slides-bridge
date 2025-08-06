@@ -72,6 +72,7 @@ export default {
 				'montserrat': ['Montserrat', 'sans-serif'],
 				'playfair': ['Playfair Display', 'serif'],
 				'poppins': ['Poppins', 'sans-serif'],
+				'merriweather': ['Merriweather', 'serif'],
 			},
 			keyframes: {
 				'accordion-down': {
