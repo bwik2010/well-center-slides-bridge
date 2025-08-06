@@ -77,6 +77,18 @@ const PresentationTemplate = () => {
               </Button>
             </Link>
             
+            {/* PDF View Link */}
+            <Link to="/pdf-view">
+              <Button 
+                variant="outline"
+                className="flex items-center gap-2 hover:opacity-80"
+                style={{ borderColor: '#b8832b', color: '#173e4e' }}
+              >
+                <Printer className="h-4 w-4" />
+                PDF Version
+              </Button>
+            </Link>
+            
             {/* Bridge Team Link */}
             <Link to="/bridge-team">
               <Button 

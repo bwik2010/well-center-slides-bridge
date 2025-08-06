@@ -10,6 +10,7 @@ import BridgeTeam from "./pages/BridgeTeam";
 import OurAsk from "./pages/OurAsk";
 import NotFound from "./pages/NotFound";
 import PrintView from "./components/PrintView";
+import PDFView from "./pages/PDFView";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/bridge-team" element={<BridgeTeam />} />
           <Route path="/our-ask" element={<OurAsk />} />
           <Route path="/print-view" element={<PrintView />} />
+          <Route path="/pdf-view" element={<PDFView />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
