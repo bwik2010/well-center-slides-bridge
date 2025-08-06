@@ -127,12 +127,20 @@ const TheBackgroundSlide = () => {
               </h2>
               
               {/* Social Enterprise graphic */}
-              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-60 h-36 mx-auto flex items-center justify-center">
+              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-60 h-36 mx-auto flex items-center justify-center mb-3">
                 <img
                   src="/lovable-uploads/8496362d-51d1-4a32-9c38-832fa049bef5.png"
                   alt="Social Enterprise diagram showing the interconnection of Market, Community, Profit, Passion, Innovation, and Mission"
                   className="w-full h-full object-contain"
                 />
+              </div>
+              
+              {/* Bullet points */}
+              <div className="text-center">
+                <ul className="text-sm space-y-1">
+                  <li>• $12K in microgrants to 32 start up businesses in past year</li>
+                  <li>• 28% of VITA clients filed Sch C (vs. 11% statewide)</li>
+                </ul>
               </div>
             </div>
           </div>
