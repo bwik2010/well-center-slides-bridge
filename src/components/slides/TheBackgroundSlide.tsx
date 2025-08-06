@@ -35,7 +35,7 @@ const TheBackgroundSlide = () => {
 
       {/* Main Content */}
       <div className="relative z-10 flex-1 px-6 pb-6">
-        <div className="grid grid-cols-2 grid-rows-2 gap-0.5 h-full items-start">
+        <div className="grid grid-cols-2 grid-rows-2 gap-0 h-full items-start">
           {/* Top Left - Food */}
           <div className="flex flex-col justify-start animate-[fade-in_1.5s_ease-out]">
             <div className="text-center">
