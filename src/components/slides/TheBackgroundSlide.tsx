@@ -45,7 +45,7 @@ const TheBackgroundSlide = () => {
               
               {/* Video under Food */}
               <div 
-                className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-64 h-44 mx-auto cursor-pointer hover:scale-105 transition-transform"
+                className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-64 h-44 mx-auto cursor-pointer hover:scale-105 transition-transform mb-3"
                 onClick={() => window.open('https://www.youtube.com/watch?v=E3UImx4VLPk', '_blank')}
               >
                 <iframe
@@ -56,6 +56,14 @@ const TheBackgroundSlide = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                   allowFullScreen
                 ></iframe>
+              </div>
+              
+              {/* Bullet points */}
+              <div className="text-center">
+                <ul className="text-sm space-y-1">
+                  <li>• 1 million lbs of food annually</li>
+                  <li>• 500 households served monthly</li>
+                </ul>
               </div>
             </div>
           </div>
