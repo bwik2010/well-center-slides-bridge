@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckCircle, Users, Building2 } from 'lucide-react';
-import kidscoLogo from '@/assets/kidsco-logo.png';
+import kidscoLogo from '@/assets/kidsco-inc-logo.png';
 import weavingImpactLogo from '@/assets/weaving-impact-logo.png';
 
 const PartnerBonaFidesSlide = () => {
