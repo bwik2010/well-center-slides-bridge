@@ -39,8 +39,7 @@ const TheBackgroundSlide = () => {
           {/* Top Left - Food */}
           <div className="flex flex-col justify-center animate-[fade-in_1.5s_ease-out] relative">
             <div className="text-center">
-              <h2 className="text-lg font-montserrat font-bold mb-3 flex items-center justify-center gap-2">
-                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
+              <h2 className="text-lg font-montserrat font-bold mb-3 text-center">
                 Food
               </h2>
               
@@ -67,8 +66,7 @@ const TheBackgroundSlide = () => {
           {/* Top Right - Community-Driven */}
           <div className="flex flex-col justify-center animate-[fade-in_1.7s_ease-out] relative">
             <div className="text-center">
-              <h2 className="text-lg font-montserrat font-bold mb-3 flex items-center justify-center gap-2">
-                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
+              <h2 className="text-lg font-montserrat font-bold mb-3 text-center">
                 Community-Driven
               </h2>
             </div>
@@ -83,8 +81,7 @@ const TheBackgroundSlide = () => {
           {/* Bottom Left - Early Childhood Development */}
           <div className="flex flex-col justify-center animate-[fade-in_1.9s_ease-out] relative">
             <div className="text-center">
-              <h2 className="text-lg font-montserrat font-bold mb-3 flex items-center justify-center gap-2">
-                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
+              <h2 className="text-lg font-montserrat font-bold mb-3 text-center">
                 Early Childhood Development
               </h2>
             </div>
@@ -99,8 +96,7 @@ const TheBackgroundSlide = () => {
           {/* Bottom Right - Social Enterprise */}
           <div className="flex flex-col justify-center animate-[fade-in_2.1s_ease-out]">
             <div className="text-center">
-              <h2 className="text-lg font-montserrat font-bold mb-3 flex items-center justify-center gap-2">
-                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
+              <h2 className="text-lg font-montserrat font-bold mb-3 text-center">
                 Social Enterprise
               </h2>
             </div>
