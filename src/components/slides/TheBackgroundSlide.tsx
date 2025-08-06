@@ -87,11 +87,20 @@ const TheBackgroundSlide = () => {
           </div>
 
           {/* Bottom Left - Early Childhood Development */}
-          <div className="flex flex-col justify-center animate-[fade-in_1.9s_ease-out]">
+          <div className="flex flex-col justify-start animate-[fade-in_1.9s_ease-out]">
             <div className="text-center">
               <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{ color: '#b8832b' }}>
                 Early Childhood Development
               </h2>
+              
+              {/* Image under Early Childhood Development */}
+              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-44 h-44 mx-auto">
+                <img
+                  src="/lovable-uploads/675f108a-ae28-44b9-b191-45dd023cd569.png"
+                  alt="Early Childhood Development article"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
 
