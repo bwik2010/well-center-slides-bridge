@@ -113,6 +113,7 @@ const TheBackgroundSlide = () => {
               <div className="text-center -mt-20">
                 <ul className="text-sm space-y-1">
                   <li>• Top barrier to economic mobility for community members</li>
+                  <li>• Key to generational mobility</li>
                 </ul>
               </div>
             </div>
