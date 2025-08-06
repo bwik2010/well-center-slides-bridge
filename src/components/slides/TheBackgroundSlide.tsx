@@ -26,7 +26,7 @@ const TheBackgroundSlide = () => {
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text'
         }}>
-          The Background Story
+          Cross Community Story
         </h1>
         <div className="w-20 h-0.5 mx-auto rounded-full animate-[scale-in_1.2s_ease-out]" style={{
           background: 'linear-gradient(90deg, #b8832b 0%, #d4a574 100%)'
