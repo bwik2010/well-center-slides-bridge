@@ -35,68 +35,55 @@ const TheBackgroundSlide = () => {
 
       {/* Main Content */}
       <div className="relative z-10 flex-1 px-8 pb-6">
-        <div className="grid grid-cols-3 gap-6 h-full">
-          {/* Left Column - Timeline */}
-          <div className="flex flex-col justify-center animate-[fade-in_1.5s_ease-out]">
-            <div className="space-y-4">
-              {/* Food */}
-              <div className="relative">
-                <h3 className="text-sm font-montserrat font-semibold flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
-                  Food
-                </h3>
-                {/* Arrow */}
-                <div className="absolute left-1 top-6 w-0.5 h-6" style={{ backgroundColor: '#b8832b' }}></div>
-                <div className="absolute left-0 top-12 w-2 h-2 border-r-2 border-b-2 rotate-45" style={{ borderColor: '#b8832b' }}></div>
+        <div className="grid grid-cols-2 gap-8 h-full">
+          {/* Left Column - Food & Community-Driven */}
+          <div className="space-y-6 animate-[fade-in_1.5s_ease-out]">
+            {/* Food */}
+            <div className="flex-1">
+              <h2 className="text-2xl font-montserrat font-bold mb-4 flex items-center gap-3">
+                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
+                Food
+              </h2>
+              
+              {/* Video under Food */}
+              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 mb-4">
+                <iframe
+                  src="https://www.youtube.com/embed/E3UImx4VLPk"
+                  title="Cross Community Story"
+                  className="w-full h-40"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
+            </div>
 
-              {/* Community-Driven */}
-              <div className="relative mt-8">
-                <h3 className="text-sm font-montserrat font-semibold flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
-                  Community-Driven
-                </h3>
-                {/* Arrow */}
-                <div className="absolute left-1 top-6 w-0.5 h-6" style={{ backgroundColor: '#b8832b' }}></div>
-                <div className="absolute left-0 top-12 w-2 h-2 border-r-2 border-b-2 rotate-45" style={{ borderColor: '#b8832b' }}></div>
-              </div>
-
-              {/* Early Childhood Development */}
-              <div className="relative mt-8">
-                <h3 className="text-sm font-montserrat font-semibold flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
-                  Early Childhood Development
-                </h3>
-                {/* Arrow */}
-                <div className="absolute left-1 top-6 w-0.5 h-6" style={{ backgroundColor: '#b8832b' }}></div>
-                <div className="absolute left-0 top-12 w-2 h-2 border-r-2 border-b-2 rotate-45" style={{ borderColor: '#b8832b' }}></div>
-              </div>
-
-              {/* Social Enterprise */}
-              <div className="relative mt-8">
-                <h3 className="text-sm font-montserrat font-semibold flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
-                  Social Enterprise
-                </h3>
-              </div>
+            {/* Community-Driven */}
+            <div className="flex-1">
+              <h2 className="text-2xl font-montserrat font-bold mb-4 flex items-center gap-3">
+                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
+                Community-Driven
+              </h2>
             </div>
           </div>
           
-          {/* Center Column - Video */}
-          <div className="flex flex-col justify-center animate-[fade-in_1.8s_ease-out]">
-            <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20">
-              <iframe
-                src="https://www.youtube.com/embed/E3UImx4VLPk"
-                title="Cross Community Story"
-                className="w-full h-48"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+          {/* Right Column - Early Childhood Development & Social Enterprise */}
+          <div className="space-y-6 animate-[fade-in_1.8s_ease-out]">
+            {/* Early Childhood Development */}
+            <div className="flex-1">
+              <h2 className="text-2xl font-montserrat font-bold mb-4 flex items-center gap-3">
+                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
+                Early Childhood Development
+              </h2>
             </div>
-          </div>
-          {/* Right Column - Empty */}
-          <div className="flex flex-col justify-center animate-[fade-in_2s_ease-out]">
+
+            {/* Social Enterprise */}
+            <div className="flex-1">
+              <h2 className="text-2xl font-montserrat font-bold mb-4 flex items-center gap-3">
+                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
+                Social Enterprise
+              </h2>
+            </div>
           </div>
         </div>
       </div>
