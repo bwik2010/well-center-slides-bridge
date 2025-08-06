@@ -36,42 +36,8 @@ const TheBackgroundSlide = () => {
       {/* Main Content */}
       <div className="relative z-10 flex-1 px-8 pb-6">
         <div className="grid grid-cols-3 gap-6 h-full">
-          {/* Left Column - Cross Community Story */}
+          {/* Left Column - Empty */}
           <div className="flex flex-col justify-center animate-[fade-in_1.5s_ease-out]">
-            <div className="mb-4">
-              <h2 className="text-lg font-montserrat font-semibold mb-3 flex items-center gap-2">
-                <Building2 className="h-5 w-5" style={{ color: '#b8832b' }} />
-                Cross Community Foundation
-              </h2>
-              <p className="text-sm leading-relaxed mb-4 opacity-95">
-                Operating as <span className="font-semibold" style={{ color: '#b8832b' }}>The Equity Center</span>, Cross Community has been a trusted partner serving low-income, immigrant, and marginalized populations in Montgomery County, Maryland.
-              </p>
-              
-              {/* Community Impact Stats */}
-              <div className="grid grid-cols-1 gap-3 mb-4">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
-                  <div className="flex items-center gap-2 mb-1">
-                    <Users className="h-4 w-4" style={{ color: '#b8832b' }} />
-                    <span className="text-xs opacity-80">Weekly Reach</span>
-                  </div>
-                  <div className="text-lg font-bold">5,000+</div>
-                  <div className="text-xs opacity-70">Individuals served</div>
-                </div>
-                
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
-                  <div className="flex items-center gap-2 mb-1">
-                    <Heart className="h-4 w-4" style={{ color: '#b8832b' }} />
-                    <span className="text-xs opacity-80">Food Distribution</span>
-                  </div>
-                  <div className="text-lg font-bold">2M+</div>
-                  <div className="text-xs opacity-70">Pounds distributed</div>
-                </div>
-              </div>
-
-              <p className="text-xs opacity-90 leading-relaxed">
-                With 70% of those served being native Spanish speakers and many being non-citizens, Cross Community has made 300-500 direct connections weekly, addressing immediate needs while fostering long-term empowerment.
-              </p>
-            </div>
           </div>
           
           {/* Center Column - Video */}
