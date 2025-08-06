@@ -44,13 +44,16 @@ const TheBackgroundSlide = () => {
               </h2>
               
               {/* Video under Food */}
-              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-56 h-56 mx-auto">
+              <div 
+                className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-56 h-56 mx-auto cursor-pointer hover:scale-105 transition-transform"
+                onClick={() => window.open('https://www.youtube.com/watch?v=E3UImx4VLPk', '_blank')}
+              >
                 <iframe
-                  src="https://www.youtube.com/embed/E3UImx4VLPk"
+                  src="https://www.youtube.com/embed/E3UImx4VLPk?autoplay=0&fs=1"
                   title="Cross Community Story"
-                  className="w-full h-full"
+                  className="w-full h-full pointer-events-none"
                   frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                   allowFullScreen
                 ></iframe>
               </div>
