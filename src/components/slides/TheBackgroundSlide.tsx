@@ -77,7 +77,7 @@ const TheBackgroundSlide = () => {
               </div>
               
               {/* Bullet points */}
-              <div className="text-left">
+              <div className="text-center">
                 <ul className="text-sm space-y-1">
                   <li>• Community JEDI's</li>
                   <li>• Community Survey of 1300 people (2021)</li>
