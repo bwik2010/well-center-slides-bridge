@@ -34,52 +34,72 @@ const TheBackgroundSlide = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 flex-1 px-8 pb-6">
-        <div className="grid grid-cols-2 gap-8 h-full">
-          {/* Left Column - Food & Community-Driven */}
-          <div className="space-y-6 animate-[fade-in_1.5s_ease-out]">
-            {/* Food */}
-            <div className="flex-1">
-              <h2 className="text-2xl font-montserrat font-bold mb-4 flex items-center gap-3">
+      <div className="relative z-10 flex-1 px-6 pb-6">
+        <div className="grid grid-cols-4 gap-4 h-full items-center">
+          {/* Food */}
+          <div className="flex flex-col justify-center animate-[fade-in_1.5s_ease-out] relative">
+            <div className="text-center">
+              <h2 className="text-lg font-montserrat font-bold mb-3 flex items-center justify-center gap-2">
                 <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
                 Food
               </h2>
               
               {/* Video under Food */}
-              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 mb-4">
+              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20">
                 <iframe
                   src="https://www.youtube.com/embed/E3UImx4VLPk"
                   title="Cross Community Story"
-                  className="w-full h-40"
+                  className="w-full h-32"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
               </div>
             </div>
+            
+            {/* Arrow to next */}
+            <div className="absolute -right-2 top-1/2 transform -translate-y-1/2 z-10">
+              <div className="w-4 h-0.5" style={{ backgroundColor: '#b8832b' }}></div>
+              <div className="absolute -right-1 top-1/2 transform -translate-y-1/2 w-2 h-2 border-r-2 border-t-2 rotate-45" style={{ borderColor: '#b8832b' }}></div>
+            </div>
+          </div>
 
-            {/* Community-Driven */}
-            <div className="flex-1">
-              <h2 className="text-2xl font-montserrat font-bold mb-4 flex items-center gap-3">
+          {/* Community-Driven */}
+          <div className="flex flex-col justify-center animate-[fade-in_1.7s_ease-out] relative">
+            <div className="text-center">
+              <h2 className="text-lg font-montserrat font-bold mb-3 flex items-center justify-center gap-2">
                 <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
                 Community-Driven
               </h2>
             </div>
+            
+            {/* Arrow to next */}
+            <div className="absolute -right-2 top-1/2 transform -translate-y-1/2 z-10">
+              <div className="w-4 h-0.5" style={{ backgroundColor: '#b8832b' }}></div>
+              <div className="absolute -right-1 top-1/2 transform -translate-y-1/2 w-2 h-2 border-r-2 border-t-2 rotate-45" style={{ borderColor: '#b8832b' }}></div>
+            </div>
           </div>
-          
-          {/* Right Column - Early Childhood Development & Social Enterprise */}
-          <div className="space-y-6 animate-[fade-in_1.8s_ease-out]">
-            {/* Early Childhood Development */}
-            <div className="flex-1">
-              <h2 className="text-2xl font-montserrat font-bold mb-4 flex items-center gap-3">
+
+          {/* Early Childhood Development */}
+          <div className="flex flex-col justify-center animate-[fade-in_1.9s_ease-out] relative">
+            <div className="text-center">
+              <h2 className="text-lg font-montserrat font-bold mb-3 flex items-center justify-center gap-2">
                 <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
                 Early Childhood Development
               </h2>
             </div>
+            
+            {/* Arrow to next */}
+            <div className="absolute -right-2 top-1/2 transform -translate-y-1/2 z-10">
+              <div className="w-4 h-0.5" style={{ backgroundColor: '#b8832b' }}></div>
+              <div className="absolute -right-1 top-1/2 transform -translate-y-1/2 w-2 h-2 border-r-2 border-t-2 rotate-45" style={{ borderColor: '#b8832b' }}></div>
+            </div>
+          </div>
 
-            {/* Social Enterprise */}
-            <div className="flex-1">
-              <h2 className="text-2xl font-montserrat font-bold mb-4 flex items-center gap-3">
+          {/* Social Enterprise */}
+          <div className="flex flex-col justify-center animate-[fade-in_2.1s_ease-out]">
+            <div className="text-center">
+              <h2 className="text-lg font-montserrat font-bold mb-3 flex items-center justify-center gap-2">
                 <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#b8832b' }}></div>
                 Social Enterprise
               </h2>
