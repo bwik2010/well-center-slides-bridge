@@ -44,11 +44,11 @@ const TheBackgroundSlide = () => {
               </h2>
               
               {/* Video under Food */}
-              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 max-w-xs mx-auto">
+              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-24 h-24 mx-auto">
                 <iframe
                   src="https://www.youtube.com/embed/E3UImx4VLPk"
                   title="Cross Community Story"
-                  className="w-full h-24"
+                  className="w-full h-full"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
