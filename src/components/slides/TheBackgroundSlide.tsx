@@ -110,7 +110,7 @@ const TheBackgroundSlide = () => {
           </div>
 
           {/* Bottom Right - Social Enterprise */}
-          <div className="flex flex-col justify-center animate-[fade-in_2.1s_ease-out]">
+          <div className="flex flex-col justify-start animate-[fade-in_2.1s_ease-out]">
             <div className="text-center">
               <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{ color: '#b8832b' }}>
                 Social Enterprise
