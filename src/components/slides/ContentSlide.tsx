@@ -7,7 +7,7 @@ const ContentSlide = () => {
       <div className="max-w-6xl mx-auto h-full">
         <h2 className="text-3xl font-bold mb-6 text-center" style={{
         color: '#173e4e'
-      }}>Capital Funding</h2>
+      }}>Capital Investment</h2>
         
         <div className="grid grid-cols-2 gap-8 items-center h-5/6">
           {/* Left Content - Partners */}
