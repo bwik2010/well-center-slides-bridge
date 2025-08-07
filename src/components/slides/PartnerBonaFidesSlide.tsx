@@ -103,7 +103,7 @@ const PartnerBonaFidesSlide = () => {
             {/* Weaving Impact Logo Area */}
             <div className="text-center flex-shrink-0">
               <div 
-                className="w-72 h-48 mx-auto rounded-lg flex items-center justify-center shadow-sm mb-6 relative"
+                className="w-96 h-48 mx-auto rounded-lg flex items-center justify-center shadow-sm mb-6 relative"
                 style={{
                   backgroundImage: `url('/lovable-uploads/62723598-bffb-4395-847c-81f875e9ed72.png')`,
                   backgroundSize: 'cover',
