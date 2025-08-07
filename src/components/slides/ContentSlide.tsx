@@ -9,14 +9,9 @@ const ContentSlide = () => {
         color: '#173e4e'
       }}>Three-Level Capital Investment</h2>
         
-        <div className="grid grid-cols-2 gap-8 items-center h-5/6">
-          {/* Left Content - Partners */}
-          <div>
-            
-          </div>
-          
-          {/* Right Content - Funding */}
-          <div className="relative">
+        <div className="flex justify-center items-center h-5/6">
+          {/* Funding Partners - Full Width */}
+          <div className="relative w-full max-w-4xl">
             <div className="rounded-2xl p-6 h-64" style={{
             background: 'linear-gradient(135deg, #8aa1a9 0%, #173e4e 100%)'
           }}>
