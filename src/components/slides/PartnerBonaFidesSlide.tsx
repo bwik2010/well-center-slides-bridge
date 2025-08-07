@@ -93,37 +93,37 @@ const PartnerBonaFidesSlide = () => {
             borderLeftColor: '#173e4e'
           }}>
             {/* Weaving Impact Logo Area */}
-            <div className="text-center mb-6">
-              <div className="w-40 h-24 mx-auto mb-4 rounded-lg flex items-center justify-center bg-white shadow-sm">
+            <div className="text-center -mt-4">
+              <div className="w-40 h-24 mx-auto rounded-lg flex items-center justify-center bg-white shadow-sm">
                 <img src={weavingImpactLogo} alt="Weaving Impact Logo" className="max-w-full max-h-full object-contain" />
               </div>
               
               {/* Business Support Impact Stats */}
-              <div className="mt-4">
-                <div className="grid grid-cols-2 gap-2 text-sm">
-                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg text-center">
-                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>161</div>
-                    <div className="text-gray-700 text-sm leading-tight">Business-Owners Supported</div>
+              <div className="mt-6">
+                <div className="grid grid-cols-2 gap-2">
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-1.5 rounded-lg shadow-md border-2 border-gray-200 text-center">
+                    <div className="text-xl font-bold" style={{ color: '#8aa1a9' }}>161</div>
+                    <div className="text-xs font-bold text-gray-700">Business-Owners Supported</div>
                   </div>
-                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg text-center">
-                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>148</div>
-                    <div className="text-gray-700 text-sm leading-tight">Black-led Enterprises</div>
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-1.5 rounded-lg shadow-md border-2 border-gray-200 text-center">
+                    <div className="text-xl font-bold" style={{ color: '#8aa1a9' }}>148</div>
+                    <div className="text-xs font-bold text-gray-700">Black-led Enterprises</div>
                   </div>
-                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg text-center">
-                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>53</div>
-                    <div className="text-gray-700 text-sm leading-tight">New Social Enterprises</div>
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-1.5 rounded-lg shadow-md border-2 border-gray-200 text-center">
+                    <div className="text-xl font-bold" style={{ color: '#8aa1a9' }}>53</div>
+                    <div className="text-xs font-bold text-gray-700">New Social Enterprises</div>
                   </div>
-                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg text-center">
-                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>107</div>
-                    <div className="text-gray-700 text-sm leading-tight">Women & Non-Gender Led</div>
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-1.5 rounded-lg shadow-md border-2 border-gray-200 text-center">
+                    <div className="text-xl font-bold" style={{ color: '#8aa1a9' }}>107</div>
+                    <div className="text-xs font-bold text-gray-700">Women & Non-Gender Led</div>
                   </div>
-                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg text-center">
-                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>12</div>
-                    <div className="text-gray-700 text-sm leading-tight">Accelerator Participants</div>
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-1.5 rounded-lg shadow-md border-2 border-gray-200 text-center">
+                    <div className="text-xl font-bold" style={{ color: '#8aa1a9' }}>12</div>
+                    <div className="text-xs font-bold text-gray-700">Accelerator Participants</div>
                   </div>
-                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg text-center">
-                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>24</div>
-                    <div className="text-gray-700 text-sm leading-tight">Boost Participants</div>
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-1.5 rounded-lg shadow-md border-2 border-gray-200 text-center">
+                    <div className="text-xl font-bold" style={{ color: '#8aa1a9' }}>24</div>
+                    <div className="text-xs font-bold text-gray-700">Boost Participants</div>
                   </div>
                 </div>
               </div>
