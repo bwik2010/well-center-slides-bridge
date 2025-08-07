@@ -94,7 +94,7 @@ const PartnerBonaFidesSlide = () => {
           }}>
             {/* Weaving Impact Logo Area */}
             <div className="text-center flex-shrink-0">
-              <div className="w-40 h-24 mx-auto rounded-lg flex items-center justify-center bg-white shadow-sm mb-6">
+              <div className="w-56 h-32 mx-auto rounded-lg flex items-center justify-center bg-white shadow-sm mb-6">
                 <img src={weavingImpactLogo} alt="Weaving Impact Logo" className="max-w-full max-h-full object-contain" />
               </div>
               
@@ -126,6 +126,9 @@ const PartnerBonaFidesSlide = () => {
                     <div className="text-xs font-bold text-gray-700">Boost Participants</div>
                   </div>
                 </div>
+                
+                {/* Placeholder to match KidsCo star rating spacing */}
+                <div className="mt-2 h-16"></div>
               </div>
             </div>
           </div>
