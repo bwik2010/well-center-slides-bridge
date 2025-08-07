@@ -16,40 +16,6 @@ const ContentSlide = () => {
             color: '#173e4e'
           }}>Strategic Partners</h3>
             
-            <div className="space-y-4">
-              <div className="flex items-start gap-3 p-4 rounded-xl border" style={{
-              backgroundColor: '#173e4e',
-              borderColor: '#173e4e'
-            }}>
-                <Users className="h-6 w-6 text-white mt-0.5 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold mb-1 text-white">Kidsco</h4>
-                  <p className="text-white opacity-90 text-sm">Child development center operations and early childhood programming</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-3 p-4 rounded-xl border" style={{
-              backgroundColor: '#8aa1a9',
-              borderColor: '#8aa1a9'
-            }}>
-                <Building2 className="h-6 w-6 text-white mt-0.5 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold mb-1 text-white">WeavingImpact</h4>
-                  <p className="text-white opacity-90 text-sm">Proven social enterprise strategies developed over 25 years as part of the Miller Center for Social Innovation</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-3 p-4 rounded-xl border" style={{
-              backgroundColor: '#b8832b',
-              borderColor: '#b8832b'
-            }}>
-                <Heart className="h-6 w-6 text-white mt-0.5 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold mb-1 text-white">Miller Center and Innovation Works Baltimore</h4>
-                  <p className="text-white opacity-90 text-sm">Intellectual and on-the-ground partner developing entrepreneur eco-systems in the local community</p>
-                </div>
-              </div>
-            </div>
           </div>
           
           {/* Right Content - Funding */}
