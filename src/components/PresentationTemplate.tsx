@@ -10,7 +10,7 @@ import TheProblemSlide from './slides/TheProblemSlide';
 import BridgeSlide from './slides/BridgeSlide';
 import BridgeTeamSlide from './slides/BridgeTeamSlide';
 import ContentSlide from './slides/ContentSlide';
-import ImpactSlide from './slides/ImpactSlide';
+
 import SourcesOfRevenueSlide from './slides/SourcesOfRevenueSlide';
 import FinancialProjectionsSlide from './slides/FinancialProjectionsSlide';
 import CallToActionSlide from './slides/CallToActionSlide';
@@ -26,7 +26,7 @@ const slides = [
   { id: 4, component: MissionSlide, title: "Mission Statement" },
   { id: 5, component: ContentSlide, title: "Key Partners & Collaborations" },
   { id: 6, component: PartnerBonaFidesSlide, title: "Partner Bona Fides" },
-  { id: 7, component: ImpactSlide, title: "Impact & Results" },
+  
   { id: 8, component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
   { id: 9, component: FinancialProjectionsSlide, title: "Financial Projections" },
   { id: 10, component: QuoteSlide, title: "Inspirational Quote" },

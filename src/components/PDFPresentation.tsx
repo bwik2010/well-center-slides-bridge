@@ -4,7 +4,7 @@ import TheBackgroundSlide from './slides/TheBackgroundSlide';
 import MissionSlide from './slides/MissionSlide';
 import TheProblemSlide from './slides/TheProblemSlide';
 import ContentSlide from './slides/ContentSlide';
-import ImpactSlide from './slides/ImpactSlide';
+
 import SourcesOfRevenueSlide from './slides/SourcesOfRevenueSlide';
 import FinancialProjectionsSlide from './slides/FinancialProjectionsSlide';
 import QuoteSlide from './slides/QuoteSlide';
@@ -23,7 +23,7 @@ const PDFPresentation = () => {
     { component: MissionSlide, title: "Mission Statement" },
     { component: ContentSlide, title: "Key Partners & Collaborations" },
     { component: PartnerBonaFidesSlide, title: "Partner Bona Fides" },
-    { component: ImpactSlide, title: "Impact & Results" },
+    
     { component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
     { component: FinancialProjectionsSlide, title: "Financial Projections" },
     { component: QuoteSlide, title: "Inspirational Quote" },
