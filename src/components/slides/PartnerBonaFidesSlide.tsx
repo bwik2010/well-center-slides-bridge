@@ -34,7 +34,7 @@ const PartnerBonaFidesSlide = () => {
               <div 
                 className="w-96 h-48 mx-auto rounded-lg flex items-center justify-center shadow-sm mb-6 relative"
                 style={{
-                  backgroundImage: `url('/lovable-uploads/62723598-bffb-4395-847c-81f875e9ed72.png')`,
+                  backgroundImage: `url('/lovable-uploads/f62fbb05-f31f-4cda-b7ae-b9647abb5edf.png')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   backgroundRepeat: 'no-repeat'
