@@ -29,28 +29,6 @@ const PartnerBonaFidesSlide = () => {
               <h3 className="text-2xl font-bold" style={{ color: '#173e4e' }}>KidsCo</h3>
             </div>
             
-            <div className="space-y-4">
-              <div className="flex items-start">
-                <CheckCircle className="h-5 w-5 mt-1 mr-3 flex-shrink-0" style={{ color: '#b8832b' }} />
-                <p className="text-gray-700 text-sm">
-                  [KidsCo credentials and achievements]
-                </p>
-              </div>
-              
-              <div className="flex items-start">
-                <CheckCircle className="h-5 w-5 mt-1 mr-3 flex-shrink-0" style={{ color: '#b8832b' }} />
-                <p className="text-gray-700 text-sm">
-                  [Key partnership benefits and experience]
-                </p>
-              </div>
-              
-              <div className="flex items-start">
-                <CheckCircle className="h-5 w-5 mt-1 mr-3 flex-shrink-0" style={{ color: '#b8832b' }} />
-                <p className="text-gray-700 text-sm">
-                  [Track record and impact metrics]
-                </p>
-              </div>
-            </div>
           </div>
           
           {/* Weaving Impact Section */}
