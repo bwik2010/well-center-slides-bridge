@@ -12,34 +12,34 @@ const ContentSlide = () => {
         <div className="flex justify-center items-center h-5/6">
           {/* Funding Partners - Full Width */}
           <div className="relative w-full max-w-4xl">
-            <div className="rounded-2xl p-6 h-64" style={{
+            <div className="rounded-2xl p-8 h-80" style={{
             background: 'linear-gradient(135deg, #8aa1a9 0%, #173e4e 100%)'
           }}>
               <div className="text-center text-white">
-                <h4 className="text-xl font-semibold mb-4">Funding Partners</h4>
+                <h4 className="text-2xl font-semibold mb-6">Funding Partners</h4>
                 
-                <div className="space-y-4">
-                  <div className="bg-white bg-opacity-20 rounded-xl p-4">
-                    <div className="text-3xl font-bold mb-2" style={{
+                <div className="space-y-6">
+                  <div className="bg-white bg-opacity-20 rounded-xl p-6">
+                    <div className="text-4xl font-bold mb-3" style={{
                     color: '#ffd700'
                   }}>
                       $2,270,000
                     </div>
-                    <p className="text-sm opacity-90">Capital Funding Committed</p>
+                    <p className="text-base opacity-90">Capital Funding Committed</p>
                   </div>
                   
-                  <div className="grid grid-cols-3 gap-2">
-                    <div className="bg-white bg-opacity-15 rounded-lg p-2">
-                      <p className="font-semibold text-xs">State of Maryland</p>
-                      <p className="text-xs opacity-80">Government</p>
+                  <div className="grid grid-cols-3 gap-4">
+                    <div className="bg-white bg-opacity-15 rounded-lg p-3">
+                      <p className="font-semibold text-sm">State of Maryland</p>
+                      <p className="text-sm opacity-80">Government</p>
                     </div>
-                    <div className="bg-white bg-opacity-15 rounded-lg p-2">
-                      <p className="font-semibold text-xs">Montgomery County</p>
-                      <p className="text-xs opacity-80">Local Gov</p>
+                    <div className="bg-white bg-opacity-15 rounded-lg p-3">
+                      <p className="font-semibold text-sm">Montgomery County</p>
+                      <p className="text-sm opacity-80">Local Gov</p>
                     </div>
-                    <div className="bg-white bg-opacity-15 rounded-lg p-2">
-                      <p className="font-semibold text-xs">City of Gaithersburg</p>
-                      <p className="text-xs opacity-80">Municipal</p>
+                    <div className="bg-white bg-opacity-15 rounded-lg p-3">
+                      <p className="font-semibold text-sm">City of Gaithersburg</p>
+                      <p className="text-sm opacity-80">Municipal</p>
                     </div>
                   </div>
                 </div>
