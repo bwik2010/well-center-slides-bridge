@@ -21,8 +21,8 @@ const PDFPresentation = () => {
     { component: TheBackgroundSlide, title: "The Background Story" },
     { component: TheProblemSlide, title: "The Problem" },
     { component: MissionSlide, title: "Mission Statement" },
-    { component: ContentSlide, title: "Key Partners & Collaborations" },
     { component: PartnerBonaFidesSlide, title: "Partner Bona Fides" },
+    { component: ContentSlide, title: "Key Partners & Collaborations" },
     
     { component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
     { component: FinancialProjectionsSlide, title: "Financial Projections" },

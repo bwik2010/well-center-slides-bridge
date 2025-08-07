@@ -24,8 +24,8 @@ const slides = [
   { id: 2, component: TheBackgroundSlide, title: "The Background Story" },
   { id: 3, component: TheProblemSlide, title: "The Problem" },
   { id: 4, component: MissionSlide, title: "Mission Statement" },
-  { id: 5, component: ContentSlide, title: "Key Partners & Collaborations" },
-  { id: 6, component: PartnerBonaFidesSlide, title: "Partner Bona Fides" },
+  { id: 5, component: PartnerBonaFidesSlide, title: "Partner Bona Fides" },
+  { id: 6, component: ContentSlide, title: "Key Partners & Collaborations" },
   
   { id: 8, component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
   { id: 9, component: FinancialProjectionsSlide, title: "Financial Projections" },
