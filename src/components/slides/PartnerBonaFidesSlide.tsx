@@ -34,7 +34,16 @@ const PartnerBonaFidesSlide = () => {
           </div>
           
           {/* Weaving Impact Section */}
-          
+          <div className="bg-white rounded-xl shadow-lg p-6 border-l-4" style={{
+            borderLeftColor: '#173e4e'
+          }}>
+            {/* Weaving Impact Logo Area */}
+            <div className="text-center mb-6">
+              <div className="w-40 h-24 mx-auto mb-4 rounded-lg flex items-center justify-center bg-white shadow-sm">
+                <img src={weavingImpactLogo} alt="Weaving Impact Logo" className="max-w-full max-h-full object-contain" />
+              </div>
+            </div>
+          </div>
         </div>
         
         <div className="text-center mt-6">
