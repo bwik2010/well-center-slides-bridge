@@ -142,7 +142,7 @@ const PartnerBonaFidesSlide = () => {
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-1.5 rounded-lg shadow-md border-2 border-gray-200 text-center">
                     <div className="text-xl font-bold" style={{
                     color: '#8aa1a9'
-                  }}>24</div>
+                  }}>$5 Million</div>
                     <div className="text-xs font-bold text-gray-700">Boost Participants</div>
                   </div>
                 </div>
