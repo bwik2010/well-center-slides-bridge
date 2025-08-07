@@ -38,9 +38,6 @@ const PartnerBonaFidesSlide = () => {
               
               {/* KidsCo Impact Stats */}
               <div className="mt-6">
-                <h3 className="text-lg font-bold mb-4 text-center" style={{ color: '#173e4e' }}>
-                  Our Amazing Impact! 🌟
-                </h3>
                 <div className="grid grid-cols-2 gap-3">
                   {/* Years of Service */}
                   <div className={`bg-gradient-to-br from-red-50 to-red-100 p-3 rounded-xl shadow-md border-2 border-red-200 text-center transition-all duration-500 ${animateStats ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
