@@ -45,9 +45,6 @@ const PartnerBonaFidesSlide = () => {
               
               {/* Business Support Impact Stats */}
               <div className="mt-4">
-                <h4 className="text-lg font-semibold mb-3" style={{ color: '#173e4e' }}>
-                  Business Support Impact
-                </h4>
                 <div className="grid grid-cols-2 gap-2 text-xs">
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg text-center">
                     <div className="text-xl font-bold" style={{ color: '#8aa1a9' }}>161</div>
