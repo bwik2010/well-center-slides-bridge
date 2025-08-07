@@ -39,9 +39,7 @@ const TheBackgroundSlide = () => {
             <div className="text-center">
               <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{
               color: '#b8832b'
-            }}>
-                Food and Resource Support
-              </h2>
+            }}>Nimble Food and Resource Response</h2>
               
               {/* Video under Food */}
               <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-64 h-44 mx-auto cursor-pointer hover:scale-105 transition-transform mb-3" onClick={() => window.open('https://www.youtube.com/watch?v=E3UImx4VLPk', '_blank')}>
