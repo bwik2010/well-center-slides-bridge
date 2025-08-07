@@ -99,3 +99,36 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Impact Slide Animations */
+@keyframes backgroundShift {
+  0% { background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 25%, #fecfef 50%, #ffd89b 100%); }
+  50% { background: linear-gradient(45deg, #a8edea 0%, #fed6e3 25%, #d299c2 50%, #fef9d7 100%); }
+  100% { background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 25%, #fecfef 50%, #ffd89b 100%); }
+}
+
+@keyframes stripes {
+  0% { transform: translateX(-50px); }
+  100% { transform: translateX(50px); }
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes twinkle {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.2); opacity: 0.7; }
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}

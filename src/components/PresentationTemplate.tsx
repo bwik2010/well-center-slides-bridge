@@ -17,6 +17,7 @@ import CallToActionSlide from './slides/CallToActionSlide';
 import QuoteSlide from './slides/QuoteSlide';
 import CitationsSlide from './slides/CitationsSlide';
 import PartnerBonaFidesSlide from './slides/PartnerBonaFidesSlide';
+import ImpactSlide from './slides/ImpactSlide';
 
 
 const slides = [
@@ -33,6 +34,7 @@ const slides = [
   { id: 11, component: CallToActionSlide, title: "Call to Action" },
   { id: 12, component: CitationsSlide, title: "Citations & References" },
   { id: 13, component: BridgeSlide, title: "Bridge Diagram" },
+  { id: 14, component: ImpactSlide, title: "Our Amazing Impact!" },
   
 ];
 
