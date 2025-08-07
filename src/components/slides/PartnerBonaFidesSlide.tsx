@@ -121,8 +121,6 @@ const PartnerBonaFidesSlide = () => {
                   backgroundRepeat: 'no-repeat'
                 }}
               >
-                {/* Overlay to reduce saturation */}
-                <div className="absolute inset-0 bg-white/70 rounded-lg"></div>
                 <img src={weavingImpactLogo} alt="Weaving Impact Logo" className="w-56 h-32 object-contain relative z-10" />
               </div>
               
