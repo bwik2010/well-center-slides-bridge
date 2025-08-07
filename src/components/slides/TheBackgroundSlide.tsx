@@ -1,36 +1,34 @@
 import React from 'react';
 import { Users, Heart, Home, BookOpen, Shield, Building2 } from 'lucide-react';
-
 const TheBackgroundSlide = () => {
-  return (
-    <div className="w-full h-full flex flex-col relative rounded-xl text-white overflow-hidden" style={{
-      background: 'linear-gradient(135deg, #173e4e 0%, #2a5a6b 50%, #8aa1a9 100%)',
-      aspectRatio: '16/9'
-    }}>
+  return <div className="w-full h-full flex flex-col relative rounded-xl text-white overflow-hidden" style={{
+    background: 'linear-gradient(135deg, #173e4e 0%, #2a5a6b 50%, #8aa1a9 100%)',
+    aspectRatio: '16/9'
+  }}>
       {/* Background Pattern */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent"></div>
         <div className="absolute top-12 right-16 w-24 h-24 rounded-full opacity-15" style={{
-          background: 'radial-gradient(circle, #b8832b 0%, transparent 70%)'
-        }}></div>
+        background: 'radial-gradient(circle, #b8832b 0%, transparent 70%)'
+      }}></div>
         <div className="absolute bottom-16 left-12 w-16 h-16 rounded-full opacity-20" style={{
-          background: 'radial-gradient(circle, #b8832b 0%, transparent 70%)'
-        }}></div>
+        background: 'radial-gradient(circle, #b8832b 0%, transparent 70%)'
+      }}></div>
       </div>
 
       {/* Header */}
       <div className="relative z-10 text-center pt-6 pb-4">
         <h1 className="text-4xl font-montserrat font-bold mb-2 animate-[fade-in_1s_ease-out]" style={{
-          background: 'linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text'
-        }}>
+        background: 'linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text'
+      }}>
           Cross Community Story
         </h1>
         <div className="w-20 h-0.5 mx-auto rounded-full animate-[scale-in_1.2s_ease-out]" style={{
-          background: 'linear-gradient(90deg, #b8832b 0%, #d4a574 100%)'
-        }}></div>
+        background: 'linear-gradient(90deg, #b8832b 0%, #d4a574 100%)'
+      }}></div>
       </div>
 
       {/* Main Content */}
@@ -39,23 +37,15 @@ const TheBackgroundSlide = () => {
           {/* Top Left - Food */}
           <div className="flex flex-col justify-start animate-[fade-in_1.5s_ease-out]">
             <div className="text-center">
-              <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{ color: '#b8832b' }}>
+              <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{
+              color: '#b8832b'
+            }}>
                 Food and Resource Support
               </h2>
               
               {/* Video under Food */}
-              <div 
-                className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-64 h-44 mx-auto cursor-pointer hover:scale-105 transition-transform mb-3"
-                onClick={() => window.open('https://www.youtube.com/watch?v=E3UImx4VLPk', '_blank')}
-              >
-                <iframe
-                  src="https://www.youtube.com/embed/E3UImx4VLPk?autoplay=0&fs=1"
-                  title="Cross Community Story"
-                  className="w-full h-full pointer-events-none"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                  allowFullScreen
-                ></iframe>
+              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-64 h-44 mx-auto cursor-pointer hover:scale-105 transition-transform mb-3" onClick={() => window.open('https://www.youtube.com/watch?v=E3UImx4VLPk', '_blank')}>
+                <iframe src="https://www.youtube.com/embed/E3UImx4VLPk?autoplay=0&fs=1" title="Cross Community Story" className="w-full h-full pointer-events-none" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowFullScreen></iframe>
               </div>
               
               {/* Bullet points */}
@@ -71,17 +61,15 @@ const TheBackgroundSlide = () => {
           {/* Top Right - Community-Driven */}
           <div className="flex flex-col justify-start animate-[fade-in_1.7s_ease-out]">
             <div className="text-center">
-              <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{ color: '#b8832b' }}>
+              <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{
+              color: '#b8832b'
+            }}>
                 Community-Driven
               </h2>
               
               {/* Image under Community-Driven */}
               <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-40 h-27 mx-auto mb-3">
-                <img
-                  src="/lovable-uploads/e8373331-1623-4b21-8994-90024e48dc73.png"
-                  alt="The Equity Center team"
-                  className="w-full h-full object-contain"
-                />
+                <img src="/lovable-uploads/e8373331-1623-4b21-8994-90024e48dc73.png" alt="The Equity Center team" className="w-full h-full object-contain" />
               </div>
               
               {/* Bullet points */}
@@ -98,16 +86,12 @@ const TheBackgroundSlide = () => {
           {/* Bottom Left - Early Childhood Development */}
           <div className="flex flex-col justify-start animate-[fade-in_1.9s_ease-out]">
             <div className="text-center">
-              <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{ color: '#b8832b' }}>
-                Early Childhood Development
-              </h2>
+              <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{
+              color: '#b8832b'
+            }}>Early Childhood Development Strategy</h2>
               
               {/* Image under Early Childhood Development */}
-              <img
-                src="/lovable-uploads/675f108a-ae28-44b9-b191-45dd023cd569.png"
-                alt="Early Childhood Development article"
-                className="w-80 h-52 mx-auto object-contain object-top rounded-lg"
-              />
+              <img src="/lovable-uploads/675f108a-ae28-44b9-b191-45dd023cd569.png" alt="Early Childhood Development article" className="w-80 h-52 mx-auto object-contain object-top rounded-lg" />
               
               {/* Bullet point */}
               <div className="text-center -mt-20">
@@ -122,17 +106,13 @@ const TheBackgroundSlide = () => {
           {/* Bottom Right - Social Enterprise */}
           <div className="flex flex-col justify-start animate-[fade-in_2.1s_ease-out]">
             <div className="text-center">
-              <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{ color: '#b8832b' }}>
-                Social Enterprise
-              </h2>
+              <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{
+              color: '#b8832b'
+            }}>Social Enterprise Eco-System</h2>
               
               {/* Social Enterprise graphic */}
               <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-60 h-36 mx-auto flex items-center justify-center mb-3">
-                <img
-                  src="/lovable-uploads/8496362d-51d1-4a32-9c38-832fa049bef5.png"
-                  alt="Social Enterprise diagram showing the interconnection of Market, Community, Profit, Passion, Innovation, and Mission"
-                  className="w-full h-full object-contain"
-                />
+                <img src="/lovable-uploads/8496362d-51d1-4a32-9c38-832fa049bef5.png" alt="Social Enterprise diagram showing the interconnection of Market, Community, Profit, Passion, Innovation, and Mission" className="w-full h-full object-contain" />
               </div>
               
               {/* Bullet points */}
@@ -149,8 +129,6 @@ const TheBackgroundSlide = () => {
 
       {/* Bottom accent */}
       <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
-    </div>
-  );
+    </div>;
 };
-
 export default TheBackgroundSlide;
