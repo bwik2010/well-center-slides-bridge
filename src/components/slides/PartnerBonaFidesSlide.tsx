@@ -20,11 +20,11 @@ const PartnerBonaFidesSlide = () => {
       <div className="max-w-6xl mx-auto h-full flex flex-col">
         <div className="grid grid-cols-2 gap-8 flex-1">
           {/* KidsCo Section */}
-          <div className="bg-white rounded-xl shadow-lg p-6 border-l-4" style={{
+          <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 flex flex-col justify-start" style={{
           borderLeftColor: '#173e4e'
         }}>
             {/* KidsCo Logo Area */}
-            <div className="text-center mb-6">
+            <div className="text-center -mt-4">
               <div className="w-56 h-32 mx-auto rounded-lg flex items-center justify-center bg-white shadow-sm">
                 <img src="/lovable-uploads/f62fbb05-f31f-4cda-b7ae-b9647abb5edf.png" alt="KidsCo Logo" className="max-w-full max-h-full object-contain" />
               </div>
