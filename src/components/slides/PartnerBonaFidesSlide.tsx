@@ -25,7 +25,7 @@ const PartnerBonaFidesSlide = () => {
         }}>
             {/* KidsCo Logo Area */}
             <div className="text-center mb-6">
-              <div className="w-56 h-32 mx-auto mb-2 rounded-lg flex items-center justify-center bg-white shadow-sm">
+              <div className="w-56 h-32 mx-auto rounded-lg flex items-center justify-center bg-white shadow-sm">
                 <img src="/lovable-uploads/f62fbb05-f31f-4cda-b7ae-b9647abb5edf.png" alt="KidsCo Logo" className="max-w-full max-h-full object-contain" />
               </div>
               
