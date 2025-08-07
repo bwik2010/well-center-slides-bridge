@@ -45,30 +45,30 @@ const PartnerBonaFidesSlide = () => {
               
               {/* Business Support Impact Stats */}
               <div className="mt-4">
-                <div className="grid grid-cols-2 gap-2 text-xs">
+                <div className="grid grid-cols-2 gap-2 text-sm">
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg text-center">
-                    <div className="text-xl font-bold" style={{ color: '#8aa1a9' }}>161</div>
-                    <div className="text-gray-700 text-xs leading-tight">Business-Owners Supported</div>
+                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>161</div>
+                    <div className="text-gray-700 text-sm leading-tight">Business-Owners Supported</div>
                   </div>
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg text-center">
-                    <div className="text-xl font-bold" style={{ color: '#8aa1a9' }}>148</div>
-                    <div className="text-gray-700 text-xs leading-tight">Black-led Enterprises</div>
+                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>148</div>
+                    <div className="text-gray-700 text-sm leading-tight">Black-led Enterprises</div>
                   </div>
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg text-center">
-                    <div className="text-xl font-bold" style={{ color: '#8aa1a9' }}>53</div>
-                    <div className="text-gray-700 text-xs leading-tight">New Social Enterprises</div>
+                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>53</div>
+                    <div className="text-gray-700 text-sm leading-tight">New Social Enterprises</div>
                   </div>
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg text-center">
-                    <div className="text-xl font-bold" style={{ color: '#8aa1a9' }}>107</div>
-                    <div className="text-gray-700 text-xs leading-tight">Women & Non-Gender Led</div>
+                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>107</div>
+                    <div className="text-gray-700 text-sm leading-tight">Women & Non-Gender Led</div>
                   </div>
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg text-center">
-                    <div className="text-xl font-bold" style={{ color: '#8aa1a9' }}>12</div>
-                    <div className="text-gray-700 text-xs leading-tight">Accelerator Participants</div>
+                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>12</div>
+                    <div className="text-gray-700 text-sm leading-tight">Accelerator Participants</div>
                   </div>
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg text-center">
-                    <div className="text-xl font-bold" style={{ color: '#8aa1a9' }}>24</div>
-                    <div className="text-gray-700 text-xs leading-tight">Boost Participants</div>
+                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>24</div>
+                    <div className="text-gray-700 text-sm leading-tight">Boost Participants</div>
                   </div>
                 </div>
               </div>
