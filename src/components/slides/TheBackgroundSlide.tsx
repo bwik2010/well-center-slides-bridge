@@ -63,9 +63,7 @@ const TheBackgroundSlide = () => {
             <div className="text-center">
               <h2 className="text-lg font-montserrat font-bold mb-3 text-center" style={{
               color: '#b8832b'
-            }}>
-                Community-Driven
-              </h2>
+            }}>Community-Based and Driven</h2>
               
               {/* Image under Community-Driven */}
               <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-40 h-27 mx-auto mb-3">
