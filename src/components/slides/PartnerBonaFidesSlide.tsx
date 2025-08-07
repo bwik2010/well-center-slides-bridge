@@ -43,7 +43,7 @@ const PartnerBonaFidesSlide = () => {
                   <div className={`bg-gradient-to-br from-red-50 to-red-100 p-3 rounded-xl shadow-md border-2 border-red-200 text-center transition-all duration-500 ${animateStats ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
                     <span className="text-2xl block mb-1 animate-bounce">🎂</span>
                     <span className="text-3xl font-black block mb-1" style={{ color: '#ff6b6b', textShadow: '2px 2px 0px #ff9999' }}>27</span>
-                    <div className="text-sm font-bold text-gray-700">Years of Awesome Adventures!</div>
+                    <div className="text-sm font-bold text-gray-700">Years of Service in Montgomery County</div>
                   </div>
 
                   {/* Children Served */}
