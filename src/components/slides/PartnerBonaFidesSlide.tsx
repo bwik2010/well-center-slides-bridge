@@ -38,46 +38,41 @@ const PartnerBonaFidesSlide = () => {
               
               {/* KidsCo Impact Stats */}
               <div className="mt-6">
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-2 gap-2">
                   {/* Years of Service */}
-                  <div className={`bg-gradient-to-br from-red-50 to-red-100 p-2 rounded-xl shadow-md border-2 border-red-200 text-center transition-all duration-500 ${animateStats ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
-                    <span className="text-lg block">🎂</span>
-                    <span className="text-2xl font-black block" style={{ color: '#ff6b6b', textShadow: '2px 2px 0px #ff9999' }}>27</span>
+                  <div className={`bg-gradient-to-br from-red-50 to-red-100 p-1.5 rounded-lg shadow-md border-2 border-red-200 text-center transition-all duration-500 ${animateStats ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
+                    <span className="text-xl font-black block" style={{ color: '#ff6b6b', textShadow: '2px 2px 0px #ff9999' }}>27</span>
                     <div className="text-xs font-bold text-gray-700">Years of Service in Montgomery County</div>
                   </div>
 
                   {/* Children Served */}
-                  <div className={`bg-gradient-to-br from-teal-50 to-teal-100 p-2 rounded-xl shadow-md border-2 border-teal-200 text-center transition-all duration-500 delay-100 ${animateStats ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
-                    <span className="text-lg block">👶</span>
-                    <span className="text-2xl font-black block" style={{ color: '#4ecdc4', textShadow: '2px 2px 0px #7ed6cc' }}>3,500</span>
+                  <div className={`bg-gradient-to-br from-teal-50 to-teal-100 p-1.5 rounded-lg shadow-md border-2 border-teal-200 text-center transition-all duration-500 delay-100 ${animateStats ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
+                    <span className="text-xl font-black block" style={{ color: '#4ecdc4', textShadow: '2px 2px 0px #7ed6cc' }}>3,500</span>
                     <div className="text-xs font-bold text-gray-700">Happy Children Served in 2024!</div>
                   </div>
 
                   {/* School Programs */}
-                  <div className={`bg-gradient-to-br from-blue-50 to-blue-100 p-2 rounded-xl shadow-md border-2 border-blue-200 text-center transition-all duration-500 delay-200 ${animateStats ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
-                    <span className="text-lg block">🏫</span>
-                    <span className="text-2xl font-black block" style={{ color: '#45b7d1', textShadow: '2px 2px 0px #73c5da' }}>21</span>
+                  <div className={`bg-gradient-to-br from-blue-50 to-blue-100 p-1.5 rounded-lg shadow-md border-2 border-blue-200 text-center transition-all duration-500 delay-200 ${animateStats ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
+                    <span className="text-xl font-black block" style={{ color: '#45b7d1', textShadow: '2px 2px 0px #73c5da' }}>21</span>
                     <div className="text-xs font-bold text-gray-700">School-Based Programs</div>
                   </div>
 
                   {/* Team Members */}
-                  <div className={`bg-gradient-to-br from-green-50 to-green-100 p-2 rounded-xl shadow-md border-2 border-green-200 text-center transition-all duration-500 delay-300 ${animateStats ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
-                    <span className="text-lg block">👨‍👩‍👧‍👦</span>
-                    <span className="text-2xl font-black block" style={{ color: '#96ceb4', textShadow: '2px 2px 0px #b4d6c4' }}>200</span>
+                  <div className={`bg-gradient-to-br from-green-50 to-green-100 p-1.5 rounded-lg shadow-md border-2 border-green-200 text-center transition-all duration-500 delay-300 ${animateStats ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
+                    <span className="text-xl font-black block" style={{ color: '#96ceb4', textShadow: '2px 2px 0px #b4d6c4' }}>200</span>
                     <div className="text-xs font-bold text-gray-700">Amazing Team Members!</div>
                   </div>
                 </div>
 
                 {/* Star Rating */}
-                <div className={`mt-3 bg-gradient-to-br from-yellow-50 to-yellow-100 p-2 rounded-xl shadow-md border-2 border-yellow-200 text-center transition-all duration-500 delay-400 ${animateStats ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
-                  <span className="text-lg block">🏆</span>
-                  <span className="text-2xl font-black block" style={{ color: '#feca57', textShadow: '2px 2px 0px #fed481' }}>5</span>
+                <div className={`mt-2 bg-gradient-to-br from-yellow-50 to-yellow-100 p-1.5 rounded-lg shadow-md border-2 border-yellow-200 text-center transition-all duration-500 delay-400 ${animateStats ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
+                  <span className="text-xl font-black block" style={{ color: '#feca57', textShadow: '2px 2px 0px #fed481' }}>5</span>
                   <div className="text-xs font-bold text-gray-700 mb-1">Star Rating from MD EXCELS</div>
                   <div className="flex justify-center gap-1">
                     {[...Array(5)].map((_, i) => (
                       <span 
                         key={i}
-                        className="text-sm text-yellow-400"
+                        className="text-xs text-yellow-400"
                         style={{ 
                           animation: 'twinkle 2s ease-in-out infinite alternate',
                           animationDelay: `${i * 0.2}s`
