@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import FinancialProjections from "./pages/FinancialProjections";
 import BridgeTeam from "./pages/BridgeTeam";
 import OurAsk from "./pages/OurAsk";
+import BusinessImpact from "./pages/BusinessImpact";
 import NotFound from "./pages/NotFound";
 import PrintView from "./components/PrintView";
 import PDFView from "./pages/PDFView";
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/financial-projections" element={<FinancialProjections />} />
           <Route path="/bridge-team" element={<BridgeTeam />} />
           <Route path="/our-ask" element={<OurAsk />} />
+          <Route path="/business-impact" element={<BusinessImpact />} />
           <Route path="/print-view" element={<PrintView />} />
           <Route path="/pdf-view" element={<PDFView />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
