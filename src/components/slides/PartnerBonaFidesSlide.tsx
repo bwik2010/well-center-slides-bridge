@@ -27,17 +27,17 @@ const PartnerBonaFidesSlide = () => {
       <div className="max-w-6xl mx-auto h-full flex flex-col">
         <div className="grid grid-cols-2 gap-8 flex-1">
           {/* KidsCo Section */}
-          <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 flex flex-col justify-start" style={{
+          <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 flex flex-col justify-start h-full" style={{
           borderLeftColor: '#173e4e'
         }}>
             {/* KidsCo Logo Area */}
-            <div className="text-center -mt-4">
-              <div className="w-56 h-32 mx-auto rounded-lg flex items-center justify-center bg-white shadow-sm">
+            <div className="text-center flex-shrink-0">
+              <div className="w-56 h-32 mx-auto rounded-lg flex items-center justify-center bg-white shadow-sm mb-6">
                 <img src="/lovable-uploads/f62fbb05-f31f-4cda-b7ae-b9647abb5edf.png" alt="KidsCo Logo" className="max-w-full max-h-full object-contain" />
               </div>
               
               {/* KidsCo Impact Stats */}
-              <div className="mt-6">
+              <div className="flex-1">
                 <div className="grid grid-cols-2 gap-2">
                   {/* Years of Service */}
                   <div className={`bg-gradient-to-br from-red-50 to-red-100 p-1.5 rounded-lg shadow-md border-2 border-red-200 text-center transition-all duration-500 ${animateStats ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
@@ -89,17 +89,17 @@ const PartnerBonaFidesSlide = () => {
           </div>
           
           {/* Weaving Impact Section */}
-          <div className="bg-white rounded-xl shadow-lg p-6 border-l-4" style={{
+          <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 flex flex-col justify-start h-full" style={{
             borderLeftColor: '#173e4e'
           }}>
             {/* Weaving Impact Logo Area */}
-            <div className="text-center -mt-4">
-              <div className="w-40 h-24 mx-auto rounded-lg flex items-center justify-center bg-white shadow-sm">
+            <div className="text-center flex-shrink-0">
+              <div className="w-40 h-24 mx-auto rounded-lg flex items-center justify-center bg-white shadow-sm mb-6">
                 <img src={weavingImpactLogo} alt="Weaving Impact Logo" className="max-w-full max-h-full object-contain" />
               </div>
               
               {/* Business Support Impact Stats */}
-              <div className="mt-6">
+              <div className="flex-1">
                 <div className="grid grid-cols-2 gap-2">
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-1.5 rounded-lg shadow-md border-2 border-gray-200 text-center">
                     <div className="text-xl font-bold" style={{ color: '#8aa1a9' }}>161</div>
