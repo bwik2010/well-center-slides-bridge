@@ -36,8 +36,8 @@ const MissionSlide = () => {
         
         <div className="text-center mb-4">
           <h3 className="text-xl font-semibold" style={{
-            color: '#173e4e'
-          }}>Co-locating and Integrating the Power of Three Levers:</h3>
+          color: '#173e4e'
+        }}>Co-locating and Integrating Three Powerful Levers:</h3>
         </div>
         
         <div className="grid grid-cols-3 gap-4 flex-1">
