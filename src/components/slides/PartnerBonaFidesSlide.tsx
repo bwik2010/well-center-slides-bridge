@@ -103,7 +103,7 @@ const PartnerBonaFidesSlide = () => {
             {/* Weaving Impact Logo Area */}
             <div className="text-center flex-shrink-0">
               <div 
-                className="w-56 h-32 mx-auto rounded-lg flex items-center justify-center shadow-sm mb-6 relative"
+                className="w-72 h-48 mx-auto rounded-lg flex items-center justify-center shadow-sm mb-6 relative"
                 style={{
                   backgroundImage: `url('/lovable-uploads/62723598-bffb-4395-847c-81f875e9ed72.png')`,
                   backgroundSize: 'cover',
@@ -113,7 +113,7 @@ const PartnerBonaFidesSlide = () => {
               >
                 {/* Overlay to reduce saturation */}
                 <div className="absolute inset-0 bg-white/70 rounded-lg"></div>
-                <img src={weavingImpactLogo} alt="Weaving Impact Logo" className="max-w-full max-h-full object-contain relative z-10" />
+                <img src={weavingImpactLogo} alt="Weaving Impact Logo" className="w-56 h-32 object-contain relative z-10" />
               </div>
               
               {/* Business Support Impact Stats */}
