@@ -12,7 +12,6 @@ import BusinessImpact from "./pages/BusinessImpact";
 import NotFound from "./pages/NotFound";
 import PrintView from "./components/PrintView";
 import PDFView from "./pages/PDFView";
-import LogoExtractor from "./components/LogoExtractor";
 
 const queryClient = new QueryClient();
 
@@ -33,7 +32,6 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <LogoExtractor />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
