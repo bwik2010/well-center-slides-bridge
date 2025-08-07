@@ -42,6 +42,20 @@ const PartnerBonaFidesSlide = () => {
               <div className="w-40 h-24 mx-auto mb-4 rounded-lg flex items-center justify-center bg-white shadow-sm">
                 <img src={weavingImpactLogo} alt="Weaving Impact Logo" className="max-w-full max-h-full object-contain" />
               </div>
+              
+              {/* Bridge Diagram under Weaving Impact */}
+              <div className="mt-4">
+                <h4 className="text-lg font-semibold mb-3" style={{ color: '#173e4e' }}>
+                  The Well's Bridge Framework
+                </h4>
+                <div className="w-full h-32 rounded-lg bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/a1276627-6474-4723-a04f-951fe9d8bc16.png" 
+                    alt="The Well's Bridge Diagram" 
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
