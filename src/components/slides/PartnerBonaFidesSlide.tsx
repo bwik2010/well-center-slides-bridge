@@ -43,17 +43,28 @@ const PartnerBonaFidesSlide = () => {
                 <img src={weavingImpactLogo} alt="Weaving Impact Logo" className="max-w-full max-h-full object-contain" />
               </div>
               
-              {/* Bridge Diagram under Weaving Impact */}
+              {/* Business Support Impact Stats */}
               <div className="mt-4">
                 <h4 className="text-lg font-semibold mb-3" style={{ color: '#173e4e' }}>
-                  The Well's Bridge Framework
+                  Business Support Impact
                 </h4>
-                <div className="w-full h-32 rounded-lg bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/a1276627-6474-4723-a04f-951fe9d8bc16.png" 
-                    alt="The Well's Bridge Diagram" 
-                    className="max-w-full max-h-full object-contain"
-                  />
+                <div className="grid grid-cols-2 gap-3 text-sm">
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-3 rounded-lg">
+                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>161</div>
+                    <div className="text-gray-700 text-xs">Business-Owners Supported</div>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-3 rounded-lg">
+                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>148</div>
+                    <div className="text-gray-700 text-xs">Black-led Enterprises</div>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-3 rounded-lg">
+                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>53</div>
+                    <div className="text-gray-700 text-xs">New Social Enterprises</div>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-3 rounded-lg">
+                    <div className="text-2xl font-bold" style={{ color: '#8aa1a9' }}>107</div>
+                    <div className="text-gray-700 text-xs">Women & Non-Gender Led</div>
+                  </div>
                 </div>
               </div>
             </div>
