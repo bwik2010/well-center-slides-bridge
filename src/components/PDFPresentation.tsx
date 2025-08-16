@@ -13,7 +13,8 @@ import CitationsSlide from './slides/CitationsSlide';
 import BridgeSlide from './slides/BridgeSlide';
 import { Button } from '@/components/ui/button';
 import { Printer, Download } from 'lucide-react';
-import PartnerBonaFidesSlide from './slides/PartnerBonaFidesSlide';
+import KidsCoBonaFidesSlide from './slides/KidsCoBonaFidesSlide';
+import WeavingImpactBonaFidesSlide from './slides/WeavingImpactBonaFidesSlide';
 
 const PDFPresentation = () => {
   const slides = [
@@ -21,7 +22,8 @@ const PDFPresentation = () => {
     { component: TheBackgroundSlide, title: "The Background Story" },
     { component: TheProblemSlide, title: "The Problem" },
     { component: MissionSlide, title: "Mission Statement" },
-    { component: PartnerBonaFidesSlide, title: "Partner Bona Fides" },
+    { component: KidsCoBonaFidesSlide, title: "KidsCo Inc. Bona Fides" },
+    { component: WeavingImpactBonaFidesSlide, title: "Weaving Impact Bona Fides" },
     { component: ContentSlide, title: "Key Partners & Collaborations" },
     
     { component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
