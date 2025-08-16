@@ -19,48 +19,47 @@ const WeavingImpactBonaFidesSlide = () => {
       }}>
           {/* Weaving Impact Logo Area */}
           <div className="text-center">
-            <div className="w-full h-64 mx-auto rounded-lg mb-8 overflow-hidden shadow-sm">
+            <div className="w-full h-80 mx-auto rounded-lg mb-6 overflow-hidden shadow-sm">
               <img src="/lovable-uploads/52b31a26-97a1-4c36-a686-1d0fac3fc76e.png" alt="Weaving Impact - Empowering Social Entrepreneurs" className="w-full h-full object-contain" />
             </div>
             
             {/* Business Support Impact Stats */}
-            <div className="grid grid-cols-2 gap-4 max-w-2xl mx-auto">
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-4 rounded-lg shadow-md border-2 border-gray-200 text-center">
-                <div className="text-3xl font-bold" style={{
+            <div className="grid grid-cols-3 gap-2 max-w-3xl mx-auto">
+              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg shadow-sm border border-gray-200 text-center">
+                <div className="text-xl font-bold" style={{
                 color: '#8aa1a9'
               }}>161</div>
-                <div className="text-sm font-bold text-gray-700">Business-Owners Supported</div>
+                <div className="text-xs font-medium text-gray-700">Business-Owners Supported</div>
               </div>
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-4 rounded-lg shadow-md border-2 border-gray-200 text-center">
-                <div className="text-3xl font-bold" style={{
+              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg shadow-sm border border-gray-200 text-center">
+                <div className="text-xl font-bold" style={{
                 color: '#8aa1a9'
               }}>148</div>
-                <div className="text-sm font-bold text-gray-700">Black-led Enterprises</div>
+                <div className="text-xs font-medium text-gray-700">Black-led Enterprises</div>
               </div>
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-4 rounded-lg shadow-md border-2 border-gray-200 text-center">
-                <div className="text-3xl font-bold" style={{
+              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg shadow-sm border border-gray-200 text-center">
+                <div className="text-xl font-bold" style={{
                 color: '#8aa1a9'
               }}>53</div>
-                <div className="text-sm font-bold text-gray-700">New Social Enterprises 
-in 2024</div>
+                <div className="text-xs font-medium text-gray-700">New Social Enterprises in 2024</div>
               </div>
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-4 rounded-lg shadow-md border-2 border-gray-200 text-center">
-                <div className="text-3xl font-bold" style={{
+              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg shadow-sm border border-gray-200 text-center">
+                <div className="text-xl font-bold" style={{
                 color: '#8aa1a9'
               }}>81</div>
-                <div className="text-sm font-bold text-gray-700">Mentors in Network</div>
+                <div className="text-xs font-medium text-gray-700">Mentors in Network</div>
               </div>
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-4 rounded-lg shadow-md border-2 border-gray-200 text-center">
-                <div className="text-3xl font-bold" style={{
+              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg shadow-sm border border-gray-200 text-center">
+                <div className="text-xl font-bold" style={{
                 color: '#8aa1a9'
               }}>$30 Million</div>
-                <div className="text-sm font-bold text-gray-700">Invested in Social Enterprise Research</div>
+                <div className="text-xs font-medium text-gray-700">Invested in Social Enterprise Research</div>
               </div>
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-4 rounded-lg shadow-md border-2 border-gray-200 text-center">
-                <div className="text-3xl font-bold" style={{
+              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-2 rounded-lg shadow-sm border border-gray-200 text-center">
+                <div className="text-xl font-bold" style={{
                 color: '#8aa1a9'
               }}>$5 Million</div>
-                <div className="text-sm font-bold text-gray-700">Invested in Curriculum Methodology</div>
+                <div className="text-xs font-medium text-gray-700">Invested in Curriculum Methodology</div>
               </div>
             </div>
           </div>
