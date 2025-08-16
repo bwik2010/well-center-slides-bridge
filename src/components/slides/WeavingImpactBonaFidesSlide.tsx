@@ -23,7 +23,7 @@ const WeavingImpactBonaFidesSlide = () => {
           {/* Weaving Impact Logo Area */}
           <div className="text-center">
             <div className="w-full h-80 mx-auto rounded-lg mb-6 overflow-hidden shadow-sm">
-              <img src="/lovable-uploads/52b31a26-97a1-4c36-a686-1d0fac3fc76e.png" alt="Weaving Impact - Empowering Social Entrepreneurs" className="w-full h-full object-contain" />
+              <img src="/lovable-uploads/838c1836-ae5a-4c8c-b562-e27b461d5de0.png" alt="Weaving Impact - Featured Social Entrepreneurs" className="w-full h-full object-contain" />
             </div>
             
             {/* Business Support Impact Stats */}
