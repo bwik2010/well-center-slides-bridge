@@ -28,7 +28,7 @@ const WeavingImpactBonaFidesSlide = () => {
               <img 
                 src="/lovable-uploads/52b31a26-97a1-4c36-a686-1d0fac3fc76e.png" 
                 alt="Weaving Impact - Empowering Social Entrepreneurs" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             
