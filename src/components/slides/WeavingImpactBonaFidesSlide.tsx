@@ -27,37 +27,37 @@ const WeavingImpactBonaFidesSlide = () => {
         {/* Data cells positioned attractively over the photo */}
         <div className="flex-1 flex items-center justify-center">
           <div className="grid grid-cols-3 gap-4 max-w-4xl mx-auto">
-            <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
+            <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
               <div className="text-2xl font-bold" style={{
                 color: '#173e4e'
               }}>161</div>
               <div className="text-sm font-medium text-gray-700">Business-Owners Supported</div>
             </div>
-            <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
+            <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
               <div className="text-2xl font-bold" style={{
                 color: '#173e4e'
               }}>148</div>
               <div className="text-sm font-medium text-gray-700">Black-led Enterprises</div>
             </div>
-            <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
+            <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
               <div className="text-2xl font-bold" style={{
                 color: '#173e4e'
               }}>53</div>
               <div className="text-sm font-medium text-gray-700">New Social Enterprises in 2024</div>
             </div>
-            <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
+            <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
               <div className="text-2xl font-bold" style={{
                 color: '#173e4e'
               }}>81</div>
               <div className="text-sm font-medium text-gray-700">Mentors in Network</div>
             </div>
-            <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
+            <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
               <div className="text-2xl font-bold" style={{
                 color: '#173e4e'
               }}>$30 Million</div>
               <div className="text-sm font-medium text-gray-700">Invested in Social Enterprise Research</div>
             </div>
-            <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
+            <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
               <div className="text-2xl font-bold" style={{
                 color: '#173e4e'
               }}>$5 Million</div>
