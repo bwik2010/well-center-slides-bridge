@@ -44,7 +44,7 @@ const KidsCoBonaFidesSlide = () => {
               color: '#4ecdc4',
               textShadow: '2px 2px 0px #7ed6cc'
             }}>3,500</span>
-              <div className="text-sm font-bold text-gray-700">Happy Children Served in 2024!</div>
+              <div className="text-sm font-bold text-gray-700">Children Served in 2024!</div>
             </div>
 
             {/* School Programs */}
