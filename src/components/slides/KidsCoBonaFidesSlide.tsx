@@ -12,7 +12,7 @@ const KidsCoBonaFidesSlide = () => {
       <div className="text-center mb-6">
         <h2 className="text-3xl font-bold mb-3" style={{
         color: '#173e4e'
-      }}>Key Partner: KidsCo Inc.</h2>
+      }}>Strategic Partner: KidsCo Inc.</h2>
         <div className="w-20 h-1 mx-auto mb-4" style={{
         backgroundColor: '#b8832b'
       }}></div>
