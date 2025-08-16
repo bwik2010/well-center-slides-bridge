@@ -47,8 +47,8 @@ in 2024</div>
               <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-4 rounded-lg shadow-md border-2 border-gray-200 text-center">
                 <div className="text-3xl font-bold" style={{
                 color: '#8aa1a9'
-              }}>107</div>
-                <div className="text-sm font-bold text-gray-700">Women & Non-Gender Conforming Led</div>
+              }}>81</div>
+                <div className="text-sm font-bold text-gray-700">Mentors in Network</div>
               </div>
               <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-4 rounded-lg shadow-md border-2 border-gray-200 text-center">
                 <div className="text-3xl font-bold" style={{
