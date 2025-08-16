@@ -25,14 +25,14 @@ const KidsCoBonaFidesSlide = () => {
           {/* KidsCo Logo Area */}
           <div className="text-center">
             <div className="w-96 h-48 mx-auto rounded-lg flex items-center justify-center shadow-sm mb-8 relative" style={{
-            backgroundImage: `url('/lovable-uploads/f62fbb05-f31f-4cda-b7ae-b9647abb5edf.png')`,
+            backgroundImage: `url('/lovable-uploads/8eb953b6-e37d-480c-8db5-5f9c5535b69e.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'
           }}>
               {/* Overlay to reduce saturation */}
-              <div className="absolute inset-0 bg-white/70 rounded-lg"></div>
-              <img src="/lovable-uploads/f62fbb05-f31f-4cda-b7ae-b9647abb5edf.png" alt="KidsCo Logo" className="w-56 h-32 object-contain relative z-10" />
+              <div className="absolute inset-0 bg-white/30 rounded-lg"></div>
+              <img src="/lovable-uploads/8eb953b6-e37d-480c-8db5-5f9c5535b69e.png" alt="KidsCo Summer Camp Activities" className="w-56 h-32 object-cover relative z-10 rounded" />
             </div>
             
             {/* KidsCo Impact Stats */}
