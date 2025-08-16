@@ -50,7 +50,7 @@ const TheBackgroundSlide = () => {
               <div className="text-center">
                 <ul className="text-sm space-y-1">
                   <li>• 1 million lbs of food annually</li>
-                  <li>• 500 households served monthly</li>
+                  <li>• First to offer vaccine clinic to underserved in 2021</li>
                   <li>• Emergency food distribution network</li>
                 </ul>
               </div>
