@@ -5,9 +5,12 @@ const WeavingImpactBonaFidesSlide = () => {
     aspectRatio: '16/9'
   }}>
       <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold mb-3" style={{
-        color: '#173e4e'
-      }}>Strategic Partner: Weaving Impact</h2>
+        <div className="flex items-center justify-center gap-4 mb-3">
+          <h2 className="text-3xl font-bold" style={{
+            color: '#173e4e'
+          }}>Strategic Partner:</h2>
+          <img src="/lovable-uploads/52b31a26-97a1-4c36-a686-1d0fac3fc76e.png" alt="Weaving Impact" className="h-12" />
+        </div>
         <div className="w-20 h-1 mx-auto mb-4" style={{
         backgroundColor: '#b8832b'
       }}></div>
