@@ -51,7 +51,7 @@ const TheBackgroundSlide = () => {
                 <ul className="text-sm space-y-1">
                   <li>• 1 million lbs of food annually</li>
                   <li>• First to offer vaccine clinic to underserved in 2021</li>
-                  <li>• Only new VITA site in Mont Co since 2020</li>
+                  <li>• Launched new VITA site in 2021</li>
                 </ul>
               </div>
             </div>
