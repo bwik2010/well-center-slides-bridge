@@ -24,18 +24,12 @@ const WeavingImpactBonaFidesSlide = () => {
         }}>
           {/* Weaving Impact Logo Area */}
           <div className="text-center">
-            <div 
-              className="w-96 h-48 mx-auto rounded-lg flex items-center justify-center shadow-sm mb-8 relative"
-              style={{
-                backgroundImage: `url('/lovable-uploads/62723598-bffb-4395-847c-81f875e9ed72.png')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat'
-              }}
-            >
-              {/* Overlay to reduce saturation */}
-              <div className="absolute inset-0 bg-white/70 rounded-lg"></div>
-              <img src={weavingImpactLogo} alt="Weaving Impact Logo" className="w-56 h-32 object-contain relative z-10" />
+            <div className="w-full h-64 mx-auto rounded-lg mb-8 overflow-hidden shadow-sm">
+              <img 
+                src="/lovable-uploads/52b31a26-97a1-4c36-a686-1d0fac3fc76e.png" 
+                alt="Weaving Impact - Empowering Social Entrepreneurs" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             {/* Business Support Impact Stats */}
