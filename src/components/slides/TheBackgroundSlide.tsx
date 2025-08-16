@@ -42,7 +42,7 @@ const TheBackgroundSlide = () => {
             }}>Nimble Food and Resource Response</h2>
               
               {/* Video under Food */}
-              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-64 h-44 mx-auto cursor-pointer hover:scale-105 transition-transform mb-3" onClick={() => window.open('https://www.youtube.com/watch?v=E3UImx4VLPk', '_blank')}>
+              <div className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 w-56 h-36 mx-auto cursor-pointer hover:scale-105 transition-transform mb-2" onClick={() => window.open('https://www.youtube.com/watch?v=E3UImx4VLPk', '_blank')}>
                 <iframe src="https://www.youtube.com/embed/E3UImx4VLPk?autoplay=0&fs=1" title="Cross Community Story" className="w-full h-full pointer-events-none" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowFullScreen></iframe>
               </div>
               
@@ -51,6 +51,7 @@ const TheBackgroundSlide = () => {
                 <ul className="text-sm space-y-1">
                   <li>• 1 million lbs of food annually</li>
                   <li>• 500 households served monthly</li>
+                  <li>• Emergency food distribution network</li>
                 </ul>
               </div>
             </div>
