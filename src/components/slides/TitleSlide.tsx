@@ -4,7 +4,7 @@ import TheWellCenterLogo from '../TheWellCenterLogo';
 const TitleSlide = () => {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center text-center relative rounded-xl text-white overflow-hidden" style={{
-      background: 'linear-gradient(135deg, #173e4e 0%, #2a5a6b 30%, #8aa1a9 100%)',
+      background: 'linear-gradient(135deg, #173e4e 0%, #2a5a6b 50%, #8aa1a9 100%)',
       aspectRatio: '16/9'
     }}>
       {/* Enhanced Background Pattern */}
