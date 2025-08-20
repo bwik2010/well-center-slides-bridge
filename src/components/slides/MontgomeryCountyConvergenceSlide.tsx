@@ -45,7 +45,7 @@ const MontgomeryCountyConvergenceSlide = () => {
         {/* Bottom Text */}
         <div className="text-center">
           <p className="text-gray-700 text-lg font-medium">
-            Building stronger communities through collaborative partnerships
+            Leveraging the Power of Community Collaboration
           </p>
         </div>
       </div>
