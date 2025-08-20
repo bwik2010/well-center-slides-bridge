@@ -18,6 +18,7 @@ import QuoteSlide from './slides/QuoteSlide';
 import CitationsSlide from './slides/CitationsSlide';
 import KidsCoBonaFidesSlide from './slides/KidsCoBonaFidesSlide';
 import WeavingImpactBonaFidesSlide from './slides/WeavingImpactBonaFidesSlide';
+import MontgomeryCountyConvergenceSlide from './slides/MontgomeryCountyConvergenceSlide';
 
 
 const slides = [
@@ -27,14 +28,15 @@ const slides = [
   { id: 4, component: MissionSlide, title: "Mission Statement" },
   { id: 5, component: KidsCoBonaFidesSlide, title: "KidsCo Inc. Bona Fides" },
   { id: 6, component: WeavingImpactBonaFidesSlide, title: "Weaving Impact Bona Fides" },
-  { id: 7, component: ContentSlide, title: "Key Partners & Collaborations" },
+  { id: 7, component: MontgomeryCountyConvergenceSlide, title: "Montgomery County Community Convergence" },
+  { id: 8, component: ContentSlide, title: "Key Partners & Collaborations" },
   
-  { id: 8, component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
-  { id: 9, component: FinancialProjectionsSlide, title: "Financial Projections" },
-  { id: 10, component: QuoteSlide, title: "Inspirational Quote" },
-  { id: 11, component: CallToActionSlide, title: "Call to Action" },
-  { id: 12, component: CitationsSlide, title: "Citations & References" },
-  { id: 13, component: BridgeSlide, title: "Bridge Diagram" },
+  { id: 9, component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
+  { id: 10, component: FinancialProjectionsSlide, title: "Financial Projections" },
+  { id: 11, component: QuoteSlide, title: "Inspirational Quote" },
+  { id: 12, component: CallToActionSlide, title: "Call to Action" },
+  { id: 13, component: CitationsSlide, title: "Citations & References" },
+  { id: 14, component: BridgeSlide, title: "Bridge Diagram" },
   
 ];
 

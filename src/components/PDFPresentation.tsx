@@ -15,6 +15,7 @@ import { Button } from '@/components/ui/button';
 import { Printer, Download } from 'lucide-react';
 import KidsCoBonaFidesSlide from './slides/KidsCoBonaFidesSlide';
 import WeavingImpactBonaFidesSlide from './slides/WeavingImpactBonaFidesSlide';
+import MontgomeryCountyConvergenceSlide from './slides/MontgomeryCountyConvergenceSlide';
 
 const PDFPresentation = () => {
   const slides = [
@@ -24,6 +25,7 @@ const PDFPresentation = () => {
     { component: MissionSlide, title: "Mission Statement" },
     { component: KidsCoBonaFidesSlide, title: "KidsCo Inc. Bona Fides" },
     { component: WeavingImpactBonaFidesSlide, title: "Weaving Impact Bona Fides" },
+    { component: MontgomeryCountyConvergenceSlide, title: "Montgomery County Community Convergence" },
     { component: ContentSlide, title: "Key Partners & Collaborations" },
     
     { component: SourcesOfRevenueSlide, title: "Sources of Revenue" },

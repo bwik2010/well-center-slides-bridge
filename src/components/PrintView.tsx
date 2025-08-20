@@ -16,6 +16,7 @@ import CallToActionSlide from './slides/CallToActionSlide';
 import QuoteSlide from './slides/QuoteSlide';
 import CitationsSlide from './slides/CitationsSlide';
 import PartnerBonaFidesSlide from './slides/PartnerBonaFidesSlide';
+import MontgomeryCountyConvergenceSlide from './slides/MontgomeryCountyConvergenceSlide';
 
 const slides = [
   { id: 1, component: TitleSlide, title: "Title Slide" },
@@ -24,6 +25,7 @@ const slides = [
   { id: 4, component: BridgeSlide, title: "Bridge Diagram" },
   { id: 5, component: ContentSlide, title: "Key Partners & Collaborations" },
   { id: 6, component: PartnerBonaFidesSlide, title: "Partner Bona Fides" },
+  { id: 7, component: MontgomeryCountyConvergenceSlide, title: "Montgomery County Community Convergence" },
   
   { id: 8, component: SourcesOfRevenueSlide, title: "Sources of Revenue" },
   { id: 9, component: FinancialProjectionsSlide, title: "Financial Projections" },
