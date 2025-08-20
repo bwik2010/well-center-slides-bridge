@@ -28,7 +28,6 @@ const MontgomeryCountyConvergenceSlide = () => {
                 className="max-h-full max-w-full object-contain"
               />
             </div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">The Well Center</h3>
             <p className="text-gray-600 text-sm">
               Community wellness and health services
             </p>
@@ -43,7 +42,6 @@ const MontgomeryCountyConvergenceSlide = () => {
                 className="max-h-full max-w-full object-contain"
               />
             </div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">WorkSource Montgomery</h3>
             <p className="text-gray-600 text-sm">
               Employment and workforce development services
             </p>
@@ -58,7 +56,6 @@ const MontgomeryCountyConvergenceSlide = () => {
                 className="max-h-full max-w-full object-contain"
               />
             </div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Identity</h3>
             <p className="text-gray-600 text-sm">
               Youth empowerment and community programs
             </p>
