@@ -4,7 +4,7 @@ const TheWellCenterLogo = ({ className = "" }: { className?: string }) => {
   return (
     <div className={`inline-flex justify-center items-center ${className}`}>
       <div 
-        className="relative w-[140px] h-[140px] rounded-full flex flex-col justify-center items-center transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-teal-300/30"
+        className="relative w-[80px] h-[80px] rounded-full flex flex-col justify-center items-center transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-teal-300/30"
         style={{
           background: 'radial-gradient(circle at center, #f0f8ff 0%, #e6fffa 50%, #4fd1c7 100%)',
         }}
@@ -34,19 +34,19 @@ const TheWellCenterLogo = ({ className = "" }: { className?: string }) => {
         {/* Curved Text SVG */}
         <svg 
           className="absolute top-0 left-0 w-full h-full z-10" 
-          viewBox="0 0 140 140"
+          viewBox="0 0 80 80"
         >
           <defs>
-            <path id="top-curve" d="M 35 70 A 35 35 0 0 1 105 70" />
-            <path id="bottom-curve" d="M 30 70 A 40 40 0 1 0 110 70" />
+            <path id="top-curve" d="M 20 40 A 20 20 0 0 1 60 40" />
+            <path id="bottom-curve" d="M 17 40 A 23 23 0 1 0 63 40" />
           </defs>
           <text 
             className="fill-gray-700" 
             style={{ 
               fontFamily: 'Arial, sans-serif', 
               fontWeight: '500',
-              fontSize: '16px',
-              letterSpacing: '2px',
+              fontSize: '9px',
+              letterSpacing: '1px',
               textShadow: '0 1px 2px rgba(255,255,255,0.8)'
             }}
           >
@@ -59,8 +59,8 @@ const TheWellCenterLogo = ({ className = "" }: { className?: string }) => {
             style={{ 
               fontFamily: 'Arial, sans-serif', 
               fontWeight: '500',
-              fontSize: '14px',
-              letterSpacing: '1px',
+              fontSize: '8px',
+              letterSpacing: '0.5px',
               textShadow: '0 1px 2px rgba(255,255,255,0.8)'
             }}
           >
@@ -72,7 +72,7 @@ const TheWellCenterLogo = ({ className = "" }: { className?: string }) => {
         
         {/* Center Text */}
         <div 
-          className="text-3xl font-bold text-gray-700 tracking-wide z-20 relative"
+          className="text-lg font-bold text-gray-700 tracking-wide z-20 relative"
           style={{ textShadow: '0 2px 4px rgba(255,255,255,0.8)' }}
         >
           WeLL
