@@ -38,9 +38,7 @@ const MontgomeryCountyConvergenceSlide = () => {
             <div className="h-24 flex items-center justify-center mb-4">
               <img src={identityYouthLogo} alt="Identity Youth Logo" className="max-h-full max-w-full object-contain" />
             </div>
-            <p className="text-gray-600 text-sm">
-              Youth empowerment and community programs
-            </p>
+            <p className="text-gray-600 text-sm">Case Management and Community Support</p>
           </div>
         </div>
 
