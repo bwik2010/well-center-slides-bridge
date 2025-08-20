@@ -2,10 +2,8 @@ import React from 'react';
 import theWellCenterLogo from '../../assets/the-well-center-logo-complete-circle.png';
 import worksourceMontgomeryLogo from '/lovable-uploads/7e021967-b150-401d-aa23-a9a7b772776a.png';
 import identityYouthLogo from '/lovable-uploads/8661bd69-0afa-46d3-8417-fc9e1c1717a3.png';
-
 const MontgomeryCountyConvergenceSlide = () => {
-  return (
-    <div className="w-full h-full flex flex-col justify-center items-center text-center px-8 py-12 bg-gradient-to-br from-blue-50 to-purple-50">
+  return <div className="w-full h-full flex flex-col justify-center items-center text-center px-8 py-12 bg-gradient-to-br from-blue-50 to-purple-50">
       
       {/* Content */}
       <div className="w-full max-w-5xl">
@@ -22,11 +20,7 @@ const MontgomeryCountyConvergenceSlide = () => {
           {/* The Well Center */}
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-200 shadow-lg">
             <div className="h-24 flex items-center justify-center mb-4">
-              <img 
-                src={theWellCenterLogo} 
-                alt="The Well Center Logo" 
-                className="max-h-full max-w-full object-contain"
-              />
+              <img src={theWellCenterLogo} alt="The Well Center Logo" className="max-h-full max-w-full object-contain" />
             </div>
             <p className="text-gray-600 text-sm">
               Community wellness and health services
@@ -36,25 +30,15 @@ const MontgomeryCountyConvergenceSlide = () => {
           {/* WorkSource Montgomery */}
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-200 shadow-lg">
             <div className="h-24 flex items-center justify-center mb-4">
-              <img 
-                src={worksourceMontgomeryLogo} 
-                alt="WorkSource Montgomery Logo" 
-                className="max-h-full max-w-full object-contain"
-              />
+              <img src={worksourceMontgomeryLogo} alt="WorkSource Montgomery Logo" className="max-h-full max-w-full object-contain" />
             </div>
-            <p className="text-gray-600 text-sm">
-              Employment and workforce development services
-            </p>
+            <p className="text-gray-600 text-sm">Co-located American Job Center and employment services</p>
           </div>
 
           {/* Identity */}
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-200 shadow-lg">
             <div className="h-24 flex items-center justify-center mb-4">
-              <img 
-                src={identityYouthLogo} 
-                alt="Identity Youth Logo" 
-                className="max-h-full max-w-full object-contain"
-              />
+              <img src={identityYouthLogo} alt="Identity Youth Logo" className="max-h-full max-w-full object-contain" />
             </div>
             <p className="text-gray-600 text-sm">
               Youth empowerment and community programs
@@ -69,8 +53,6 @@ const MontgomeryCountyConvergenceSlide = () => {
           </p>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default MontgomeryCountyConvergenceSlide;
