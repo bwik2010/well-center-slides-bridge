@@ -22,9 +22,7 @@ const MontgomeryCountyConvergenceSlide = () => {
             <div className="h-24 flex items-center justify-center mb-4">
               <img src={theWellCenterLogo} alt="The Well Center Logo" className="max-h-full max-w-full object-contain" />
             </div>
-            <p className="text-gray-600 text-sm">
-              Community wellness and health services
-            </p>
+            <p className="text-gray-600 text-sm">Mentorship, training, and entrepreneur support</p>
           </div>
 
           {/* WorkSource Montgomery */}
