@@ -1,4 +1,5 @@
 import React from 'react';
+import TheWellCenterLogo from '../TheWellCenterLogo';
 
 const TitleSlide = () => {
   return (
@@ -29,15 +30,18 @@ const TitleSlide = () => {
       <div className="relative z-10 max-w-6xl px-8 animate-[fade-in_1s_ease-out]">
         {/* Main Title with enhanced styling */}
         <div className="mb-8">
-          <h1 className="text-7xl font-montserrat font-bold mb-2 leading-tight animate-[scale-in_1.2s_ease-out]" style={{
-            background: 'linear-gradient(135deg, #ffffff 0%, #f0f8ff 50%, #e6f3ff 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-            textShadow: '0 4px 20px rgba(184, 131, 43, 0.3)'
-          }}>
-            The Well Center
-          </h1>
+          <div className="flex items-center justify-center gap-6 mb-2">
+            <TheWellCenterLogo className="animate-[scale-in_1.2s_ease-out]" />
+            <h1 className="text-7xl font-montserrat font-bold leading-tight animate-[scale-in_1.2s_ease-out]" style={{
+              background: 'linear-gradient(135deg, #ffffff 0%, #f0f8ff 50%, #e6f3ff 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              textShadow: '0 4px 20px rgba(184, 131, 43, 0.3)'
+            }}>
+              The Well Center
+            </h1>
+          </div>
           <div className="w-32 h-1 mx-auto rounded-full animate-[scale-in_1.5s_ease-out]" style={{
             background: 'linear-gradient(90deg, #b8832b 0%, #d4a574 50%, #b8832b 100%)'
           }}></div>
