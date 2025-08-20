@@ -31,7 +31,7 @@ const TitleSlide = () => {
         {/* Main Title with enhanced styling */}
         <div className="mb-8">
           <div className="flex items-center justify-center gap-4 mb-2">
-            <h1 className="text-7xl font-montserrat font-bold leading-tight animate-[scale-in_1.2s_ease-out]" style={{
+            <h1 className="text-5xl font-montserrat font-bold leading-tight animate-[scale-in_1.2s_ease-out]" style={{
               background: 'linear-gradient(135deg, #ffffff 0%, #f0f8ff 50%, #e6f3ff 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
@@ -41,7 +41,7 @@ const TitleSlide = () => {
               The
             </h1>
             <TheWellCenterLogo className="animate-[scale-in_1.2s_ease-out]" showText={false} />
-            <h1 className="text-7xl font-montserrat font-bold leading-tight animate-[scale-in_1.2s_ease-out]" style={{
+            <h1 className="text-5xl font-montserrat font-bold leading-tight animate-[scale-in_1.2s_ease-out]" style={{
               background: 'linear-gradient(135deg, #ffffff 0%, #f0f8ff 50%, #e6f3ff 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
