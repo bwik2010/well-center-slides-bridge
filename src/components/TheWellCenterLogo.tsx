@@ -38,7 +38,7 @@ const TheWellCenterLogo = ({ className = "" }: { className?: string }) => {
         >
           <defs>
             <path id="top-curve" d="M 20 40 A 20 20 0 0 1 60 40" />
-            <path id="bottom-curve" d="M 15 40 A 25 25 0 1 0 65 40" />
+            <path id="bottom-curve" d="M 15 45 A 25 25 0 1 0 65 45" />
           </defs>
           <text 
             className="fill-gray-700" 
@@ -60,7 +60,7 @@ const TheWellCenterLogo = ({ className = "" }: { className?: string }) => {
               fontFamily: 'Arial, sans-serif', 
               fontWeight: '500',
               fontSize: '8px',
-              letterSpacing: '0.5px',
+              letterSpacing: '1px',
               textShadow: '0 1px 2px rgba(255,255,255,0.8)'
             }}
           >
