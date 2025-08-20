@@ -1,7 +1,7 @@
 import React from 'react';
 import theWellCenterLogo from '../../assets/the-well-center-logo.png';
 import worksourceMontgomeryLogo from '../../assets/worksource-montgomery-logo.png';
-import identityYouthLogo from '../../assets/identity-youth-logo.png';
+import identityYouthLogo from '/lovable-uploads/8661bd69-0afa-46d3-8417-fc9e1c1717a3.png';
 
 const MontgomeryCountyConvergenceSlide = () => {
   return (
