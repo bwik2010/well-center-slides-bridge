@@ -51,9 +51,6 @@ const TitleSlide = () => {
               Center
             </h1>
           </div>
-          <div className="w-32 h-1 mx-auto rounded-full animate-[scale-in_1.5s_ease-out]" style={{
-            background: 'linear-gradient(90deg, #b8832b 0%, #d4a574 50%, #b8832b 100%)'
-          }}></div>
         </div>
         
         {/* Enhanced subtitle */}
