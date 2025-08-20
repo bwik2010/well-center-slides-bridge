@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TheWellCenterLogo = ({ className = "" }: { className?: string }) => {
+const TheWellCenterLogo = ({ className = "", showText = true }: { className?: string; showText?: boolean }) => {
   return (
     <div className={`inline-flex justify-center items-center ${className}`}>
       <div 
@@ -31,44 +31,46 @@ const TheWellCenterLogo = ({ className = "" }: { className?: string }) => {
           }}
         ></div>
         
-        {/* Curved Text SVG */}
-        <svg 
-          className="absolute top-0 left-0 w-full h-full z-10" 
-          viewBox="0 0 80 80"
-        >
-          <defs>
-            <path id="top-curve" d="M 20 40 A 20 20 0 0 1 60 40" />
-            <path id="bottom-curve" d="M 15 45 A 25 25 0 1 0 65 45" />
-          </defs>
-          <text 
-            className="fill-gray-700" 
-            style={{ 
-              fontFamily: 'Arial, sans-serif', 
-              fontWeight: '500',
-              fontSize: '9px',
-              letterSpacing: '1px',
-              textShadow: '0 1px 2px rgba(255,255,255,0.8)'
-            }}
+        {/* Curved Text SVG - only show if showText is true */}
+        {showText && (
+          <svg 
+            className="absolute top-0 left-0 w-full h-full z-10" 
+            viewBox="0 0 80 80"
           >
-            <textPath href="#top-curve" startOffset="50%" textAnchor="middle">
-              THE
-            </textPath>
-          </text>
-          <text 
-            className="fill-gray-700" 
-            style={{ 
-              fontFamily: 'Arial, sans-serif', 
-              fontWeight: '500',
-              fontSize: '8px',
-              letterSpacing: '1px',
-              textShadow: '0 1px 2px rgba(255,255,255,0.8)'
-            }}
-          >
-            <textPath href="#bottom-curve" startOffset="50%" textAnchor="middle">
-              CENTER
-            </textPath>
-          </text>
-        </svg>
+            <defs>
+              <path id="top-curve" d="M 20 40 A 20 20 0 0 1 60 40" />
+              <path id="bottom-curve" d="M 15 45 A 25 25 0 1 0 65 45" />
+            </defs>
+            <text 
+              className="fill-gray-700" 
+              style={{ 
+                fontFamily: 'Arial, sans-serif', 
+                fontWeight: '500',
+                fontSize: '9px',
+                letterSpacing: '1px',
+                textShadow: '0 1px 2px rgba(255,255,255,0.8)'
+              }}
+            >
+              <textPath href="#top-curve" startOffset="50%" textAnchor="middle">
+                THE
+              </textPath>
+            </text>
+            <text 
+              className="fill-gray-700" 
+              style={{ 
+                fontFamily: 'Arial, sans-serif', 
+                fontWeight: '500',
+                fontSize: '8px',
+                letterSpacing: '1px',
+                textShadow: '0 1px 2px rgba(255,255,255,0.8)'
+              }}
+            >
+              <textPath href="#bottom-curve" startOffset="50%" textAnchor="middle">
+                CENTER
+              </textPath>
+            </text>
+          </svg>
+        )}
         
         {/* Center Text */}
         <div 

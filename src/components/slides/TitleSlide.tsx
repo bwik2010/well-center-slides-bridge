@@ -40,7 +40,7 @@ const TitleSlide = () => {
             }}>
               The
             </h1>
-            <TheWellCenterLogo className="animate-[scale-in_1.2s_ease-out]" />
+            <TheWellCenterLogo className="animate-[scale-in_1.2s_ease-out]" showText={false} />
             <h1 className="text-7xl font-montserrat font-bold leading-tight animate-[scale-in_1.2s_ease-out]" style={{
               background: 'linear-gradient(135deg, #ffffff 0%, #f0f8ff 50%, #e6f3ff 100%)',
               WebkitBackgroundClip: 'text',
