@@ -1,5 +1,5 @@
 import React from 'react';
-import theWellCenterLogo from '../../assets/the-well-center-logo-lowercase-e.png';
+import theWellCenterLogo from '../../assets/the-well-center-logo-well-large.png';
 import worksourceMontgomeryLogo from '/lovable-uploads/7e021967-b150-401d-aa23-a9a7b772776a.png';
 import identityYouthLogo from '/lovable-uploads/8661bd69-0afa-46d3-8417-fc9e1c1717a3.png';
 
