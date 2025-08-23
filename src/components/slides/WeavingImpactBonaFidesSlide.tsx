@@ -45,7 +45,7 @@ const WeavingImpactBonaFidesSlide = () => {
             </div>
             <div className="bg-white/30 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
               <div className="text-2xl font-bold text-white">$13 Million</div>
-              <div className="text-sm font-medium text-white/90">Collected Revenue in 2024</div>
+              <div className="text-sm font-medium text-white/90">Collective Business Revenue in 2024</div>
             </div>
             <div className="bg-white/30 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
               <div className="text-2xl font-bold text-white">$25 Million</div>
