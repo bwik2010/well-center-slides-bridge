@@ -29,7 +29,7 @@ const WeavingImpactBonaFidesSlide = () => {
           <div className="grid grid-cols-3 gap-4 max-w-4xl mx-auto">
             <div className="bg-white/30 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
               <div className="text-2xl font-bold text-white">161</div>
-              <div className="text-sm font-medium text-white/90">Business-Owners Supported</div>
+              <div className="text-sm font-medium text-white/90">Business-Owners Actively Engaged</div>
             </div>
             <div className="bg-white/30 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
               <div className="text-2xl font-bold text-white">148</div>
