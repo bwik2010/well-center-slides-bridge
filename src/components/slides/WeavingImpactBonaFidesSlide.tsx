@@ -36,8 +36,8 @@ const WeavingImpactBonaFidesSlide = () => {
               <div className="text-sm font-medium text-white/90">Black-led Enterprises</div>
             </div>
             <div className="bg-white/30 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
-              <div className="text-2xl font-bold text-white">53</div>
-              <div className="text-sm font-medium text-white/90">New Social Enterprises in 2024</div>
+              <div className="text-2xl font-bold text-white">22</div>
+              <div className="text-sm font-medium text-white/90">Yrs of Social Enterprise Innovation</div>
             </div>
             <div className="bg-white/30 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
               <div className="text-2xl font-bold text-white">81</div>
