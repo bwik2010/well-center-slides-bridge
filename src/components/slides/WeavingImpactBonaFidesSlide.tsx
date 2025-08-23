@@ -48,7 +48,7 @@ const WeavingImpactBonaFidesSlide = () => {
               <div className="text-sm font-medium text-white/90">Invested in Social Enterprise Research</div>
             </div>
             <div className="bg-white/30 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-white/20 text-center">
-              <div className="text-2xl font-bold text-white">$5 Million</div>
+              <div className="text-2xl font-bold text-white">$25 Million</div>
               <div className="text-sm font-medium text-white/90">Invested in Curriculum Methodology</div>
             </div>
           </div>
