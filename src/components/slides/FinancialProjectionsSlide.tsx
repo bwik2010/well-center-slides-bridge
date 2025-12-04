@@ -42,7 +42,7 @@ const FinancialProjectionsSlide = () => {
       {/* Header */}
       <div className="text-center mb-6">
         <h1 className="text-4xl font-bold mb-2" style={{ color: '#173e4e' }}>
-          Financial Projections
+          Financial Sustainability Model
         </h1>
         <p className="text-lg" style={{ color: '#8aa1a9' }}>
           Revenue Growth vs Operating Expenses (2026-2030)
