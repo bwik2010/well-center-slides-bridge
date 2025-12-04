@@ -5,12 +5,12 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 const FinancialProjectionsSlide = () => {
   // Financial data from The Well projections
   const chartData = [
-    { year: 2025, revenue: 214500, expenses: 328500 },
-    { year: 2026, revenue: 411500, expenses: 789250 },
-    { year: 2027, revenue: 508000, expenses: 831650 },
-    { year: 2028, revenue: 570000, expenses: 824165 },
-    { year: 2029, revenue: 612000, expenses: 742054 },
-    { year: 2030, revenue: 612000, expenses: 760331 },
+    { year: 2026, revenue: 214500, expenses: 328500 },
+    { year: 2027, revenue: 411500, expenses: 789250 },
+    { year: 2028, revenue: 508000, expenses: 831650 },
+    { year: 2029, revenue: 570000, expenses: 824165 },
+    { year: 2030, revenue: 612000, expenses: 742054 },
+    { year: 2031, revenue: 612000, expenses: 760331 },
   ];
 
   const formatCurrency = (value: number) => {
@@ -46,7 +46,7 @@ const FinancialProjectionsSlide = () => {
           Financial Projections
         </h1>
         <p className="text-lg" style={{ color: '#8aa1a9' }}>
-          Revenue Growth vs Operating Expenses (2025-2030)
+          Revenue Growth vs Operating Expenses (2026-2031)
         </p>
       </div>
 
@@ -106,7 +106,7 @@ const FinancialProjectionsSlide = () => {
                  background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)',
                  borderColor: 'rgba(184, 131, 43, 0.3)'
                }}>
-            <div className="text-xs opacity-90 mb-2">2025 Revenue</div>
+            <div className="text-xs opacity-90 mb-2">2026 Revenue</div>
             <div className="text-xl font-bold">$214K</div>
             <div className="text-xs opacity-80">Launch Year</div>
           </div>
@@ -116,7 +116,7 @@ const FinancialProjectionsSlide = () => {
                  background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)',
                  borderColor: 'rgba(184, 131, 43, 0.3)'
                }}>
-            <div className="text-xs opacity-90 mb-2">2030 Revenue</div>
+            <div className="text-xs opacity-90 mb-2">2031 Revenue</div>
             <div className="text-xl font-bold">$612K</div>
             <div className="text-xs opacity-80">+185% Growth</div>
           </div>
@@ -126,7 +126,7 @@ const FinancialProjectionsSlide = () => {
                  background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)',
                  borderColor: 'rgba(184, 131, 43, 0.3)'
                }}>
-            <div className="text-xs opacity-90 mb-2">2026 Coverage</div>
+            <div className="text-xs opacity-90 mb-2">2027 Coverage</div>
             <div className="text-xl font-bold">52%</div>
             <div className="text-xs opacity-80">Revenue vs Expenses</div>
           </div>
@@ -136,7 +136,7 @@ const FinancialProjectionsSlide = () => {
                  background: 'linear-gradient(135deg, #173e4e 0%, #8aa1a9 100%)',
                  borderColor: 'rgba(184, 131, 43, 0.3)'
                }}>
-            <div className="text-xs opacity-90 mb-2">2030 Coverage</div>
+            <div className="text-xs opacity-90 mb-2">2031 Coverage</div>
             <div className="text-xl font-bold">80%</div>
             <div className="text-xs opacity-80">Revenue vs Expenses</div>
           </div>
