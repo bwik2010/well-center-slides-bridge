@@ -44,9 +44,7 @@ const MontgomeryCountyConvergenceSlide = () => {
 
         {/* Bottom Text */}
         <div className="text-center">
-          <p className="text-gray-700 text-lg font-medium">
-            Leveraging the Power of Community Collaboration
-          </p>
+          <p className="text-gray-700 text-lg font-medium">Cross Community and Identity are members of the CWN Grant Program since its inception.</p>
         </div>
       </div>
     </div>;
