@@ -20,27 +20,18 @@ const MontgomeryCountyConvergenceSlide = () => {
         {/* Partners Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           {/* Cross Community */}
-          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 border border-gray-200 shadow-lg">
-            <div className="h-20 flex items-center justify-center mb-3">
-              <img src={crossCommunityLogo} alt="Cross Community Logo" className="max-h-full max-w-full object-contain" />
-            </div>
-            <p className="text-gray-600 text-sm">Mentorship, training, and entrepreneur support</p>
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 border border-gray-200 shadow-lg flex items-center justify-center h-28">
+            <img src={crossCommunityLogo} alt="Cross Community Logo" className="h-16 w-auto object-contain" />
           </div>
 
           {/* WorkSource Montgomery */}
-          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 border border-gray-200 shadow-lg">
-            <div className="h-20 flex items-center justify-center mb-3">
-              <img src={worksourceMontgomeryLogo} alt="WorkSource Montgomery Logo" className="max-h-full max-w-full object-contain" />
-            </div>
-            <p className="text-gray-600 text-sm">Co-located American Job Center and employment services</p>
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 border border-gray-200 shadow-lg flex items-center justify-center h-28">
+            <img src={worksourceMontgomeryLogo} alt="WorkSource Montgomery Logo" className="h-16 w-auto object-contain" />
           </div>
 
           {/* Identity */}
-          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 border border-gray-200 shadow-lg">
-            <div className="h-20 flex items-center justify-center mb-3">
-              <img src={identityYouthLogo} alt="Identity Youth Logo" className="max-h-full max-w-full object-contain" />
-            </div>
-            <p className="text-gray-600 text-sm">Case Management and Community Support</p>
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 border border-gray-200 shadow-lg flex items-center justify-center h-28">
+            <img src={identityYouthLogo} alt="Identity Youth Logo" className="h-16 w-auto object-contain" />
           </div>
         </div>
 
