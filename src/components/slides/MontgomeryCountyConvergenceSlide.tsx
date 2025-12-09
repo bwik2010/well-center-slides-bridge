@@ -3,10 +3,8 @@ import crossCommunityLogo from '@/assets/cross-community-logo.png';
 import worksourceMontgomeryLogo from '/lovable-uploads/7e021967-b150-401d-aa23-a9a7b772776a.png';
 import identityYouthLogo from '/lovable-uploads/8661bd69-0afa-46d3-8417-fc9e1c1717a3.png';
 import cwnLogo from '@/assets/cwn-logo.png';
-
 const MontgomeryCountyConvergenceSlide = () => {
-  return (
-    <div className="w-full h-full flex flex-col justify-center items-center text-center px-6 py-6 bg-gradient-to-br from-blue-50 to-purple-50">
+  return <div className="w-full h-full flex flex-col justify-center items-center text-center px-6 py-6 bg-gradient-to-br from-blue-50 to-purple-50">
       {/* Content */}
       <div className="w-full max-w-5xl">
         {/* Title */}
@@ -37,7 +35,7 @@ const MontgomeryCountyConvergenceSlide = () => {
 
         {/* Bottom Text */}
         <div className="text-center mb-4">
-          <p className="text-gray-700 text-base font-medium">Cross Community and Identity are members of the CWN Grant Program since its inception.</p>
+          <p className="text-gray-700 text-base font-medium">Cross Community and Identity are grant recipients and have been actively engaged in the CWN since its inception.</p>
         </div>
 
         {/* CWN Logo */}
@@ -45,8 +43,6 @@ const MontgomeryCountyConvergenceSlide = () => {
           <img src={cwnLogo} alt="Community Workforce Network Montgomery County" className="h-24 object-contain" />
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default MontgomeryCountyConvergenceSlide;
