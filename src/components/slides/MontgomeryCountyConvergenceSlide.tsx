@@ -10,7 +10,7 @@ const MontgomeryCountyConvergenceSlide = () => {
         {/* Title */}
         <div className="mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
-            Montgomery County Community Convergence
+            Montgomery County Collaborative Convergence
           </h1>
           <div className="w-32 h-1 mx-auto bg-gradient-to-r from-blue-400 to-purple-400"></div>
         </div>
