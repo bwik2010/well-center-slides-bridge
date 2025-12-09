@@ -21,7 +21,7 @@ const MontgomeryCountyConvergenceSlide = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           {/* Cross Community */}
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 border border-gray-200 shadow-lg flex items-center justify-center h-28">
-            <img src={crossCommunityLogo} alt="Cross Community Logo" className="h-16 w-auto object-contain" />
+            <img src={crossCommunityLogo} alt="Cross Community Logo" className="h-24 w-auto object-contain" />
           </div>
 
           {/* WorkSource Montgomery */}
@@ -42,7 +42,7 @@ const MontgomeryCountyConvergenceSlide = () => {
 
         {/* CWN Logo */}
         <div className="flex justify-center">
-          <img src={cwnLogo} alt="Community Workforce Network Montgomery County" className="h-16 object-contain" />
+          <img src={cwnLogo} alt="Community Workforce Network Montgomery County" className="h-24 object-contain" />
         </div>
       </div>
     </div>
